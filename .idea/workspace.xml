@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-backend/firebaseEnv.text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +49,22 @@
       <option name="presentableId" value="Default" />
       <updated>1658388910977</updated>
       <workItem from="1658388914052" duration="17000" />
-      <workItem from="1658390723571" duration="966000" />
+      <workItem from="1658390723571" duration="3667000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
