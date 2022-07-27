@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/controllers/productController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/models/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-backend/routes/product-routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/firebase-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/firebase-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\public" />
@@ -74,6 +73,11 @@
       <workItem from="1658505678738" duration="2120000" />
       <workItem from="1658509556287" duration="2339000" />
       <workItem from="1658519273423" duration="858000" />
+      <workItem from="1658784506520" duration="1599000" />
+      <workItem from="1658841694785" duration="161000" />
+      <workItem from="1658842005833" duration="2743000" />
+      <workItem from="1658869441068" duration="10251000" />
+      <workItem from="1658881678757" duration="3199000" />
     </task>
     <servers />
   </component>

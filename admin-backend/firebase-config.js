@@ -1,15 +1,36 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "@firebase/firestore";
+'use strict';
+const dotenv = require('dotenv');
+const assert = require('assert');
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDxaheONobOJ7Ca_R0uTEsK6LFPPLp__N8",
-    authDomain: "salesman-bot-56ef5.firebaseapp.com",
-    projectId: "salesman-bot-56ef5",
-    storageBucket: "salesman-bot-56ef5.appspot.com",
-    messagingSenderId: "351167086438",
-    appId: "1:351167086438:web:e770f3dce9aa32eb8452a7",
-    measurementId: "G-854TQ2TFS9"
-};
+dotenv.config();
 
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const {
+    PORT,
+    HOST,
+    HOST_URL,
+    API_KEY,
+    AUTH_DOMAIN,
+    PROJECT_ID,
+    STORAGE_BUCKET,
+    MESSAGING_SENDER_ID,
+    APP_ID,
+    MEASUREMENT_ID
+} = process.env;
+
+assert(PORT, 'PORT is required');
+assert(HOST, 'HOST is required');
+
+module.exports = {
+    port: PORT,
+    host: HOST,
+    url: HOST_URL,
+    firebaseConfig: {
+        apiKey: API_KEY,
+        authDomain: AUTH_DOMAIN,
+        projectId: PROJECT_ID,
+        storageBucket: STORAGE_BUCKET,
+        messagingSenderId: MESSAGING_SENDER_ID,
+        appId: APP_ID,
+        measurementId: MEASUREMENT_ID
+    }
+}
