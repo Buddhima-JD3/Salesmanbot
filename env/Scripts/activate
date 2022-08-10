@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Webstorm\Salesmanbot2\env"
+VIRTUAL_ENV="C:\Users\Lenovo\OneDrive\Documents\GitHub\Salesmanbot\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
