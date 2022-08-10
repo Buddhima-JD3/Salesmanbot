@@ -68,13 +68,13 @@ const App = ({classes}) => {
     setIsRecording(true)
 
     speechToTextUtils.initRecording(
-      getTranscriptionConfig(),
-      handleDataReceived,
-      (error) => {
-        console.error('Error when transcribing', error);
-        setIsRecording(false)
-        // No further action needed, as stream already closes itself on error
-      });
+        getTranscriptionConfig(),
+        handleDataReceived,
+        (error) => {
+          console.error('Error when transcribing', error);
+          setIsRecording(false)
+          // No further action needed, as stream already closes itself on error
+        });
   }
 
   function onStop() {
@@ -84,41 +84,24 @@ const App = ({classes}) => {
   }
 
   return (
-<<<<<<< HEAD
-    <div className={classes.root}>
-      <div className={classes.title}>
-        <Typography variant="h3">
-          Your Transcription App <span role="img" aria-label="microphone-emoji">🎤</span>
-        </Typography>
+      <div className={classes.root}>
+        <div className={classes.title}>
+          <Typography variant="h3">
+            Your Transcription App <span role="img" aria-label="microphone-emoji">🎤</span>
+          </Typography>
+        </div>
+        <div className={classes.settingsSection}>
+          <SettingsSections possibleLanguages={supportedLanguages} selectedLanguage={selectedLanguage}
+                            onLanguageChanged={setSelectedLanguage}/>
+        </div>
+        <div className={classes.buttonsSection}>
+          {!isRecording && <Button onClick={onStart} variant="primary">Start transcribing</Button>}
+          {isRecording && <Button onClick={onStop} variant="danger">Stop</Button>}
+        </div>
+        <div>
+          <TranscribeOutput transcribedText={transcribedData} interimTranscribedText={interimTranscribedData}/>
+        </div>
       </div>
-      <div className={classes.settingsSection}>
-        <SettingsSections possibleLanguages={supportedLanguages} selectedLanguage={selectedLanguage}
-                          onLanguageChanged={setSelectedLanguage}/>
-      </div>
-      <div className={classes.buttonsSection}>
-        {!isRecording && <Button onClick={onStart} variant="primary">Start transcribing</Button>}
-        {isRecording && <Button onClick={onStop} variant="danger">Stop</Button>}
-      </div>
-      <div>
-        <TranscribeOutput transcribedText={transcribedData} interimTranscribedText={interimTranscribedData}/>
-      </div>
-=======
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Salesman bot</h1>
-          <div>
-              <form>
-                  <label>
-                      Name:
-                      <input type="text" name="name" />
-                  </label>
-                  <input type="submit" value="Submit" />
-              </form>
-          </div>
-      </header>
->>>>>>> main
-    </div>
   );
 }
 
