@@ -1,0 +1,47 @@
+ /* ==== GENERAL STYLES ==== */
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+  
+  /* ==== SIMPLE FOOTER ==== */
+  
+  footer {
+    background: white;
+    display: table;
+    width: 100vw;
+    padding-top: 5rem;
+    min-height: calc(20vh - 0px);
+    font-family: 'Arial', sans-serif;
+    font-size: .875rem;
+
+  }
+  
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  footer small {
+    color: rgb(70, 70, 70);
+    letter-spacing: .025rem;
+    margin-bottom: 0.50rem;
+    display: block;
+    font-size: 15px;
+  }
+  
+  .footer-nav a {
+    color: #2f7c4c;
+    text-decoration: none;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  .footer-nav a:hover {
+    color: #46cc7e;
+    transition: color .15s ease-in-out;
+  }
