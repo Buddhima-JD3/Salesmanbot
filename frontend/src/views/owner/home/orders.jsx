@@ -1,217 +1,83 @@
-import React, { Component } from "react";
-import Container from 'react-bootstrap/Container';
-import axios from "axios";
-import { withRouter } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Footer from '../../../layouts/footer';
+import Header from '../../../layouts/header';
+import '../../client/cart/cart.css'
 
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+const Orders = () => {
 
+    return (
+        <div>
+                <div>
+                    <Header />
+                    <img src="https://i.postimg.cc/BbrzhpXf/services-left-dec.png" alt="" class="shape" />
 
-class orders extends Component {
+                    <div class="container" >
+                        <div className='shopc'>
+                            <h1>ORDERS</h1>
+                            <p><Link to="/homeclient">Home</Link> / Orders</p>
+                        </div>
+                        <div class="container pb-5 mt-n2 mt-md-n3">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="h6 d-flex flex-wrap justify-content-between align-items-center px-4 py-3"><span style={{ fontWeight: "bold", fontSize: "30px", fontfamily: "Poppins" }}>Orders</span>
+                                        <Link to="/homeclient"><a class="font-size-sm" href="/homeclient"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" style={{ fontWeight: "bold", fontSize: "30px", fontfamily: "Poppins" }}><polyline points="15 18 9 12 15 6"></polyline></svg>Back to Home</a></Link></h2>
+                                        
+                                        <form action="#" method="get" id="searchForm" class="input-group">
+                                            <input type="search" class="form-control" name="search" placeholder="Search Orders..."  />
+                                            <button type="button" style={{ borderRadius: '0px' }} class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>
+                                            </button>
+                                        </form>
+                                            <br/><br/>
+                                            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
+                                                <div class="media d-block d-sm-flex text-center text-sm-left">
+                                                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#">
+                                                        <div class="cardc">
+                                                            <div class="imgBxc">
+                                                            <Link ><img src="https://i.postimg.cc/jS1Z4tDd/189-1894807-old-milk-bottle-png-transparent-png-copy.png" /></Link>   
+                                                            </div>
+                                                        </div></a>
+                                                    <div class="media-body pt-3">
+                                                        <Link ><h3 class="product-card-title font-weight-semibold border-0 pb-0">Milk Bottle</h3></Link>
+                                                        <div class="font-size-sm"><span class="text-muted mr-2">Qty:</span>3</div>
+                                                        {/* <div class="font-size-sm"><span class="text-muted mr-2">Color:</span>Black</div> */}
+                                                        <div class="font-size-sm"><span class="text-muted mr-2">SKU:</span>CA8001</div>
+                                                        <div class="font-size-lg text-primary pt-2">Rs. 1200</div>
+                                                    </div>
+                                                </div>
 
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-            searchKey: "",
-            customer: [
-                {
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    phone: "",
-                    age: "",
-                    _id: "",
-                },
-            ],
-    
-    
-        };
-      }
-      
-      componentDidMount() {
-        this.retrieveCustomers();
-      }
-    
-      retrieveCustomers() {
-        axios.get("http://localhost:8090/api/customer").then((res) => {
-          // if (res.data.success) {
-            this.setState({
-              customer: res.data,
-            });
-          
-          console.log(res.data);
-        });
-      }
-    
-      onDelete = (id) => {
-    
-        if (window.confirm("Are you sure you wish to delete this user?")) {
-          axios.delete(`http://localhost:8090/api/customer/delete/${id}`).then((res) => {
-            alert("Deleted Successfully");
-            this.retrieveCustomers();
-    
-          });
-        }
-      };
-    
-      filterData(customer, searchKey) {
-        const result = customer.filter(
-          (customer) =>
-            customer.firstName.toLowerCase().includes(searchKey) ||
-            customer.lastName.toLowerCase().includes(searchKey) ||
-            customer.email.toLowerCase().includes(searchKey) ||
-            customer.phone.toLowerCase().includes(searchKey) ||
-            customer.age.toLowerCase().includes(searchKey)
-        );
-        this.setState({ items: result });
-      }
-    
-      handleSearchArea = (e) => {
-        const searchKey = e.currentTarget.value;
-    
-        axios.get("http://localhost:8090/api/customer").then((res) => {
-          if (res.data.success) {
-            this.filterData(res.data.existingItems, searchKey);
-          }
-        });
-      };
-       
-      render() {
+                                                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style={{ width: "auto" }}>
+                                                        <h3 style={{textAlign: 'center'}} class="product-card-title font-weight-bold border-0 pb-0">Shipping Adress</h3>
+                                                        <p style={{textAlign: 'center'}}>Kavindu Lakshan, Kandy Road, Malabe</p> 
+                                                        <h3 style={{textAlign: 'center'}} class="product-card-title font-weight-bold border-0 pb-0">Shipping Service</h3>
+                                                        <button class="btn btn-danger btn-sm btn-block mb-2">Pronto</button> 
+                                                </div>
+                                                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style={{ width: "auto" }}>
+                                                    <from>
+                                                        <h3 style={{textAlign: 'center'}} class="product-card-title font-weight-bold border-0 pb-0">Update Shipping Status</h3>
+                                                        <div class="input-group-btn search-panel">
+                                                            <select name="search_param" id="search_param" style={{borderRadius: '0px', width: '200px'}} class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                                                <option value="all">---</option>
+                                                                <option value="username">Processing</option>
+                                                                <option value="email">Shipped</option>
+                                                                <option value="studentcode">Deliverd</option>
+                                                            </select>
+                                                        </div>
+                                                        <button style={{marginTop: '15px'}} class="btn btn-secondary btn-sm btn-block mb-2">Update</button>  
+                                                    </from> 
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        return (
-    
-            <div class="container" >
-              <br></br>
-              <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
-      <Container>
-        <Navbar.Brand href="#home">Admin Panel</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/admin">Admin Panel</Nav.Link>
-            <NavDropdown title="Dashboard Items" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="customers">
-                Customers
-              </NavDropdown.Item>
-              <NavDropdown.Item href="itemsold">
-                Item Sold
-              </NavDropdown.Item>
-              <NavDropdown.Item href="orders">
-                Orders
-              </NavDropdown.Item>
-              <NavDropdown.Item href="products">
-                Products
-              </NavDropdown.Item>
-              <NavDropdown.Item href="users">
-                Users
-              </NavDropdown.Item>
+                    <Footer />
+                </div>
+        </div>
 
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="admin">
-                Admin Panel
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-              <div class="card login-card">
-                HI Orders
-  
-                <br></br>
-  
-                <div className="container">
-          <br/>
-            <div className="row">
-              <div className="col-lg-9 mt-2 mb-2">
-                
-                <h3><b>Order Details Dashboard</b></h3>
-              </div>
-              <div className="col-lg-3 mt-2 mb-2">
-                <input
-                  className="form-control"
-                  type="search"
-                  placeholder="Search"
-                  name="searchQuery"
-                  onChange={this.handleSearchArea}></input>
-              </div>
-            </div>
-            <table className="table table-hover" style={{ marginTop: "40px" }}>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Phone</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Gender</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                {this.state.customer.map((customer, index) => (
-  
-                  <tr key={index}>
-                    <th scope="row">{index + 1}</th>
-                    <td>
-                      <a
-                        href={`localhost:8090/api/customer/${customer._id}`}
-                        style={{ textDecoration: "none" }}>
-                        {customer.name}
-                      </a>
-                    </td>
-                    <td>{customer.email}</td>
-                    <td>{customer.phone}</td>
-                    <td>{customer.age}</td>
-                    <td>{customer.gender}</td>
-                    <td>
-                      <a className="btn btn-warning" href={`/editCustomer/${customer._id}`}>
-                        <i className="fas fa-edit"></i>&nbsp;Edit
-                      </a>
-                      &nbsp;
-                      <button
-                        className="btn btn-danger" type=""
-                        href= {`/customer/delete/${customer._id}`}
-                        onClick={() => this.onDelete(customer._id)}>
-                        <i className="far fa-trash-alt"></i>&nbsp;Delete
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-              <br/>
-              <button className="btn btn-success"><a href="customer/add" style={{textDecoration:'none',color:'white'}}>Add New Order</a></button>  
-              <button className="btn btn-secondary" style={{marginLeft:"10px" }}><a href="/report" style={{textDecoration:'none',color:'white'}}>Generate Order Report</a></button>
-              <button className="btn btn-dark" style={{marginLeft:"10px" }}><a href="/purchaseOrder" style={{textDecoration:'none',color:'white'}}>Generate Purchase Orders Report</a></button>
-          </div>
-                
-              </div>
-            </div>
-      
-  
-    )
-  }
-        
-      }
-  
+    );
+};
 
-export default orders;
+export default Orders;

@@ -1,19 +1,17 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import bot from './bot.png'
 // import shoppingcart from 'assets/shopping_cart_black_24dp.svg';
 
 
 const adminpanal = () => {
     return (
-    <div class="container-fluid py-4 center">
+    <div class="container-fluid py-4">
     {/* //   <div class="row">
     //     <div class="col-xl-12 col-sm-4 mb-xl-0 mb-12">
             
@@ -156,16 +154,12 @@ const adminpanal = () => {
             
         </div>
     </div>
-    <div class="row justify-content-around" style={{height: '20rem', backgroundColor: '#00A65A'}}>
-        <div class="col-12 pb-5" style={{width: "300px", marginLeft: "750px"}}>
+    <div class="row justify-content-around" style={{height: '25rem', backgroundColor: '#00A65A'}}>
+        <div class="col-12 pb-5">
             <h4>Hi, I'm Alice!</h4>
             <h4>Welcome to the Admin Dashboard</h4>
-            <div class="logo">
-               <a href="/"><img src={bot} alt="Logo" height="330px" style={{marginTop: "-150px", width: "300px", marginLeft: "350px"}} /></a>
-            </div>
             
         </div>
-
     </div>
     
     <br></br>
@@ -176,12 +170,10 @@ const adminpanal = () => {
                     <div class="iconfont-wrapper">
                         <span class="mbr-iconfont mobi-mbri-cash mobi-mbri"></span>
                     </div>
-                    <a href="products" style={{textDecoration:"none"}}>
                     <p class="card-text mbr-fonts-style display-4">35</p>
                     <h2 class="card-title mbr-fonts-style display-5 d-flex justify-content-left text-center">Products</h2>
                     <img src="assets/shopping_cart_black_24dp.svg" class="rounded float-right" alt="..." style={{width: '176px',height: '137px'}}></img>
                     {/* <h6 class="link mbr-fonts-style display-4"><a href="#" class="text-info">Read more</a></h6> */}
-                    </a>
                 </div>
             </div>
         </div>
@@ -192,12 +184,10 @@ const adminpanal = () => {
                     <div class="iconfont-wrapper">
                         <span class="mbr-iconfont mobi-mbri-change-style mobi-mbri"></span>
                     </div>
-                    <a href="orders" style={{textDecoration:"none"}}>
                     <p class="card-text mbr-fonts-style display-4">10</p>
                     <h2 class="card-title mbr-fonts-style display-5">Orders</h2>
                     <img src="..." class="rounded float-right" alt="..." style={{width: '176px',height: '137px'}}></img>
                     {/* <h6 class="link mbr-fonts-style display-4"><a href="#" class="text-info">Read more</a></h6> */}
-                    </a>
                 </div>
             </div>
         </div>
@@ -208,12 +198,10 @@ const adminpanal = () => {
                     <div class="iconfont-wrapper">
                         <span class="mbr-iconfont mobi-mbri-photo mobi-mbri"></span>
                     </div>
-                    <a href="customers" style={{textDecoration:"none"}}>
                     <p class="card-text mbr-fonts-style display-4">5</p>
                     <h2 class="card-title mbr-fonts-style display-5">Customers</h2>
                     <img src="..." class="rounded float-right" alt="..." style={{width: '176px',height: '137px'}}></img>
                     {/* <h6 class="link mbr-fonts-style display-4"><a href="#" class="text-info">Read more</a></h6> */}
-                    </a>
                 </div>
             </div>
         </div>
@@ -226,12 +214,10 @@ const adminpanal = () => {
                     <div class="iconfont-wrapper">
                         <span class="mbr-iconfont mobi-mbri-rocket mobi-mbri"></span>
                     </div>
-                    <a href="users" style={{textDecoration:"none"}}>
                     <p class="card-text mbr-fonts-style display-4">3</p>
                     <h2 class="card-title mbr-fonts-style display-5">Users</h2>
                     <img src="..." class="rounded float-right" alt="..." style={{width: '176px',height: '137px'}}></img>
                     {/* <h6 class="link mbr-fonts-style display-4"><a href="#" class="text-info">Read more</a></h6> */}
-                    </a>
                 </div>
             </div>
         </div>
@@ -242,12 +228,10 @@ const adminpanal = () => {
                     <div class="iconfont-wrapper">
                         <span class="mbr-iconfont mobi-mbri-sites mobi-mbri"></span>
                     </div>
-                    <a href="itemsold" style={{textDecoration:"none"}}>
                     <p class="card-text mbr-fonts-style display-4">16</p>
                     <h2 class="card-title mbr-fonts-style display-5">Item Sold</h2>
                     <img src="..." class="rounded float-right" alt="..." style={{width: '176px',height: '137px'}}></img>
                     {/* <h6 class="link mbr-fonts-style display-4"><a href="#" class="text-info">Read more</a></h6> */}
-                    </a>
                 </div>
             </div>
         </div>
