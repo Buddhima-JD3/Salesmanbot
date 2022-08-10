@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="inital commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +78,17 @@
       <workItem from="1660105447920" duration="8995000" />
       <workItem from="1660170138462" duration="94000" />
       <workItem from="1660170650636" duration="58000" />
+      <workItem from="1660165262593" duration="207000" />
+      <workItem from="1660153619411" duration="7390000" />
+      <workItem from="1660165804465" duration="1400000" />
+      <workItem from="1660169321898" duration="217000" />
+    </task>
+    <task id="LOCAL-00001" summary="inital commit">
+      <created>1660160635268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660160635268</updated>
     </task>
     <servers />
   </component>
