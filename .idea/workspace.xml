@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
-=======
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="inital commit" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ob-admin-backend" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -64,7 +66,6 @@
       <workItem from="1658505678738" duration="2120000" />
       <workItem from="1658509556287" duration="2339000" />
       <workItem from="1658519273423" duration="858000" />
-<<<<<<< Updated upstream
       <workItem from="1658784506520" duration="1599000" />
       <workItem from="1658841694785" duration="161000" />
       <workItem from="1658842005833" duration="2743000" />
@@ -75,8 +76,9 @@
       <workItem from="1660074985823" duration="1131000" />
       <workItem from="1660076416835" duration="3662000" />
       <workItem from="1660105447920" duration="8995000" />
+      <workItem from="1660170138462" duration="94000" />
+      <workItem from="1660170650636" duration="58000" />
       <workItem from="1660165262593" duration="207000" />
-=======
       <workItem from="1660153619411" duration="7390000" />
       <workItem from="1660165804465" duration="1400000" />
       <workItem from="1660169321898" duration="217000" />
@@ -87,7 +89,6 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1660160635268</updated>
->>>>>>> Stashed changes
     </task>
     <servers />
   </component>
