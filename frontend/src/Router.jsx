@@ -11,6 +11,8 @@ import {
 import Admin from './views/admin/admin-panel';
 import AuthContext from "./context/AuthContext";
 
+import Chat from './views/chat/chat';
+
 
 const Routers = () => {
     const { loggedIn } = useContext(AuthContext);
@@ -22,6 +24,8 @@ const Routers = () => {
             <Route exact path="/owner-register"><OwnerRegistration /></Route>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/admin"><Admin /></Route>
+
+            <Route exact path="/chat"><Chat /></Route>
 
             {
                 loggedIn !== null && (<>
