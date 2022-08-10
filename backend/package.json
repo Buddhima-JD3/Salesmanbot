@@ -20,7 +20,6 @@
   },
   "scripts": {
     "start": "python demo_web_app.py",
-    "envst": "./env/Scripts/activate",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
