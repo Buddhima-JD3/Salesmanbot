@@ -19,7 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"../env/Scripts/activate\" \"python demo_web_app.py\"",
+    "start": "python demo_web_app.py",
+    "envst": "./env/Scripts/activate",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
