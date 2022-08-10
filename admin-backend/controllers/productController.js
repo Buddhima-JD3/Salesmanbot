@@ -27,7 +27,13 @@ const getAllProducts = async (req, res, next) => {
                 const product = new Product(
                     doc.id,
                     doc.data().productName,
-                    doc.data().price
+                    doc.data().brand,
+                    doc.data().iteam_type,
+                    doc.data().price,
+                    doc.data().weightOrVolume,
+                    doc.data().ingredients,
+                    doc.data().nutrition,
+                    doc.data().helthStat
                 );
                 productsArray.push(product);
             });
