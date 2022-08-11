@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/src/views/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +62,9 @@
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\public" />
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\admin-frontend\public" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,6 +98,7 @@
       <workItem from="1660165804465" duration="1400000" />
       <workItem from="1660169321898" duration="217000" />
       <workItem from="1660172065865" duration="295000" />
+      <workItem from="1660233485027" duration="3467000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>
