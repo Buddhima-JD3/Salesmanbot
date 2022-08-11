@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from './views/home';
+import Navigation from './views/Navigation';
 import {BrowserRouter as Router} from "react-router-dom";
 
 function App() {
