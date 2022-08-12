@@ -36,7 +36,9 @@ class products extends Component {
       }
     
       retrieveCustomers() {
+
         axios.get("http://localhost:8080/getallproducts").then((res) => {
+
           // if (res.data.success) {
             this.setState({
               customer: res.data,
@@ -49,7 +51,9 @@ class products extends Component {
       onDelete = (id) => {
     
         if (window.confirm("Are you sure you wish to delete this user?")) {
+
           axios.delete(`http://localhost:8080/deleteproduct/${id}`).then((res) => {
+
             alert("Deleted Successfully");
             this.retrieveCustomers();
     
@@ -65,6 +69,7 @@ class products extends Component {
             customer.ingreduents.toLowerCase().includes(searchKey) ||
             customer.item_type.toLowerCase().includes(searchKey) ||
             customer.nutrition.toLowerCase().includes(searchKey)
+
         );
         this.setState({ items: result });
       }
@@ -72,7 +77,9 @@ class products extends Component {
       handleSearchArea = (e) => {
         const searchKey = e.currentTarget.value;
     
+
         axios.get("http://localhost:8080/getallproducts").then((res) => {
+
           if (res.data.success) {
             this.filterData(res.data.existingItems, searchKey);
           }

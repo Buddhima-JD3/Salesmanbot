@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import Admin from './views/admin/admin-panel';
 import AuthContext from "./context/AuthContext";
+
 import AddProduct from './views/owner/home/addProduct';
+
 import Customers from './views/admin/side-pages/customers';
 import Itemsold from './views/admin/side-pages/itemsold';
 import Orders from './views/admin/side-pages/orders';
@@ -28,7 +30,9 @@ const Routers = () => {
             <Route exact path="/orders"><Orders /></Route>
             <Route exact path="/products"><Products /></Route>
             <Route exact path="/users"><Users /></Route>
+
             <Route exact path="/add_product"><AddProduct /></Route>
+
             {
                 loggedIn !== null && (<>                 
                     

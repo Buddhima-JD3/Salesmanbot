@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -21,6 +22,32 @@
   "scripts": {
     "start": "react-scripts start",
     "start-backend": "cd ../backend && ../env/Scripts/activate && ../backend/demo_web_app.py",
+=======
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "formik": "^2.2.9",
+    "js-cookie": "^3.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^14.2.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "react-use-cart": "^1.13.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "soloalert": "^1.1.10",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "serve": "react-scripts start",
+>>>>>>> 120630e9ebe6b1292572b6781e8f4d0e82c73e35
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

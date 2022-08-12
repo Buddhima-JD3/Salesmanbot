@@ -1,3 +1,4 @@
+
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -82,27 +83,3 @@ const App = ({classes}) => {
     flushInterimData() // A safety net if Google's Speech API doesn't work as expected, i.e. always sends the final result
     speechToTextUtils.stopRecording();
   }
-
-  return (
-      <div className={classes.root}>
-        <div className={classes.title}>
-          <Typography variant="h3">
-            Your Transcription App <span role="img" aria-label="microphone-emoji">🎤</span>
-          </Typography>
-        </div>
-        <div className={classes.settingsSection}>
-          <SettingsSections possibleLanguages={supportedLanguages} selectedLanguage={selectedLanguage}
-                            onLanguageChanged={setSelectedLanguage}/>
-        </div>
-        <div className={classes.buttonsSection}>
-          {!isRecording && <Button onClick={onStart} variant="primary">Start transcribing</Button>}
-          {isRecording && <Button onClick={onStop} variant="danger">Stop</Button>}
-        </div>
-        <div>
-          <TranscribeOutput transcribedText={transcribedData} interimTranscribedText={interimTranscribedData}/>
-        </div>
-      </div>
-  );
-}
-
-export default withStyles(useStyles)(App);
