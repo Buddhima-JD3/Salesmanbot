@@ -205,7 +205,7 @@ class products extends Component {
               </tbody>
             </table>
               <br/>
-              <button className="btn btn-success"><a href="customer/add" style={{textDecoration:'none',color:'white'}}>Add New Product</a></button>  
+              <button className="btn btn-success"><a href="/add_product" style={{textDecoration:'none',color:'white'}}>Add New Product</a></button>  
               <button className="btn btn-secondary" style={{marginLeft:"10px" }}><a href="/report" style={{textDecoration:'none',color:'white'}}>Generate Product Report</a></button>
               <button className="btn btn-dark" style={{marginLeft:"10px" }}><a href="/purchaseOrder" style={{textDecoration:'none',color:'white'}}>Generate Product Purchase Report</a></button>
           </div>
