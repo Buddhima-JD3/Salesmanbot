@@ -1,0 +1,21 @@
+.body-div {
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 56px);
+}
+
+.admin-card {
+    padding: 20px 30px !important;
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+.admin-panel-main {
+    width: 100%;
+    padding: 60px 160px;
+}

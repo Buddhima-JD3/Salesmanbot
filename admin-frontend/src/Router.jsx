@@ -10,12 +10,15 @@ import Itemsold from './views/admin/side-pages/itemsold';
 import Orders from './views/admin/side-pages/orders';
 import Products from './views/admin/side-pages/products';
 import Users from './views/admin/side-pages/users';
+import {NavbarLayout} from "./layouts/Navbar";
 
 const Routers = () => {
     const {loggedIn} = useContext(AuthContext);
 
     return (
         <Router>
+            <NavbarLayout />
+
             <Route exact path="/" component={AdminLandingPage}/>
 
             <Route exact path="/admin"><Admin/></Route>
