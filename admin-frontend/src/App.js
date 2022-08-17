@@ -1,14 +1,20 @@
 import React from "react";
-import Navigation from './views/Navigation';
-import {BrowserRouter as Router} from "react-router-dom";
+import Router from "./Router"
+import axios from "axios";
+import { AuthContextProvider } from "../src/context/AuthContext";
+import { CartProvider } from "react-use-cart";
+
+
+
+axios.defaults.withCredentials = true;
 
 function App() {
   return (
-      <Router>
-          <div>
-              <Navigation/>
-          </div>
-      </Router>
+    <CartProvider>
+      <AuthContextProvider>
+        <Router />
+      </AuthContextProvider>
+    </CartProvider>
   );
 }
 
