@@ -5,25 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-frontend/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-frontend/public/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-frontend/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/env/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/SettingsSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/TranscribeOutput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utility_transcribe.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +112,9 @@
       <workItem from="1660238324459" duration="6577000" />
       <workItem from="1660707719073" duration="10666000" />
       <workItem from="1660746596092" duration="476000" />
+      <workItem from="1660747581152" duration="303000" />
+      <workItem from="1660748121212" duration="457000" />
+      <workItem from="1660748615851" duration="1963000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>
