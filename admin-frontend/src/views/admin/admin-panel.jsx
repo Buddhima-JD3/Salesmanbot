@@ -9,7 +9,7 @@ import bot from './bot.png';
 
 const adminpanal = () => {
     return (
-        <div className="container-fluid py-4 center">
+        <div className="container-fluid py-4 center" style={{paddingTop: "0px!important"}}>
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
@@ -117,7 +117,7 @@ const adminpanal = () => {
                                 </div>
                                 <a href="customers" style={{textDecoration: "none"}}>
                                     <p className="card-text mbr-fonts-style display-4">5</p>
-                                    <h2 className="card-title mbr-fonts-style display-5">Customers</h2>
+                                    <h2 className="card-title mbr-fonts-style display-5">Inventory</h2>
                                     <img src="..." className="rounded float-right" alt="..."
                                          style={{width: '176px', height: '137px'}}></img>
                                     {/* <h6 className="link mbr-fonts-style display-4"><a href="#" className="text-info">Read more</a></h6> */}

@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import productsModule from "../../../apis/modules/products";
+
 
 class products extends Component {
 
@@ -13,68 +15,36 @@ class products extends Component {
 
         this.state = {
             searchKey: "",
-            customer: [
-                {
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    phone: "",
-                    age: "",
-                    _id: "",
-                },
-            ],
-
-
+            products: []
         };
     }
 
     componentDidMount() {
-        this.retrieveCustomers();
+        this.retrieveProducts();
     }
 
-    retrieveCustomers() {
-        axios.get("http://localhost:8090/api/customer").then((res) => {
-            // if (res.data.success) {
-            this.setState({
-                customer: res.data,
-            });
+    retrieveProducts() {
 
-            console.log(res.data);
+        productsModule.retrieveProducts().then((res) => {
+            this.setState({
+                products: res.data,
+            });
         });
+
+
     }
 
     onDelete = (id) => {
-
         if (window.confirm("Are you sure you wish to delete this user?")) {
-            axios.delete(`http://localhost:8090/api/customer/delete/${id}`).then((res) => {
+            // axios.delete(`http://localhost:8080/api/deleteproduct/${id}`).then((res) => {
+            productsModule.deleteProduct(id).then((res) => {
                 alert("Deleted Successfully");
-                this.retrieveCustomers();
+                this.retrieveProducts();
 
             });
         }
     };
 
-    filterData(customer, searchKey) {
-        const result = customer.filter(
-            (customer) =>
-                customer.firstName.toLowerCase().includes(searchKey) ||
-                customer.lastName.toLowerCase().includes(searchKey) ||
-                customer.email.toLowerCase().includes(searchKey) ||
-                customer.phone.toLowerCase().includes(searchKey) ||
-                customer.age.toLowerCase().includes(searchKey)
-        );
-        this.setState({items: result});
-    }
-
-    handleSearchArea = (e) => {
-        const searchKey = e.currentTarget.value;
-
-        axios.get("http://localhost:8090/api/customer").then((res) => {
-            if (res.data.success) {
-                this.filterData(res.data.existingItems, searchKey);
-            }
-        });
-    };
 
     render() {
 
@@ -153,40 +123,36 @@ class products extends Component {
                         <table className="table table-hover" style={{marginTop: "40px"}}>
                             <thead>
                             <tr>
-                                <th>ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Phone</th>
-                                <th scope="col">Age</th>
-                                <th scope="col">Gender</th>
+                                <th>Index</th>
+                                <th>Product code</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Brand</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Weight / Volume</th>
+                                <th scope="col">Nutrition</th>
                                 <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {this.state.customer.map((customer, index) => (
+                            {this.state.products.map((product, index) => (
 
                                 <tr key={index}>
                                     <th scope="row">{index + 1}</th>
+                                    <td>{product.id}</td>
+                                    <td>{product.productName}</td>
+                                    <td>{product.brand}</td>
+                                    <td>{product.price}</td>
+                                    <td>{product.weightOrVoluem}</td>
+                                    <td>{product.nutrition}</td>
+
                                     <td>
-                                        <a
-                                            href={`localhost:8090/api/customer/${customer._id}`}
-                                            style={{textDecoration: "none"}}>
-                                            {customer.name}
-                                        </a>
-                                    </td>
-                                    <td>{customer.email}</td>
-                                    <td>{customer.phone}</td>
-                                    <td>{customer.age}</td>
-                                    <td>{customer.gender}</td>
-                                    <td>
-                                        <a className="btn btn-warning" href={`/editCustomer/${customer._id}`}>
+                                        <a className="btn btn-warning" href={`/editCustomer/${product.id}`}>
                                             <i className="fas fa-edit"></i>&nbsp;Edit
                                         </a>
                                         &nbsp;
                                         <button
                                             className="btn btn-danger" type=""
-                                            href={`/customer/delete/${customer._id}`}
-                                            onClick={() => this.onDelete(customer._id)}>
+                                            onClick={() => this.onDelete(product.id)}>
                                             <i className="far fa-trash-alt"></i>&nbsp;Delete
                                         </button>
                                     </td>

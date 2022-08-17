@@ -5,96 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-backend/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/controllers/productController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/buyer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/buyer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/owner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/context/AuthContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/landing_page/landingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/landing_page/landingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/landing_page/landingPagestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/landing_page/landingPagestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/navtop.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/navtop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/validations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/validations/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/auth/clientRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/auth/clientRegistration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/auth/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/auth/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/auth/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/auth/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/auth/ownerRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/auth/ownerRegistration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/web.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/web_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/aiohttp/web_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1/services/speech/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1/services/speech/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1p1beta1/services/adaptation/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1p1beta1/services/adaptation/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1p1beta1/services/speech/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/google/cloud/speech_v1p1beta1/services/speech/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/google/protobuf/descriptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/google/protobuf/descriptor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/google/protobuf/internal/_parameterized.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/google/protobuf/internal/_parameterized.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/grpc/aio/_base_call.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/grpc/aio/_base_call.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/grpc/aio/_interceptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/grpc/aio/_interceptor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_nodes/statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_nodes/statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_nodes/tests/test_classdef.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_nodes/tests/test_classdef.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_parser/conversions/statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/_parser/conversions/statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/codegen/gen_matcher_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/codegen/gen_matcher_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/matchers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/matchers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/testing/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/testing/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/libcst/tests/test_type_enforce.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/libcst/tests/test_type_enforce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/multidict/_abc.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/multidict/_abc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/packaging/specifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/distributions/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/distributions/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/models/candidate.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/models/candidate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/models/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_internal/models/link.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/cachecontrol/wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/packaging/specifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/cmdline.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/cmdline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/formatters/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/formatters/html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/style.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pygments/style.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pyparsing/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/pyparsing/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/requests/sessions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/rich/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/rich/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/typing_extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/typing_extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pkg_resources/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pkg_resources/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/proto/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/proto/enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/proto/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/proto/message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pyasn1/codec/ber/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pyasn1/codec/ber/decoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pyparsing/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pyparsing/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/pyparsing/diagram/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/pyparsing/diagram/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/requests/sessions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/rsa/asn1.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/rsa/asn1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/rsa/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/rsa/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/setuptools/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/setuptools/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/typing_extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/typing_extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/Lib/site-packages/yaml/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/Lib/site-packages/yaml/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
     </list>
-    <list id="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" name="Changes by sathnindu" comment="" />
+    <list id="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" name="Changes by sathnindu" comment="">
+      <change beforePath="$PROJECT_DIR$/admin-backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +36,34 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="8" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="15" end1="27" start2="17" end2="18" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="31" end1="32" start2="22" end2="23" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="34" end1="37" start2="25" end2="28" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="38" end1="39" start2="29" end2="30" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="40" end1="42" start2="31" end2="31" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="43" end1="43" start2="32" end2="34" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="46" end1="47" start2="37" end2="37" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="48" end1="49" start2="38" end2="40" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="50" end1="51" start2="41" end2="42" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="56" end1="77" start2="47" end2="47" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="155" end1="161" start2="125" end2="132" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="165" end1="166" start2="136" end2="137" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+        <range start1="169" end1="180" start2="140" end2="147" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="181" end1="182" start2="148" end2="149" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="187" end1="189" start2="154" end2="155" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="12" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
+        <range start1="119" end1="120" start2="119" end2="120" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -119,22 +75,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\public" />
@@ -178,7 +135,7 @@
       <workItem from="1660172065865" duration="295000" />
       <workItem from="1660233485027" duration="4588000" />
       <workItem from="1660238324459" duration="6577000" />
-      <workItem from="1660707719073" duration="1618000" />
+      <workItem from="1660707719073" duration="10008000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>
