@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-backend/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/controllers/productController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-    </list>
-    <list id="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" name="Changes by sathnindu" comment="">
-      <change beforePath="$PROJECT_DIR$/admin-backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,34 +17,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="8" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="15" end1="27" start2="17" end2="18" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="31" end1="32" start2="22" end2="23" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="34" end1="37" start2="25" end2="28" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="38" end1="39" start2="29" end2="30" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="40" end1="42" start2="31" end2="31" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="43" end1="43" start2="32" end2="34" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="46" end1="47" start2="37" end2="37" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="48" end1="49" start2="38" end2="40" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="50" end1="51" start2="41" end2="42" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="56" end1="77" start2="47" end2="47" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="155" end1="161" start2="125" end2="132" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="165" end1="166" start2="136" end2="137" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-        <range start1="169" end1="180" start2="140" end2="147" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="181" end1="182" start2="148" end2="149" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="187" end1="189" start2="154" end2="155" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="a34fb7a4-fc1e-4cc4-b65a-4f8fa495c3c2" />
-        <range start1="119" end1="120" start2="119" end2="120" changelist="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -135,7 +89,7 @@
       <workItem from="1660172065865" duration="295000" />
       <workItem from="1660233485027" duration="4588000" />
       <workItem from="1660238324459" duration="6577000" />
-      <workItem from="1660707719073" duration="10008000" />
+      <workItem from="1660707719073" duration="10666000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>
