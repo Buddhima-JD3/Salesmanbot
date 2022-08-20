@@ -16,8 +16,13 @@ from mypy_extensions import _TypedDictMeta as _TypedDictMeta_Mypy
 if (3, 4, 0) <= sys.version_info[:3] < (3, 9, 2):
     from typing_extensions import _TypedDictMeta as _TypedDictMeta_TE
 elif sys.version_info[:3] >= (3, 9, 2):
-    # typing_extensions.TypedDict is a re-export from typing.
-    from typing import _TypedDictMeta as _TypedDictMeta_TE
+    # Situation with typing_extensions.TypedDict is complicated.
+    # Use the one defined in typing_extentions, and if there is none,
+    # fall back to typing.
+    try:
+        from typing_extensions import _TypedDictMeta as _TypedDictMeta_TE
+    except ImportError:
+        from typing import _TypedDictMeta as _TypedDictMeta_TE
 else:
     # typing_extensions.TypedDict is a re-export from typing.
     from typing import TypedDict
@@ -30,11 +35,13 @@ if NEW_TYPING:
 WITH_FINAL = True
 WITH_LITERAL = True
 WITH_CLASSVAR = True
+WITH_NEWTYPE = True
 LEGACY_TYPING = False
 
 if NEW_TYPING:
     from typing import (
-        Generic, Callable, Union, TypeVar, ClassVar, Tuple, _GenericAlias, ForwardRef
+        Generic, Callable, Union, TypeVar, ClassVar, Tuple, _GenericAlias,
+        ForwardRef, NewType,
     )
     from typing_extensions import Final, Literal
     if sys.version_info[:3] >= (3, 9, 0):
@@ -44,7 +51,8 @@ if NEW_TYPING:
         typingGenericAlias = (_GenericAlias,)
 else:
     from typing import (
-        Callable, CallableMeta, Union, Tuple, TupleMeta, TypeVar, GenericMeta, _ForwardRef
+        Callable, CallableMeta, Union, Tuple, TupleMeta, TypeVar, GenericMeta,
+        _ForwardRef,
     )
     try:
         from typing import _Union, _ClassVar
@@ -63,12 +71,20 @@ else:
             WITH_FINAL = False
 
     try:  # python 3.6
-        from typing_extensions import _Literal
+        from typing_extensions import Literal
     except ImportError:  # python 2.7
         try:
-            from typing import _Literal
+            from typing import Literal
         except ImportError:
             WITH_LITERAL = False
+
+    try:  # python < 3.5.2
+        from typing_extensions import NewType
+    except ImportError:
+        try:
+            from typing import NewType
+        except ImportError:
+            WITH_NEWTYPE = False
 
 
 def _gorg(cls):
@@ -194,6 +210,12 @@ def is_final_type(tp):
     return WITH_FINAL and type(tp) is _Final
 
 
+try:
+    MaybeUnionType = types.UnionType
+except AttributeError:
+    MaybeUnionType = None
+
+
 def is_union_type(tp):
     """Test if the type is a union type. Examples::
 
@@ -201,10 +223,13 @@ def is_union_type(tp):
         is_union_type(Union) == True
         is_union_type(Union[int, int]) == False
         is_union_type(Union[T, int]) == True
+        is_union_type(int | int) == False
+        is_union_type(T | int) == True
     """
     if NEW_TYPING:
         return (tp is Union or
-                isinstance(tp, typingGenericAlias) and tp.__origin__ is Union)
+                (isinstance(tp, typingGenericAlias) and tp.__origin__ is Union) or
+                (MaybeUnionType and isinstance(tp, MaybeUnionType)))
     return type(tp) is _Union
 
 
@@ -212,7 +237,7 @@ def is_literal_type(tp):
     if NEW_TYPING:
         return (tp is Literal or
                 isinstance(tp, typingGenericAlias) and tp.__origin__ is Literal)
-    return WITH_LITERAL and type(tp) is _Literal
+    return WITH_LITERAL and type(tp) is type(Literal)
 
 
 def is_typevar(tp):
@@ -247,10 +272,24 @@ def is_new_type(tp):
     """Tests if the type represents a distinct type. Examples::
 
         is_new_type(int) == False
+        is_new_type(NewType) == True
         is_new_type(NewType('Age', int)) == True
         is_new_type(NewType('Scores', List[Dict[str, float]])) == True
     """
-    return getattr(tp, '__supertype__', None) is not None
+    if not WITH_NEWTYPE:
+        return False
+    elif sys.version_info[:3] >= (3, 10, 0) and sys.version_info.releaselevel != 'beta':
+        return tp is NewType or isinstance(tp, NewType)
+    elif sys.version_info[:3] >= (3, 0, 0):
+        return (tp is NewType or
+                (getattr(tp, '__supertype__', None) is not None and
+                 getattr(tp, '__qualname__', '') == 'NewType.<locals>.new_type' and
+                 tp.__module__ in ('typing', 'typing_extensions')))
+    else:  # python 2
+        # __qualname__ is not available in python 2, so we simplify the test here
+        return (tp is NewType or
+                (getattr(tp, '__supertype__', None) is not None and
+                 tp.__module__ in ('typing', 'typing_extensions')))
 
 
 def is_forward_ref(tp):
@@ -313,6 +352,8 @@ def get_origin(tp):
         return Union
     if is_tuple_type(tp):
         return Tuple
+    if is_literal_type(tp):
+        return Literal
 
     return None
 
@@ -473,6 +514,8 @@ def get_args(tp, evaluate=None):
             if get_origin(tp) is collections.abc.Callable and res[0] is not Ellipsis:
                 res = (list(res[:-1]), res[-1])
             return res
+        if MaybeUnionType and isinstance(tp, MaybeUnionType):
+            return tp.__args__
         return ()
     if is_classvar(tp) or is_final_type(tp):
         return (tp.__type__,) if tp.__type__ is not None else ()
