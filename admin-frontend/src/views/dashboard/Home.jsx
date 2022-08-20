@@ -17,11 +17,15 @@ const Home = () => {
         let respond = await product.createProduct(data)
     }
     return (
-        <div>
-            Hello Home
-            <button type="submit" onClick={(e) => {
-                creatGroup()
-            }}>create group</button>
+        <div className={"body-div admin-panel-main con-mid"}>
+            <div className={"admin-card-container"}>
+                <div>
+                    Hello Home
+                    <button type="submit" onClick={(e) => {
+                        creatGroup()
+                    }}>create group</button>
+                </div>
+            </div>
         </div>
     );
 };

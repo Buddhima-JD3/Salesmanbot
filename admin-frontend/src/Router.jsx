@@ -17,7 +17,7 @@ const Routers = () => {
 
     return (
         <Router>
-            <NavbarLayout />
+            <NavbarLayout/>
 
             <Route exact path="/" component={AdminLandingPage}/>
 

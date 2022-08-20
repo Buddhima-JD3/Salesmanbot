@@ -1,19 +1,16 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
 
 const itemsold = () => {
 
 
     return (
-
-        <div className="container">
-            <div className="card login-card">
-                HI Item Sold
+        <div className={"body-div admin-panel-main con-mid"}>
+            <div className={"admin-card-container"}>
+                <div className="container">
+                    <div className="card login-card">
+                        HI Item Sold
+                    </div>
+                </div>
             </div>
         </div>
 

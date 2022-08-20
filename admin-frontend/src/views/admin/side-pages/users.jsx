@@ -1,11 +1,8 @@
 import React, {Component} from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import MUIDataTable from "mui-datatables";
 import usersModule from "../../../apis/modules/users";
 
+const data = [];
 
 class Users extends Component {
 
@@ -25,9 +22,25 @@ class Users extends Component {
     retrieveUsers() {
 
         usersModule.retrieveUsers().then((res) => {
+
+            let user = res.data;
+
+            for (let i = 0; i < user.length; i++) {
+                data.push([(i + 1), /*user[i].id, */user[i].fName, user[i].lName, user[i].DOB, user[i].contactNum, user[i].email, user[i].home_address,
+                    <div>
+                        <button
+                            className="btn btn-danger" type=""
+                            onClick={() => this.onDelete(user[i].id)}>
+                            Delete
+                        </button>
+                    </div>
+                ])
+            }
+
             this.setState({
                 users: res.data,
             });
+
         });
 
 
@@ -37,6 +50,7 @@ class Users extends Component {
         if (window.confirm("Are you sure you wish to delete this user?")) {
             usersModule.deleteUser(id).then((res) => {
                 alert("Deleted Successfully");
+                window.location.reload();
                 this.retrieveUsers();
 
             });
@@ -46,75 +60,33 @@ class Users extends Component {
 
     render() {
 
+        const columns = ["Index", /*"ID",*/ "First Name", "Last Name", "DOB", "Contact Number", "Email", "Address", "Action"];
+        const options = {
+            filterType: 'checkbox',
+        };
+
         return (
-
-            <div className="container">
-                <div className="card login-card">
+            <div className={"body-div admin-panel-main con-mid"}>
+                <div className={"admin-card-container"}>
                     <div className="container">
+                        <div style={{width: "100%", textAlign: "right"}}>
+                            <h5 className={"admin-panel-heading"}>Users_</h5>
+                        </div>
                         <br/>
-                        <div className="row">
-                            <div className="col-lg-9 mt-2 mb-2">
-
-                                <h3><b>User Details Dashboard</b></h3>
-                            </div>
-                            <div className="col-lg-3 mt-2 mb-2">
-                                <input
-                                    className="form-control"
-                                    type="search"
-                                    placeholder="Search"
-                                    name="searchQuery"
-                                    onChange={this.handleSearchArea}></input>
+                        <div className="card login-card">
+                            <div className="container">
+                                <MUIDataTable
+                                    title={"Users List"}
+                                    data={data}
+                                    columns={columns}
+                                    options={options}
+                                />
+                                <br/>
                             </div>
                         </div>
-                        <table className="table table-hover" style={{marginTop: "40px"}}>
-                            <thead>
-                            <tr>
-                                <th>Index</th>
-                                {/*<th>User ID</th>*/}
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">DOB</th>
-                                <th scope="col">Contact Number</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Address</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {this.state.users.map((user, index) => (
-
-                                <tr key={index}>
-                                    <th scope="row">{index + 1}</th>
-                                    {/*<td>{user.id}</td>*/}
-                                    <td>{user.fName}</td>
-                                    <td>{user.lName}</td>
-                                    <td>{user.DOB}</td>
-                                    <td>{user.contactNum}</td>
-                                    <td>{user.email}</td>
-                                    <td>{user.home_address}</td>
-                                    <td>
-                                        <a className="btn btn-warning" href={`/editCustomer/${user.id}`}>
-                                            <i className="fas fa-edit"></i>&nbsp;Edit
-                                        </a>
-                                        &nbsp;
-                                        <button
-                                            className="btn btn-danger" type="" onClick={() => this.onDelete(user.id)}>
-                                            <i className="far fa-trash-alt"></i>&nbsp;Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))}
-                            </tbody>
-                        </table>
-                        <br/>
-                        <button className="btn btn-success"><a href="customer/add"
-                                                               style={{textDecoration: 'none', color: 'white'}}>Add New
-                            User</a></button>
                     </div>
                 </div>
             </div>
-
-
         )
     }
 

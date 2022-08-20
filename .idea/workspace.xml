@@ -5,7 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/img/bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/jquery-3.2.1.slim.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/bot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/client-dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/client-dashboard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/owner-dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/owner-dashboard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +137,9 @@
       <workItem from="1660748121212" duration="457000" />
       <workItem from="1660748615851" duration="1963000" />
       <workItem from="1660751289017" duration="1744000" />
+      <workItem from="1660991491632" duration="620000" />
+      <workItem from="1660992159944" duration="406000" />
+      <workItem from="1660992587995" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>

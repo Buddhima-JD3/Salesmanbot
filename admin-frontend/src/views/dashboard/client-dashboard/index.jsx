@@ -2,8 +2,12 @@ import React from 'react';
 
 const Index = () => {
     return (
-        <div>
-            client dashboard
+        <div className={"body-div admin-panel-main con-mid"}>
+            <div className={"admin-card-container"}>
+                <div>
+                    client dashboard
+                </div>
+            </div>
         </div>
     );
 };
