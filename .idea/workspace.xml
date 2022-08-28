@@ -4,364 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="inital commit">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/speech-to-text.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/speech-to-text.js" afterDir="false" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/img/bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-frontend/public/js/jquery-3.2.1.slim.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodemon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodemon.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodemon.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodetouch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodetouch.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nodetouch.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nopt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nopt.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/nopt.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.bin/semver.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.bin/semver.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/abbrev/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/abbrev/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/abbrev/abbrev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/abbrev/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/anymatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/anymatch/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/anymatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/anymatch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/anymatch/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/anymatch/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/anymatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/anymatch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/anymatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/anymatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/balanced-match/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/balanced-match/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/balanced-match/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/balanced-match/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/balanced-match/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/balanced-match/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/balanced-match/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/balanced-match/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/balanced-match/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/binary-extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/binary-extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/binary-extensions.json.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/binary-extensions.json.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/license" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/binary-extensions/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/binary-extensions/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/brace-expansion/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/brace-expansion/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/brace-expansion/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/brace-expansion/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/brace-expansion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/brace-expansion/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/brace-expansion/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/compile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/expand.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/expand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/braces/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/braces/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/fsevents-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/fsevents-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/nodefs-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/lib/nodefs-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/chokidar/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/chokidar/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/README.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/README.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/example/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/example/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/concat-map/test/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/concat-map/test/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/fill-range/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/fill-range/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/fill-range/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/fill-range/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/fill-range/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/fill-range/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/fill-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/fill-range/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/glob-parent/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/glob-parent/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/glob-parent/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/glob-parent/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/glob-parent/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/glob-parent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/glob-parent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/glob-parent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/glob-parent/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/has-flag/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/has-flag/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/has-flag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/has-flag/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/has-flag/license" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/has-flag/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/has-flag/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/has-flag/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/has-flag/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/ignore-by-default/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/ignore-by-default/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/ignore-by-default/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/ignore-by-default/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-binary-path/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-binary-path/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-binary-path/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-binary-path/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-binary-path/license" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-binary-path/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-binary-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-binary-path/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-binary-path/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-binary-path/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-extglob/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-extglob/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-extglob/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-extglob/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-extglob/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-extglob/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-extglob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-extglob/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-glob/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-glob/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-glob/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-glob/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-glob/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-glob/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-glob/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-number/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-number/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-number/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-number/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-number/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-number/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/is-number/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/is-number/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/minimatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/minimatch/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/minimatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/minimatch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/minimatch/minimatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/minimatch/minimatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/minimatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/.releaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/bin/nodemon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/bin/postinstall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/bin/windows-kill.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/commitlint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/authors.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/help.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/logo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/topics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/usage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/doc/cli/whoami.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/cli/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/cli/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/command.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/help/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/match.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/run.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/signals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/watch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/nodemon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/spawn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/bus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/clone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/colour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/src/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nodemon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/bin/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/examples/my-program.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/lib/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/nopt/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/normalize-path/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/normalize-path/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/normalize-path/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/normalize-path/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/normalize-path/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/normalize-path/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/normalize-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/normalize-path/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/picomatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/picomatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/scan.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/scan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/picomatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/picomatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/lib/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/tests/fixtures/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/tests/fixtures/out1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/tests/fixtures/out2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/pstree.remy/tests/index.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/readdirp/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/readdirp/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/readdirp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/readdirp/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/readdirp/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/readdirp/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/readdirp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/readdirp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/readdirp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/readdirp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/bin/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/bin/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/classes/comparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/classes/comparator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/classes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/classes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/classes/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/classes/range.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/classes/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/classes/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/clean.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/cmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/coerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/coerce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare-build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare-loose.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare-loose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/compare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/diff.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/diff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/eq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/gt.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/gt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/gte.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/gte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/inc.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/inc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/lte.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/lte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/major.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/major.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/minor.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/minor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/neq.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/neq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/patch.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/patch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/prerelease.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/prerelease.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/rcompare.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/rcompare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/rsort.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/rsort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/satisfies.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/satisfies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/functions/valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/functions/valid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/internal/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/internal/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/internal/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/internal/debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/internal/identifiers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/internal/identifiers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/internal/parse-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/internal/parse-options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/internal/re.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/internal/re.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/preload.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/preload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/range.bnf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/range.bnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/gtr.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/gtr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/intersects.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/intersects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/ltr.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/ltr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/max-satisfying.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/max-satisfying.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/min-satisfying.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/min-satisfying.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/min-version.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/min-version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/outside.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/simplify.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/simplify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/subset.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/subset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/to-comparators.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/to-comparators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/ranges/valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/semver/ranges/valid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/semver/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/build/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/build/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/.bin/semver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/.bin/semver.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/bin/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/classes/comparator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/classes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/classes/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/classes/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/clean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/cmp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/coerce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/compare-build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/compare-loose.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/compare.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/diff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/eq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/gt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/gte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/inc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/lte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/major.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/minor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/neq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/patch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/prerelease.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/rcompare.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/rsort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/satisfies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/functions/valid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/internal/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/internal/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/internal/identifiers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/internal/re.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/range.bnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/gtr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/intersects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/ltr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/max-satisfying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/min-satisfying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/min-version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/outside.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/to-comparators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/node_modules/semver/ranges/valid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/borderedText.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/cache.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/cache.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/getDistVersion.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/getDistVersion.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/hasNewVersion.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/hasNewVersion.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/index.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/isNpmOrYarn.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/simple-update-notifier/src/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/supports-color/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/supports-color/browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/supports-color/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/supports-color/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/supports-color/license" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/supports-color/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/supports-color/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/supports-color/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/supports-color/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/to-regex-range/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/to-regex-range/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/to-regex-range/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/to-regex-range/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/to-regex-range/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/to-regex-range/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/to-regex-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/to-regex-range/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/touch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/touch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/touch/bin/nodetouch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/touch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/touch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/.github/workflows/release.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/lib/undefsafe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/undefsafe/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/SettingsSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/TranscribeOutput.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/TranscribeOutput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/setupTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utility_transcribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Speech-to-text/utility_transcribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/Router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/apis/modules/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/layouts/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/layouts/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/bot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/customers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/itemsold.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/admin/side-pages/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/client-dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/client-dashboard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/owner-dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/dashboard/owner-dashboard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/itemview/itemview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/addProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/editProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/owner/home/orders.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,16 +55,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="ob-admin-backend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2CFCNjrCUZbkK9ATCt7jnfkGUri" />
   <component name="ProjectLevelVcsManager">
@@ -390,49 +71,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Webstorm/Salesmanbot12/frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Webstorm\Salesmanbot12\frontend" />
-      <recent name="D:\Webstorm\Salesmanbot12\frontend\src" />
-      <recent name="D:\Webstorm\Salesmanbot2\backend" />
-      <recent name="D:\Webstorm\Salesmanbot2\frontend\src" />
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\public" />
+      <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Webstorm\Salesmanbot2\backend" />
+      <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\admin-frontend\public" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="start-backend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start-backend" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start-backend" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -449,9 +112,34 @@
       <workItem from="1658505678738" duration="2120000" />
       <workItem from="1658509556287" duration="2339000" />
       <workItem from="1658519273423" duration="858000" />
+      <workItem from="1658784506520" duration="1599000" />
+      <workItem from="1658841694785" duration="161000" />
+      <workItem from="1658842005833" duration="2743000" />
+      <workItem from="1658869441068" duration="10251000" />
+      <workItem from="1658881678757" duration="3425000" />
+      <workItem from="1658913697165" duration="2858000" />
+      <workItem from="1659031480759" duration="1725000" />
+      <workItem from="1660074985823" duration="1131000" />
+      <workItem from="1660076416835" duration="3662000" />
+      <workItem from="1660105447920" duration="8995000" />
+      <workItem from="1660170138462" duration="94000" />
+      <workItem from="1660170650636" duration="58000" />
+      <workItem from="1660165262593" duration="207000" />
       <workItem from="1660153619411" duration="7390000" />
       <workItem from="1660165804465" duration="1400000" />
-      <workItem from="1660172788070" duration="348000" />
+      <workItem from="1660169321898" duration="217000" />
+      <workItem from="1660172065865" duration="295000" />
+      <workItem from="1660233485027" duration="4588000" />
+      <workItem from="1660238324459" duration="6577000" />
+      <workItem from="1660707719073" duration="10666000" />
+      <workItem from="1660746596092" duration="476000" />
+      <workItem from="1660747581152" duration="303000" />
+      <workItem from="1660748121212" duration="457000" />
+      <workItem from="1660748615851" duration="1963000" />
+      <workItem from="1660751289017" duration="1744000" />
+      <workItem from="1660991491632" duration="620000" />
+      <workItem from="1660992159944" duration="406000" />
+      <workItem from="1660992587995" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1660160635268</created>
@@ -460,7 +148,6 @@
       <option name="project" value="LOCAL" />
       <updated>1660160635268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +166,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="inital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
   </component>
 </project>
