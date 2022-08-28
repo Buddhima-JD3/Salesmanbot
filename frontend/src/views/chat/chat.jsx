@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Typography from "@material-ui/core/Typography";
 
@@ -12,11 +14,10 @@ import SettingsSections from "./utils/SettingsSection";
 const useStyles = () => ({
     root: {
         display: 'flex',
-        flex: '1',
-        margin: '100px 0px 100px 0px',
-        alignItems: 'center',
         textAlign: 'center',
-        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 'auto',
     },
     title: {
         marginBottom: '20px',
@@ -25,17 +26,28 @@ const useStyles = () => ({
         marginBottom: '20px',
     },
     buttonsSection: {
-        marginBottom: '40px',
+       // flex: '1',
     },
+    speech: {
+        /* (A2) COLORS */
+        color: '#fff',
+        background: '#a53d38',
+
+        /* (A3) DIMENSIONS + POSITION */
+        position: 'relative',
+        padding: '20px',
+        borderRadius: '19px',
+        maxWidth: '700px',
+
+    }
+
 });
+
 
 const App = ({classes}) => {
     const [transcribedData, setTranscribedData] = useState([]);
     const [interimTranscribedData, setInterimTranscribedData] = useState('');
     const [isRecording, setIsRecording] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState('en-US');
-
-    const supportedLanguages = {'en-US': 'English', 'de-DE': 'German', 'fr-FR': 'French', 'es-ES': 'Spanish'}
 
     function flushInterimData() {
         if (interimTranscribedData !== '') {
@@ -58,7 +70,7 @@ const App = ({classes}) => {
             audio: {
                 encoding: 'LINEAR16',
                 sampleRateHertz: 16000,
-                languageCode: selectedLanguage,
+                languageCode: 'en-US',
             },
             interimResults: true
         }
@@ -74,7 +86,6 @@ const App = ({classes}) => {
             (error) => {
                 console.error('Error when transcribing', error);
                 setIsRecording(false)
-                // No further action needed, as stream already closes itself on error
             });
     }
 
@@ -85,25 +96,28 @@ const App = ({classes}) => {
     }
 
     return (
-        <div className={classes.root}>
-            <div className={classes.title}>
-                <Typography variant="h3">
-                    Your Transcription App <span role="img" aria-label="microphone-emoji">🎤</span>
-                </Typography>
+        <div class="flex-container" className={classes.root}>
+            <div class="flex-child magenta" className={classes.buttonsSection}>
+                {!isRecording && <Button onClick={onStart} variant="primary" style={{
+                    borderRadius: '56%', margin: '24px', padding: '12px', height: '56px',
+                    width: '55px'
+                }}><i className="fa-solid fa-microphone fa-lg"></i></Button>}
+                {isRecording && <Button onClick={onStop} variant="danger" style={{
+                    borderRadius: '56%', margin: '24px', padding: '12px', height: '56px',
+                    width: '55px'
+                }}><i className="fa-solid fa-microphone fa-lg"></i></Button>}
             </div>
-            <div className={classes.settingsSection}>
-                <SettingsSections possibleLanguages={supportedLanguages} selectedLanguage={selectedLanguage}
-                                  onLanguageChanged={setSelectedLanguage}/>
-            </div>
-            <div className={classes.buttonsSection}>
-                {!isRecording && <Button onClick={onStart} variant="primary">Start transcribing</Button>}
-                {isRecording && <Button onClick={onStop} variant="danger">Stop</Button>}
-            </div>
+
             <div>
-                <TranscribeOutput transcribedText={transcribedData} interimTranscribedText={interimTranscribedData}/>
+                <div class="flex-child green" className={classes.speech}>
+                    <TranscribeOutput transcribedText={transcribedData}
+                                      interimTranscribedText={interimTranscribedData}/>
+                </div>
             </div>
         </div>
     );
 }
 
 export default withStyles(useStyles)(App);
+
+

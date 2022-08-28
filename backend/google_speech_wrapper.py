@@ -12,6 +12,7 @@ GOOGLE_SERVICE_JSON_FILE = os.environ['GOOGLE_SERVICE_JSON_FILE']
 clients = {}
 
 
+
 class ClientData:
     def __init__(self, transcribe_thread, conn, config: Dict):
         self._buff = queue.Queue()
