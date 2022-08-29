@@ -1,0 +1,42 @@
+/*html {*/
+/*    height: 100%;*/
+/*}*/
+
+/*body {*/
+/*    !*min-height: 100%;*!*/
+/*    background-color: #000000 !important;*/
+/*}*/
+
+/*#root {*/
+/*    height: 100vh;*/
+/*    background-color: #000000 !important;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+/*#speech {*/
+/*    !* (A1) FONT *!*/
+/*    font-family: arial, sans-serif;*/
+/*    font-size: 1.1em;*/
+
+/*    !* (A2) COLORS *!*/
+/*    color: #fff;*/
+/*    background: #a53d38;*/
+
+/*    !* (A3) DIMENSIONS + POSITION *!*/
+/*    position: relative;*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    max-width: 320px;*/
+/*}*/
+/*.flex-container {*/
+/*    display: flex;*/
+/*}*/
+
+/*.flex-child {*/
+/*    border: 2px solid yellow;*/
+/*}*/
+
+/*.flex-child:first-child {*/
+/*    margin-right: 20px;*/
+/*}*/
