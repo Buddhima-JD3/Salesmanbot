@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Button} from "react-bootstrap";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -43,10 +43,9 @@ const useStyles = () => ({
         padding: '20px',
         borderRadius: '19px',
         maxWidth: '700px',
-
     }
-
 });
+
 
 
 const App = ({classes}) => {
@@ -96,28 +95,30 @@ const App = ({classes}) => {
 
     function onStop() {
         setIsRecording(false)
-        console.log({transcribedData});
         flushInterimData() // A safety net if Google's Speech API doesn't work as expected, i.e. always sends the final result
         speechToTextUtils.stopRecording();
+        const Text = {transcribedData};
     }
 
+    useEffect(() => {
+        document.getElementById("chatInput").value = transcribedData;
+    }, [transcribedData])
+
     return (
-        <div class="flex-container" className={classes.root}>
-            <div class="flex-child magenta" className={classes.buttonsSection}>
+        <div className={"flex-container " + classes.root}>
+            <div className={"flex-child magenta " + classes.buttonsSection}>
                 {!isRecording && <Button onClick={onStart} variant="primary" style={{
-                    borderRadius: '56%', margin: '7px', padding: '12px', height: '56px',
-                    width: '55px'
+                    borderRadius: '56%', margin: '7px', padding: '7px', height: '45px',
+                    width: '45px'
                 }}><i className="fa-solid fa-microphone fa-lg"></i></Button>}
                 {isRecording && <Button onClick={onStop} variant="danger" style={{
-                    borderRadius: '56%', margin: '7px', padding: '12px', height: '56px',
-                    width: '55px'
+                    borderRadius: '56%', margin: '7px', padding: '7px', height: '45px',
+                    width: '45px'
                 }}><i className="fa-solid fa-microphone fa-lg"></i></Button>}
             </div>
-
-            <div>
-                <Input placeholder='Message...' type="text" value={transcribedData}   onChange={e => setMsg(e.target.value)} />
-                    <TranscribeOutput transcribedText={transcribedData}
-                                      interimTranscribedText={interimTranscribedData}/>
+            <div hidden>
+                <Input placeholder='Message...' type="text" value={transcribedData} />
+                <TranscribeOutput transcribedText={transcribedData} interimTranscribedText={interimTranscribedData} />
             </div>
         </div>
     );

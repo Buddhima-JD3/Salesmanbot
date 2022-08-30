@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="Chat interface added">
-      <change afterPath="$PROJECT_DIR$/frontend/src/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SignOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/SettingsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/TranscribeOutput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/utility_transcribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="Chat interface bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Router.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +126,8 @@
       <workItem from="1661679378376" duration="326000" />
       <workItem from="1661680813030" duration="556000" />
       <workItem from="1661685854707" duration="29594000" />
-      <workItem from="1661750232070" duration="7153000" />
+      <workItem from="1661750232070" duration="15458000" />
+      <workItem from="1661778034625" duration="12402000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -148,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661691145277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Chat interface added">
+      <created>1661762083278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661762083278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +164,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Chat UI changes and other fixes" />
     <MESSAGE value="Chat interface added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chat interface added" />
+    <MESSAGE value="Chat interface bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat interface bug fix" />
   </component>
 </project>

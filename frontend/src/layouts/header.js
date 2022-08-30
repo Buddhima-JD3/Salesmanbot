@@ -31,7 +31,7 @@ export default function Header() {
               {/*unauthorized user*/}
               {
                 loggedIn === null && (<>
-                  <Link to="/speechtotext"><li><a >Chat</a></li></Link>
+                  <Link to="/chat"><li><a >Chat</a></li></Link>
                   <Link to="/login"><li><a>About Us</a></li></Link>
                   <Link to="/admin"><li><a>Admin</a></li></Link>
                   {/* <Link to="/"><li><a>Testimonials</a></li></Link> */}

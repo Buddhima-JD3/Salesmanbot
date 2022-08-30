@@ -27,10 +27,8 @@ const Routers = () => {
             <Route exact path="/owner-register"><OwnerRegistration /></Route>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/admin"><Admin /></Route>
-            <Route exact path="/chat"><Chat /></Route>
-            <>
-                {user ? <Chat /> : <SignIn />}
-            </>
+            <Route exact path="/chat">{user ? <Chat /> : <SignIn />}</Route>
+
             {
                 loggedIn !== null && (<>
                     
