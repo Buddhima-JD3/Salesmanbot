@@ -7,11 +7,14 @@ import './chat.css'
 function Chat() {
     const scroll = useRef()
     const [messages, setMessages] = useState([])
-    useEffect(() => {
-        db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {
-            setMessages(snapshot.docs.map(doc => doc.data()))
-        })
-    }, [])
+
+    function scrollFunc() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    // eslint-disable-next-line no-use-before-define
+    useEffect(() => {scrollFunc(); db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {setMessages(snapshot.docs.map(doc => doc.data())) })}, [])
+
     return (
         <div>
             <SignOut />
