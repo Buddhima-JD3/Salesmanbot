@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="speech to text big fix">
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +124,7 @@
       <workItem from="1661680813030" duration="556000" />
       <workItem from="1661685854707" duration="29594000" />
       <workItem from="1661750232070" duration="15458000" />
-      <workItem from="1661778034625" duration="19164000" />
+      <workItem from="1661778034625" duration="20776000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661833131511</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="speech to text big fix">
+      <created>1661833476543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661833476543</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

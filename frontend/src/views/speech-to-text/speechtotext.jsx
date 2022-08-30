@@ -83,7 +83,7 @@ const App = ({classes}) => {
     function onStart() {
         setTranscribedData([])
         setIsRecording(true)
-
+        setTimeout(onStop,3000)
         speechToTextUtils.initRecording(
             getTranscriptionConfig(),
             handleDataReceived,
@@ -91,13 +91,13 @@ const App = ({classes}) => {
                 console.error('Error when transcribing', error);
                 setIsRecording(false)
             });
+
     }
 
     function onStop() {
         setIsRecording(false)
         flushInterimData() // A safety net if Google's Speech API doesn't work as expected, i.e. always sends the final result
         speechToTextUtils.stopRecording();
-        const Text = {transcribedData};
     }
 
     useEffect(() => {

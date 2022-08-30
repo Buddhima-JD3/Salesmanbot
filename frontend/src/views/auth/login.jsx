@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import './login.css';
-
 import auth from "../../apis/modules/auth";
 import { SigningForm } from '../../validations/index'
 import { Formik, Form, Field } from 'formik'
 import card from './Rectangle.png'
 import bot from './bot.png'
-import {Button} from "@material-ui/core";
-import firebase from 'firebase/compat/app';
 
 export function Login() {
 
 
-    function signInWithGoogle() {
-      const provider = new firebase.auth.GoogleAuthProvider()
-      auth.signInWithPopup(provider)
-    }
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -88,9 +81,6 @@ export function Login() {
                           </div>
 
                           <button type="submit" class="btn btn-block login-btn mb-4">Login</button>
-                          <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', alignItems: 'center' }}>
-                            <Button style={{ padding: '30px', fontSize: '20px', borderRadius: '0', fontWeight: '600' }} onClick={signInWithGoogle}>Sign In With Google</Button>
-                          </div>
                         </Form>
                       )}
                     </Formik>
