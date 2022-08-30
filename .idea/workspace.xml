@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="Chat interface bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Router.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/owner/home/addProduct.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/owner/home/editProduct.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/owner/home/home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/owner/home/orders.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +129,7 @@
       <workItem from="1661680813030" duration="556000" />
       <workItem from="1661685854707" duration="29594000" />
       <workItem from="1661750232070" duration="15458000" />
-      <workItem from="1661778034625" duration="12402000" />
+      <workItem from="1661778034625" duration="18750000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -143,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661762083278</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Chat interface bug fix">
+      <created>1661825696733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661825696733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -101,7 +101,7 @@ const App = ({classes}) => {
     }
 
     useEffect(() => {
-        document.getElementById("chatInput").value = transcribedData;
+        document.getElementById("chatInput").value = transcribedData.toString();
     }, [transcribedData])
 
     return (
