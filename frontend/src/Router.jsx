@@ -11,12 +11,15 @@ import {
 import Admin from './views/admin/admin-panel';
 import AuthContext from "./context/AuthContext";
 
-import Chat from './views/chat/chat';
+import Chat from './views/chat/Chat'
+import SignIn from './views/chat/SignIn';
+import { auth } from './firebase.js'
+import { useAuthState } from 'react-firebase-hooks/auth'
 
 
 const Routers = () => {
     const { loggedIn } = useContext(AuthContext);
-
+    const [user] = useAuthState(auth);
     return (
         <Router>
             <Route exact path="/login"><Login /></Route>
@@ -24,8 +27,7 @@ const Routers = () => {
             <Route exact path="/owner-register"><OwnerRegistration /></Route>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/admin"><Admin /></Route>
-
-            <Route exact path="/chat"><Chat /></Route>
+            <Route exact path="/chat">{user ? <Chat /> : <SignIn />}</Route>
 
             {
                 loggedIn !== null && (<>
