@@ -83,7 +83,7 @@ const App = ({classes}) => {
     function onStart() {
         setTranscribedData([])
         setIsRecording(true)
-        setTimeout(onStop,3000)
+        setTimeout(onStop,7000)
         speechToTextUtils.initRecording(
             getTranscriptionConfig(),
             handleDataReceived,

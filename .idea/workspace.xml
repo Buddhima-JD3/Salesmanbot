@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="speech to text big fix">
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,7 @@
       <workItem from="1661680813030" duration="556000" />
       <workItem from="1661685854707" duration="29594000" />
       <workItem from="1661750232070" duration="15458000" />
-      <workItem from="1661778034625" duration="20776000" />
+      <workItem from="1661778034625" duration="24538000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -161,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661833476543</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="set timeout fix">
+      <created>1661836407612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661836407612</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +190,7 @@
     <MESSAGE value="Chat interface added" />
     <MESSAGE value="Chat interface bug fix" />
     <MESSAGE value="speech to text big fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="speech to text big fix" />
+    <MESSAGE value="set timeout fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="set timeout fix" />
   </component>
 </project>
