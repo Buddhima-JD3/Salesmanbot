@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* ==== GENERAL STYLES ==== */
 
  * {
@@ -11,6 +12,21 @@
   /* ==== SIMPLE FOOTER ==== */
   
   footer {
+=======
+/* ==== GENERAL STYLES ==== */
+
+* {
+    box-sizing: border-box;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ==== SIMPLE FOOTER ==== */
+
+footer {
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     background: white;
     display: table;
     width: 100vw;
@@ -19,6 +35,7 @@
     font-family: 'Arial', sans-serif;
     font-size: .875rem;
 
+<<<<<<< HEAD
   }
   
   .wrapper {
@@ -27,21 +44,46 @@
   }
   
   footer small {
+=======
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer small {
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     color: rgb(70, 70, 70);
     letter-spacing: .025rem;
     margin-bottom: 0.50rem;
     display: block;
     font-size: 15px;
+<<<<<<< HEAD
   }
   
   .footer-nav a {
+=======
+}
+
+.footer-nav a {
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     color: #2f7c4c;
     text-decoration: none;
     margin: 0 .5rem;
     display: inline-block;
+<<<<<<< HEAD
   }
   
   .footer-nav a:hover {
     color: #46cc7e;
     transition: color .15s ease-in-out;
   }
+=======
+}
+
+.footer-nav a:hover {
+    color: #46cc7e;
+    transition: color .15s ease-in-out;
+}
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907

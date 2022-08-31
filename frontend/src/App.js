@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
@@ -8,33 +9,17 @@ import "./App.css";
 import speechToTextUtils from "./utility_transcribe";
 import TranscribeOutput from "./TranscribeOutput";
 import SettingsSections from "./SettingsSection";
+=======
+import React from "react";
+import Router from "./Router"
+import axios from "axios";
+import { AuthContextProvider } from "./context/AuthContext";
+import { CartProvider } from "react-use-cart";
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 
-const useStyles = () => ({
-  root: {
-    display: 'flex',
-    flex: '1',
-    margin: '100px 0px 100px 0px',
-    alignItems: 'center',
-    textAlign: 'center',
-    flexDirection: 'column',
-  },
-  title: {
-    marginBottom: '20px',
-  },
-  settingsSection: {
-    marginBottom: '20px',
-  },
-  buttonsSection: {
-    marginBottom: '40px',
-  },
-});
 
-const App = ({classes}) => {
-  const [transcribedData, setTranscribedData] = useState([]);
-  const [interimTranscribedData, setInterimTranscribedData] = useState('');
-  const [isRecording, setIsRecording] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('en-US');
 
+<<<<<<< HEAD
   const supportedLanguages = {'en-US': 'English', 'de-DE': 'German', 'fr-FR': 'French', 'es-ES': 'Spanish'}
 
   function flushInterimData() {
@@ -83,3 +68,18 @@ const App = ({classes}) => {
     flushInterimData() // A safety net if Google's Speech API doesn't work as expected, i.e. always sends the final result
     speechToTextUtils.stopRecording();
   }
+=======
+axios.defaults.withCredentials = true;
+
+function App() {
+  return (
+    <CartProvider>
+      <AuthContextProvider>
+        <Router />
+      </AuthContextProvider>
+    </CartProvider>
+  );
+}
+
+export default App;
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907

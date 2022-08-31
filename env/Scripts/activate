@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Lenovo\OneDrive\Documents\GitHub\Salesmanbot\env"
+VIRTUAL_ENV="D:\Downloads\Salesmanbot\SalesmanbotPrivate\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

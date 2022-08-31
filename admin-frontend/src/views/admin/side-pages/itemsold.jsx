@@ -1,14 +1,18 @@
 import React from 'react';
+<<<<<<< HEAD
 import Container from 'react-bootstrap/Container';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+=======
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 
 const itemsold = () => {
 
 
+<<<<<<< HEAD
         
   return (
     
@@ -64,6 +68,21 @@ const itemsold = () => {
     
 
   )
+=======
+    return (
+        <div className={"body-div admin-panel-main con-mid"}>
+            <div className={"admin-card-container"}>
+                <div className="container">
+                    <div className="card login-card">
+                        HI Item Sold
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    )
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 export default itemsold;

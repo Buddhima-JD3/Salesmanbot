@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +21,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2CFCNjrCUZbkK9ATCt7jnfkGUri" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,20 +38,39 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/osand/Documents/GitHub/Salesmanbot/frontend/public&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Downloads/Salesmanbot/SalesmanbotPrivate/frontend/src/views/chat&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Downloads\Salesmanbot\SalesmanbotPrivate\frontend\src\views\chat" />
+      <recent name="D:\Downloads\Salesmanbot\SalesmanbotPrivate\frontend\src" />
+      <recent name="D:\Downloads\Salesmanbot\SalesmanbotPrivate\backend" />
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\public" />
       <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\frontend\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Downloads\Salesmanbot\SalesmanbotPrivate\frontend\src\views\speech-to-text" />
+      <recent name="C:\Users\osand\Documents\GitHub\Salesmanbot\admin-frontend\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="speechtotext.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" working-dir="$PROJECT_DIR$/frontend/src/views/speech-to-text">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.speechtotext.jsx" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,14 +104,68 @@
       <workItem from="1660165804465" duration="1400000" />
       <workItem from="1660169321898" duration="217000" />
       <workItem from="1660172065865" duration="295000" />
+      <workItem from="1660233485027" duration="4588000" />
+      <workItem from="1660238324459" duration="6577000" />
+      <workItem from="1660707719073" duration="10666000" />
+      <workItem from="1660746596092" duration="476000" />
+      <workItem from="1660747581152" duration="303000" />
+      <workItem from="1660748121212" duration="457000" />
+      <workItem from="1660748615851" duration="1963000" />
+      <workItem from="1660751289017" duration="1744000" />
+      <workItem from="1660991491632" duration="620000" />
+      <workItem from="1660992159944" duration="406000" />
+      <workItem from="1660992587995" duration="726000" />
+      <workItem from="1661660324419" duration="5819000" />
+      <workItem from="1661679378376" duration="326000" />
+      <workItem from="1661680813030" duration="556000" />
+      <workItem from="1661685854707" duration="29594000" />
+      <workItem from="1661750232070" duration="15458000" />
+      <workItem from="1661778034625" duration="24538000" />
+      <workItem from="1661956740477" duration="502000" />
     </task>
-    <task id="LOCAL-00001" summary="inital commit">
-      <created>1660160635268</created>
+    <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
+      <created>1661691145277</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1660160635268</updated>
+      <updated>1661691145277</updated>
     </task>
+    <task id="LOCAL-00002" summary="Chat interface added">
+      <created>1661762083278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661762083278</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Chat interface bug fix">
+      <created>1661825696733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661825696733</updated>
+    </task>
+    <task id="LOCAL-00004" summary="speech to text big fix">
+      <created>1661833131511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661833131511</updated>
+    </task>
+    <task id="LOCAL-00005" summary="speech to text big fix">
+      <created>1661833476543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661833476543</updated>
+    </task>
+    <task id="LOCAL-00006" summary="set timeout fix">
+      <created>1661836407612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661836407612</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,5 +184,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Chat UI changes and other fixes" />
+    <MESSAGE value="Chat interface added" />
+    <MESSAGE value="Chat interface bug fix" />
+    <MESSAGE value="speech to text big fix" />
+    <MESSAGE value="set timeout fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="set timeout fix" />
   </component>
 </project>

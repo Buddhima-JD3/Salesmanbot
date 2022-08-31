@@ -37,7 +37,7 @@ const getAllProducts = async (req, res, next) => {
                 );
                 productsArray.push(product);
             });
-            res.send(productsArray);
+            res.send(productsArray.sort());
         }
     } catch (error) {
         res.status(400).send(error.message);

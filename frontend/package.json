@@ -4,23 +4,42 @@
   "private": true,
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
+=======
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@material-ui/core": "^4.12.4",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.5.0",
-    "lodash": "^4.17.19",
-    "react": "^18.2.0",
-    "react-bootstrap": "^1.2.2",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-spinners": "^0.10.6",
-    "socket.io-client": "^4.1.2",
-    "web-vitals": "^2.1.4"
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "firebase": "^9.9.3",
+    "formik": "^2.2.9",
+    "js-cookie": "^3.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^14.2.1",
+    "react-firebase-hooks": "^5.0.3",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "react-use-cart": "^1.13.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^4.5.1",
+    "soloalert": "^1.1.10",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
     "start-backend": "cd ../backend && ../env/Scripts/activate && ../backend/demo_web_app.py",
 =======
     "@testing-library/jest-dom": "^5.16.3",
@@ -48,6 +67,9 @@
   "scripts": {
     "serve": "react-scripts start",
 >>>>>>> 120630e9ebe6b1292572b6781e8f4d0e82c73e35
+=======
+    "serve": "react-scripts start",
+>>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
