@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="NLP Added fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/admin/admin-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/auth/clientRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/auth/clientRegistration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/auth/ownerRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/auth/ownerRegistration.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +132,10 @@
       <workItem from="1661680813030" duration="556000" />
       <workItem from="1661685854707" duration="29594000" />
       <workItem from="1661750232070" duration="15458000" />
+      <workItem from="1661778034625" duration="33306000" />
+      <workItem from="1661943781910" duration="12115000" />
+      <workItem from="1662041973717" duration="4366000" />
+      <workItem from="1662068900041" duration="913000" />
       <workItem from="1661778034625" duration="24538000" />
       <workItem from="1661956740477" duration="502000" />
     </task>
@@ -165,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661836407612</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="timeout fix">
+      <created>1661851504449</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661851504449</updated>
+    </task>
+    <task id="LOCAL-00008" summary="NLP Added">
+      <created>1662069465666</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069465666</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +219,8 @@
     <MESSAGE value="Chat interface bug fix" />
     <MESSAGE value="speech to text big fix" />
     <MESSAGE value="set timeout fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="set timeout fix" />
+    <MESSAGE value="timeout fix" />
+    <MESSAGE value="NLP Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="NLP Added" />
   </component>
 </project>
