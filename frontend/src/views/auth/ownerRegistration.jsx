@@ -3,7 +3,7 @@ import './login.css';
 import auth from "../../apis/modules/auth";
 import {SignupSchema} from "../../validations";
 import {Field, Form, Formik} from "formik";
-import card from './Rectangle.png'
+
 import bot from './bot.png'
 
 export default function OwnerRegistration(){

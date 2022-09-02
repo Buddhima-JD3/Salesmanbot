@@ -1,4 +1,5 @@
 import api from "../axios";
+
 const resource = '/api/user';
 
 export default {

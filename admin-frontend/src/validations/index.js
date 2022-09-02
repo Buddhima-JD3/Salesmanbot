@@ -9,7 +9,7 @@ export const SigningForm = Yup.object().shape({
 });
 
 export const SignupSchema = Yup.object().shape({
-    name:Yup.string().required('required'),
+    name: Yup.string().required('required'),
     email: Yup.string().email('Invalid email').required('required'),
     password: Yup.string()
         .min(8, 'password must be at least 8 character')
@@ -21,11 +21,11 @@ export const SignupSchema = Yup.object().shape({
 });
 
 export const ProductSchema = Yup.object().shape({
-    name:Yup.string().required('required'),
-    stock:Yup.string().required('required'),
-    size:Yup.number().required('required'),
+    name: Yup.string().required('required'),
+    stock: Yup.string().required('required'),
+    size: Yup.number().required('required'),
     // category:Yup.string().required('required'),
-    price:Yup.string().required('required'),
-    sku:Yup.string().required('required'),
+    price: Yup.string().required('required'),
+    sku: Yup.string().required('required'),
     // description:Yup.string().required('required'),
 });

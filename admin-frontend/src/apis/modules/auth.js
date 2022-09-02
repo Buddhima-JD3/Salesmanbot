@@ -1,10 +1,10 @@
-import api from "../axios";
+import axios from "../axios";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default  {
-    login: (payload) => api.post(`/signing`,payload),
-    register: (payload) => api.post(`/signup`,payload),
-    currentUser: () => api.get(`/current-user`),
-    logout: () => api.get(`/logout`),
+export default {
+    login: (payload) => axios.post(`/signing`, payload),
+    register: (payload) => axios.post(`/signup`, payload),
+    currentUser: () => axios.get(`/current-user`),
+    logout: () => axios.get(`/logout`),
 }

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.body-div {
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.con-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-brand {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    transition-duration: 0.3s;
+}
+
+.nav-link:hover {
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+/* Admin card */
+.admin-card-container {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.admin-card {
+    padding: 20px 30px !important;
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+.admin-panel-main {
+    width: 100%;
+    padding: 80px 160px;
+
+}
+
+.alice-img {
+    height: 350px;
+}
+
+.alice-col {
+    max-width: 400px !important;
+}
+
+@media (min-width: 1600px) {
+    .alice-col {
+        max-width: 600px !important;
+    }
+}
+
+.alice-text {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.admin-panel-heading {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.admin-card p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admin-card h2 {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 18px;
+}
+
+.admin-card-container .login-card {
+    background-color: rgba(255, 255, 255, .29);
+    backdrop-filter: blur(20px);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.MuiTable-root div {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.css-2ulfj5-MuiTypography-root {
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 600!important;
+}
+
+.MuiTable-root tr th:nth-child(1), .MuiTable-root tr td:nth-child(1) {
+    display: none;
+}
+
+.MuiTableCell-root, .css-11mde6h-MuiPaper-root {
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+
+.css-1ygcj2i-MuiTableCell-root {
+    border-bottom: 1px solid #fff!important;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56) !important;
+}
