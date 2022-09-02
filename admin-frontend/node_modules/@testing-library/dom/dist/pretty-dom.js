@@ -19,7 +19,7 @@ var _getUserCodeFrame = require("./get-user-code-frame");
 
 var _helpers = require("./helpers");
 
-var _shared = require("./shared");
+var _config = require("./config");
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -35,8 +35,7 @@ const ELEMENT_NODE = 1;
 const COMMENT_NODE = 8; // https://github.com/facebook/jest/blob/615084195ae1ae61ddd56162c62bbdda17587569/packages/pretty-format/src/plugins/DOMElement.ts#L50
 
 function filterCommentsAndDefaultIgnoreTagsTags(value) {
-  return value.nodeType !== COMMENT_NODE && ( // value.nodeType === ELEMENT_NODE => !value.matches(DEFAULT_IGNORE_TAGS)
-  value.nodeType !== ELEMENT_NODE || !value.matches(_shared.DEFAULT_IGNORE_TAGS));
+  return value.nodeType !== COMMENT_NODE && (value.nodeType !== ELEMENT_NODE || !value.matches((0, _config.getConfig)().defaultIgnore));
 }
 
 function prettyDOM(dom, maxLength, options = {}) {

@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-bodyiv{
-    margin-top:20px;
-    background:#eee;
-=======
 bodyiv {
     margin-top: 20px;
     background: #eee;
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 
@@ -80,11 +74,7 @@ bodyiv {
     font-size: 12.5px;
     line-height: 20px;
     padding: 10px 14px 16px 19px;
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .product-content .product-info {
@@ -179,22 +169,14 @@ bodyiv {
     position: relative
 }
 
-<<<<<<< HEAD
-.shop-btn>span {
-=======
 .shop-btn > span {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     background: #a90329;
     display: inline-block;
     font-size: 10px;
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
     font-weight: 700;
     border-radius: 50%;
-<<<<<<< HEAD
-    padding: 2px 4px 3px!important;
-=======
     padding: 2px 4px 3px !important;
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     text-align: center;
     line-height: normal;
     width: 19px;
@@ -203,11 +185,7 @@ bodyiv {
 }
 
 .description-tabs {
-<<<<<<< HEAD
-    padding: 30px 0 5px!important;
-=======
     padding: 30px 0 5px !important;
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .description-tabs .tab-content {
@@ -218,22 +196,13 @@ bodyiv {
     padding: 30px 30px 50px
 }
 
-<<<<<<< HEAD
-.product-deatil hr+.description-tabs {
-    padding: 0 0 5px!important;
-=======
 .product-deatil hr + .description-tabs {
     padding: 0 0 5px !important;
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .product-deatil .carousel-control.left,
 .product-deatil .carousel-control.right {
-<<<<<<< HEAD
-    background: none!important
-=======
     background: none !important
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .product-deatil .glyphicon {
@@ -241,11 +210,7 @@ bodyiv {
 }
 
 .product-deatil .product-image {
-<<<<<<< HEAD
-    border-right: none!important
-=======
     border-right: none !important
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .product-deatil .name {
@@ -273,37 +238,21 @@ bodyiv {
 }
 
 .product-deatil .fa-2x {
-<<<<<<< HEAD
-    font-size: 16px!important
-}
-
-.product-deatil .fa-2x>h5 {
-=======
     font-size: 16px !important
 }
 
 .product-deatil .fa-2x > h5 {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     font-size: 12px;
     margin: 0
 }
 
-<<<<<<< HEAD
-.product-deatil .fa-2x+a,
-.product-deatil .fa-2x+a+a {
-=======
 .product-deatil .fa-2x + a,
 .product-deatil .fa-2x + a + a {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     font-size: 13px
 }
 
 .profile-message ul {
-<<<<<<< HEAD
-  list-style: none ;  
-=======
     list-style: none;
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 }
 
 .product-deatil .certified {
@@ -349,24 +298,6 @@ bodyiv {
     width: calc(100% - 70px)
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width:1024px) {
-    .product-content div[class*=col-md-4] {
-        padding-right: 0
-    }
-    .product-content div[class*=col-md-8] {
-        padding: 0 13px 0 0
-    }
-    .product-wrap div[class*=col-md-5] {
-        padding-right: 0
-    }
-    .product-wrap div[class*=col-md-7] {
-        padding: 0 13px 0 0
-    }
-    .product-content .product-image {
-        border-right: 1px solid #dfe5e9
-    }
-=======
 @media only screen and (min-width: 1024px) {
     .product-content div[class*=col-md-4] {
         padding-right: 0
@@ -388,36 +319,23 @@ bodyiv {
         border-right: 1px solid #dfe5e9
     }
 
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     .product-content .product-info {
         position: relative
     }
 }
 
 .message img.online {
-<<<<<<< HEAD
-    width:40px;
-    height:40px;
-}
-
-.detail{
-=======
     width: 40px;
     height: 40px;
 }
 
 .detail {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     text-align: justify;
     line-height: 2;
     font-size: 15px;
 }
 
-<<<<<<< HEAD
-.container .cardiv{
-=======
 .container .cardiv {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     position: relative;
     width: auto;
     height: 500px;
@@ -426,15 +344,9 @@ bodyiv {
     overflow: hidden;
     margin-right: 15px;
     margin-bottom: 60px;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv:before{
-=======
 }
 
 .container .cardiv:before {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     content: '';
     position: absolute;
     top: 0;
@@ -444,15 +356,6 @@ bodyiv {
     background: #4cc97c;
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv:hover:before{
-    clip-path: circle(300px at 80% -20%);
-  }
-  
-  .container .cardiv:after{
-=======
 }
 
 .container .cardiv:hover:before {
@@ -460,7 +363,6 @@ bodyiv {
 }
 
 .container .cardiv:after {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     content: 'CA';
     position: absolute;
     top: 30%;
@@ -468,17 +370,10 @@ bodyiv {
     font-size: 12em;
     font-weight: 800;
     font-style: italic;
-<<<<<<< HEAD
-    color: rgba(255,255,25,0.05)
-  }
-  
-  .container .cardiv .imgBx{
-=======
     color: rgba(255, 255, 25, 0.05)
 }
 
 .container .cardiv .imgBx {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -486,17 +381,6 @@ bodyiv {
     width: 100%;
     height: 400px;
     transition: 0.5s;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv:hover .imgBx{
-    top: 0%;
-    transform: translateY(0%) rotate(-15deg);
-      
-  }
-  
-  .container .cardiv .imgBx img{
-=======
 }
 
 .container .cardiv:hover .imgBx {
@@ -506,21 +390,14 @@ bodyiv {
 }
 
 .container .cardiv .imgBx img {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 360px;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv .contentBx{
-=======
 }
 
 .container .cardiv .contentBx {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -528,15 +405,6 @@ bodyiv {
     text-align: center;
     transition: 1s;
     z-index: 10;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv:hover .contentBx{
-    height: 210px;
-  }
-  
-  .container .cardiv .contentBx h2{
-=======
 }
 
 .container .cardiv:hover .contentBx {
@@ -544,46 +412,18 @@ bodyiv {
 }
 
 .container .cardiv .contentBx h2 {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
     margin: 0;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv .contentBx .size, .container .cardiv .contentBx .color {
-=======
 }
 
 .container .cardiv .contentBx .size, .container .cardiv .contentBx .color {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 20px;
-<<<<<<< HEAD
-    transition: 0.5s;opacity: 0;
-    visibility: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-  .container .cardiv:hover .contentBx .size{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.5s;
-  }
-  
-  .container .cardiv:hover .contentBx .color{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.6s;
-  }
-  
-  .container .cardiv .contentBx .size h3, .container .cardiv .contentBx .color h3{
-=======
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -604,22 +444,15 @@ bodyiv {
 }
 
 .container .cardiv .contentBx .size h3, .container .cardiv .contentBx .color h3 {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     color: #fff;
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-right: 10px;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv .contentBx .size span{
-=======
 }
 
 .container .cardiv .contentBx .size span {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     width: 26px;
     height: 26px;
     text-align: center;
@@ -634,19 +467,6 @@ bodyiv {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 10px;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv .contentBx .size span:hover{
-    background: #9bdc28;
-  }
-  
-  .container .cardiv .contentBx .color span{
-    color: #ffffff;
-  }
-  
-  .container .cardiv .contentBx a{
-=======
 }
 
 .container .cardiv .contentBx .size span:hover {
@@ -658,7 +478,6 @@ bodyiv {
 }
 
 .container .cardiv .contentBx a {
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
     display: inline-block;
     padding: 10px 20px;
     background: #fff;
@@ -671,20 +490,6 @@ bodyiv {
     transform: translateY(50px);
     transition: 0.5s;
     margin-top: 0;
-<<<<<<< HEAD
-  }
-  
-  .container .cardiv:hover .contentBx a{
-    opacity: 1;
-    transform: translateY(0px);
-    transition-delay: 0.75s;
-    
-  }
-
-  .rowbt{
-      padding-left: 45%;
-  }
-=======
 }
 
 .container .cardiv:hover .contentBx a {
@@ -698,7 +503,6 @@ bodyiv {
     padding-left: 45%;
 }
 
->>>>>>> 1a91d0b6f549a1a455b867f016f0582b7d1f9907
 
  
   

@@ -9,8 +9,6 @@ var _queryHelpers = require("../query-helpers");
 
 var _helpers = require("../helpers");
 
-var _shared = require("../shared");
-
 var _allUtils = require("./all-utils");
 
 const queryAllByText = (container, text, {
@@ -18,7 +16,7 @@ const queryAllByText = (container, text, {
   exact = true,
   collapseWhitespace,
   trim,
-  ignore = _shared.DEFAULT_IGNORE_TAGS,
+  ignore = (0, _allUtils.getConfig)().defaultIgnore,
   normalizer
 } = {}) => {
   (0, _helpers.checkContainerType)(container);
