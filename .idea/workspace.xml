@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="merge fix">
-      <change afterPath="$PROJECT_DIR$/backend/ontology_lookup.py" afterDir="false" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="Ontology look up added and merge fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-frontend/src/views/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-frontend/src/views/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662084631947</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ontology look up added and merge fixes">
+      <created>1662090386758</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662090386758</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +243,7 @@
     <MESSAGE value="timeout fix" />
     <MESSAGE value="NLP Added" />
     <MESSAGE value="merge fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge fix" />
+    <MESSAGE value="Ontology look up added and merge fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ontology look up added and merge fixes" />
   </component>
 </project>
