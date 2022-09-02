@@ -20,3 +20,8 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```terminal
 cd backend; npm start
 ```
+### To install Pip
+python -m ensurepip
+
+### To update Requirements File
+pip freeze > requirements.txt
