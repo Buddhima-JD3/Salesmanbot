@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - product_check
 
 responses:
   utter_greet:
@@ -28,6 +29,9 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_check_products:
+    - text: "We have daily products. Do you want to check the product list?"
 
 session_config:
   session_expiration_time: 60

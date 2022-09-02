@@ -89,3 +89,10 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - what is your name?
+
+- intent: product_check
+  examples: |
+    - what are the products?
+    - products?
+    - what are the available products?
