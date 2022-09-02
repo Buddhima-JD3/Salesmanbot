@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
-      <change afterPath="$PROJECT_DIR$/chatbot/models/20220902-104440-glum-arbor.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
