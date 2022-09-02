@@ -72,7 +72,7 @@ class Chat extends Component {
               <div class="card login-card">
                 <div className="container">
 
-                    Chat UI
+                    Senara- Chat UI
           <br/>
 
                 </div>            
