@@ -4,8 +4,6 @@ import axios from "axios";
 import { AuthContextProvider } from "./context/AuthContext";
 import { CartProvider } from "react-use-cart";
 
-
-
 axios.defaults.withCredentials = true;
 
 function App() {

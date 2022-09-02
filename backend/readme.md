@@ -1,11 +1,22 @@
-Commit Backend Work Here
-How to run.(`Typr this )
+## Backend
+**⚠ Error: Cannot Run Scripts in Terminal.**
 
 ```terminal
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-\
+```
+### How to Start Backend
+
+### To execute all at once
+```terminal
+./env/scripts/activate; cd backend; npm start
+```
+### Break Down
+#### 1. Activate virtual environment
+```terminal
 ./env/scripts/activate
 ```
 
-\
-Go to backend & start backend by npm start
+#### 2.Move to backend Dir and Start
+```terminal
+cd backend; npm start
+```
