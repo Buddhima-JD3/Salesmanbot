@@ -1,1 +1,6 @@
-admin backend comes here
+## Backend
+### To execute all at once
+```terminal
+npm start
+```
+
