@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="merge fix">
+      <change afterPath="$PROJECT_DIR$/chatbot/models/20220903-192313-blaring-noodle.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +145,9 @@
       <workItem from="1662069141073" duration="2414000" />
       <workItem from="1662095576370" duration="1222000" />
       <workItem from="1662139858610" duration="4742000" />
+      <workItem from="1662212132367" duration="4181000" />
+      <workItem from="1662360591217" duration="13000" />
+      <workItem from="1662438330935" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>

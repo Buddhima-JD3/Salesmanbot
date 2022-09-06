@@ -4,6 +4,11 @@
 ```terminal
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
+### Delete Root Env and Install Dependencies and Run from Root Dir
+
+```terminal
+python -m venv env; ./env/scripts/activate; pip install -r backend/requirements.txt; npm install
+```
 ### How to Start Backend
 
 ### To execute all at once
@@ -21,7 +26,10 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 cd backend; npm start
 ```
 ### To install Pip
+```terminal
 python -m ensurepip
-
+```
 ### To update Requirements File
+```terminal
 pip freeze > requirements.txt
+```

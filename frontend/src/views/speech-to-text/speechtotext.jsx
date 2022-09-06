@@ -4,7 +4,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Typography from "@material-ui/core/Typography";
-import chat from "../chat/Chat";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SendMessage from '../chat/SendMessage'
 
