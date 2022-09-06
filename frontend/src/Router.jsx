@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import Admin from './views/admin/admin-panel';
 import AuthContext from "./context/AuthContext";
-import Chat from './views/chat/Chat'
+import Chat from './views/chat/chat'
 import SignIn from './views/chat/SignIn';
 import { auth } from './firebase.js'
 import { useAuthState } from 'react-firebase-hooks/auth'

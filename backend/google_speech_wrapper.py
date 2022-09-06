@@ -4,7 +4,7 @@ import sys
 import threading
 from typing import Dict
 import os
-from natural_language import *
+# from natural_language import *
 from google.cloud import speech
 
 GOOGLE_SERVICE_JSON_FILE = os.environ['GOOGLE_SERVICE_JSON_FILE']
@@ -116,7 +116,7 @@ async def listen_print_loop(responses, client: ClientData):
         else:
             text = transcript + overwrite_chars
             print(text)
-            analyze_lang(text)
+
 
             if client:
                 await client.send_client_data(text, True)

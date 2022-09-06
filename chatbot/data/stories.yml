@@ -34,3 +34,12 @@ stories:
   - action: utter_goodbye
   - intent: product_check
   - action: utter_check_products
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: product_check
+  - action: utter_check_products
