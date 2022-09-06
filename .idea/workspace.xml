@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="merge fix">
-      <change afterPath="$PROJECT_DIR$/chatbot/models/20220903-192313-blaring-noodle.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="merge fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +140,7 @@
       <workItem from="1662212132367" duration="4181000" />
       <workItem from="1662360591217" duration="13000" />
       <workItem from="1662438330935" duration="6378000" />
+      <workItem from="1662456675686" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -212,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662098171072</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="merge fix">
+      <created>1662457896735</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662457896735</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
