@@ -14,9 +14,8 @@ class Chat extends Component {
     
      
       render() {
-
         return (
-    
+
             <div class="container" >
               <br></br>
               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{border:"25rem"}}>
@@ -44,7 +43,7 @@ class Chat extends Component {
                 <NavDropdown.Item href="users">
                   Users
                 </NavDropdown.Item>
-  
+
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="admin">
                   Admin Panel
@@ -60,7 +59,7 @@ class Chat extends Component {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-  
+
             <br></br>
             <br></br>
             <br></br>
@@ -69,18 +68,18 @@ class Chat extends Component {
             <br></br>
             <br></br>
             <br></br>
-            
+
               <div class="card login-card">
                 <div className="container">
 
-                    Senara- Chat UI
+                    {/*Senara- Chat UI*/}
           <br/>
 
-                </div>            
+                </div>
               </div>
             </div>
-      
-  
+
+
     )
   }
         

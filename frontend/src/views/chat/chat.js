@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { db, auth } from '../../firebase'
+import React, {useEffect, useRef, useState} from 'react'
+import {auth, db} from '../../firebase'
 import SendMessage from './SendMessage'
 import SignOut from './SignOut'
 import './chat.css'
@@ -13,22 +13,29 @@ function Chat() {
     }
 
     // eslint-disable-next-line no-use-before-define
-    useEffect(() => {scrollFunc(); db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {setMessages(snapshot.docs.map(doc => doc.data())) })}, [])
+    useEffect(() => {
+        scrollFunc();
+        db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {
+            setMessages(snapshot.docs.map(doc => doc.data()))
+        })
+    }, [])
 
     return (
         <div>
-            <SignOut />
+            <SignOut/>
             <div className="msgs">
-                {messages.map(({ id, text, photoURL, uid }) => (
+                {messages.map(({ id, text, /*photoURL, uid,*/ messageType }) => (
                     <div>
-                        <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
-                            <img className="profile" src={photoURL} alt="" />
+                        {/*<div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>*/}
+                        <div key={id} className={`msg ${messageType === "user" ? 'sent' : 'received'}`}>
+                            {/*<img className="profile" src={photoURL} alt="" />*/}
                             <p>{text}</p>
                         </div>
                     </div>
                 ))}
             </div>
-            <SendMessage scroll={scroll} />
+
+            <SendMessage scroll={scroll}/>
             <div ref={scroll}></div>
         </div>
     )
