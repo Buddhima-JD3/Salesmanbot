@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ac012e9-a7f7-4aed-bbe3-e8fc0be40bc6" name="Changes" comment="set timeout fix">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="6ac012e9-a7f7-4aed-bbe3-e8fc0be40bc6" name="Changes" comment="requirements fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="" />
+      <changelist id="6ac012e9-a7f7-4aed-bbe3-e8fc0be40bc6" name="Changes" comment="requirements fixed" />
       <created>1658388910977</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -142,6 +140,9 @@
       <workItem from="1662069141073" duration="2414000" />
       <workItem from="1662095576370" duration="1222000" />
       <workItem from="1662437833584" duration="9380000" />
+      <workItem from="1662464949219" duration="2460000" />
+      <workItem from="1662590842676" duration="513000" />
+      <workItem from="1662601833476" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -199,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662098127910</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="merge fix">
+      <created>1662462123007</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662462123007</updated>
+    </task>
+    <task id="LOCAL-00010" summary="requirements fixed">
+      <created>1662462409876</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662462409876</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +239,7 @@
     <MESSAGE value="speech to text big fix" />
     <MESSAGE value="set timeout fix" />
     <MESSAGE value="merge fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge fix" />
+    <MESSAGE value="requirements fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements fixed" />
   </component>
 </project>

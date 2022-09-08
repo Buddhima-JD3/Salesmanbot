@@ -1,24 +1,48 @@
-## To Start Frontend
+# To Run From Root Directory
 
+### Frontend:
 ```terminal
-npm install; npm start
+cd frontend; npm start
 ```
-## To Start Chatbot
+### Backend
+```terminal
+./env/scripts/activate; cd Backend; npm start
+```
+### Chatbot
+```terminal
+cd chatbot; ./venv/scripts/activate; rasa run -m models --enable-api --cors “*” --debug
+```
+### Admin-Frontend:
+```terminal
+cd admin-frontend; npm start
+```
+### Admin-Backend:
+```terminal
+cd admin-backend; npm start
+```
 
+# To Install dependencies from Root Directory
+### Frontend:
 ```terminal
-./env/scripts/activate; rasa run -m models --enable-api --cors “*” --debug
+cd frontend; npm install
 ```
-## To Start Backend
-
+### Backend
 ```terminal
-python -m venv env; ./env/scripts/activate; pip install -r backend/requirements.txt; cd Backend; npm start
+python -m venv env; ./env/scripts/activate; pip install -r backend/requirements.txt;
 ```
-## To Execute Backend from Root Dir
+### Chatbot
 ```terminal
-./env/scripts/activate; cd backend; npm start
+cd chatbot; python -m venv venv; pip install; pip install rasa
 ```
-
-## References
+### Admin-Frontend:
+```terminal
+cd admin-frontend; npm install
+```
+### Admin-Backend:
+```terminal
+cd admin-backend; npm install
+```
+# References
 **⚠ Error: Cannot Run Scripts in Terminal.**
 
 ```terminal
@@ -31,4 +55,8 @@ python -m ensurepip
 ### To update Requirements File
 ```terminal
 pip freeze > requirements.txt
+```
+### To remove node modules
+```terminal
+rm -r node_modules
 ```
