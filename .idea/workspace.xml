@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
-      <change afterPath="$PROJECT_DIR$/chatbot/models/20220906-101111-sienna-order.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Salesmanbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Salesmanbot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/google_speech_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/google_speech_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/natural_language.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/natural_language.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/credentials.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/actions/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Router.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/endpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/endpoints.yml" afterDir="false" />
     </list>
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="merge fix" />
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,8 +55,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "last_opened_file_path": "C:/Users/osand/Documents/GitHub/Salesmanbot",
