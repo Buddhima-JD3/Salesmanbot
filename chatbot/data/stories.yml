@@ -43,3 +43,8 @@ stories:
   - action: utter_iamabot
   - intent: product_check
   - action: utter_check_products
+
+- story: product_list_story
+  steps:
+    - intent: product_list
+    - action: action_hello_world
