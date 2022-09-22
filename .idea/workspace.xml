@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ac012e9-a7f7-4aed-bbe3-e8fc0be40bc6" name="Changes" comment="readme updated">
-      <change afterPath="$PROJECT_DIR$/backend/create_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/dbquery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-backend/firebaseEnv.text" beforeDir="false" afterPath="$PROJECT_DIR$/admin-backend/firebaseEnv.text" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ontology_lookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ontology_lookup.py" afterDir="false" />
-    </list>
+    <list default="true" id="6ac012e9-a7f7-4aed-bbe3-e8fc0be40bc6" name="Changes" comment="negotiation process added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662604887205</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="negotiation process added">
+      <created>1663883652978</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663883652978</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +273,7 @@
     <MESSAGE value="merge fix" />
     <MESSAGE value="requirements fixed" />
     <MESSAGE value="readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
+    <MESSAGE value="negotiation process added" />
+    <option name="LAST_COMMIT_MESSAGE" value="negotiation process added" />
   </component>
 </project>
