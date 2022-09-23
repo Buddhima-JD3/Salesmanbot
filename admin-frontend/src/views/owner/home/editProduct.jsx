@@ -133,7 +133,7 @@ const EditProduct = () => {
                     <div className="container">
                         <div className='shopc'>
                             <h1>EDIT PRODUCT</h1>
-                            <p><Link to="/homeowner">Home</Link>/ Edit Product</p>
+                            <p><Link to="/homeowner">Home</Link> / Edit Product</p>
                         </div>
                         <Formik initialValues={{
                             stock: products.stock,
@@ -162,7 +162,6 @@ const EditProduct = () => {
                             {({errors, touched}) => (
                                 <Form>
                                     <div className="row mb-4">
-
                                         <div className="col">
                                             <div className="form-group">
                                                 <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
@@ -175,7 +174,6 @@ const EditProduct = () => {
                                                        className="text-danger mt-1">{errors.name}</p> : null}
                                             </div>
                                         </div>
-
                                         <div className="col">
                                             <div className="form-outline">
                                                 <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
@@ -188,7 +186,6 @@ const EditProduct = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                     <div className="form-outline mb-4">
                                         <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
                                                className="form-label">*Quantity</label>
@@ -197,7 +194,6 @@ const EditProduct = () => {
                                         {errors.size && touched.size ?
                                             <p id={"login-error"} className="text-danger mt-1">{errors.size}</p> : null}
                                     </div>
-
                                     <div className="form-outline mb-4">
                                         <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
                                                className="form-label">*Price</label>
@@ -207,7 +203,6 @@ const EditProduct = () => {
                                             <p id={"login-error"}
                                                className="text-danger mt-1">{errors.price}</p> : null}
                                     </div>
-
                                     <div className="form-outline mb-4">
                                         <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
                                                className="form-label">*Stock</label>
@@ -217,7 +212,6 @@ const EditProduct = () => {
                                             <p id={"login-error"}
                                                className="text-danger mt-1">{errors.stock}</p> : null}
                                     </div>
-
                                     <div className="form-outline mb-4">
                                         <label style={{fontWeight: 'bold', color: '#5D5D5D'}}
                                                className="form-label">*Description</label>
@@ -229,7 +223,6 @@ const EditProduct = () => {
                                                   }}></textarea>
 
                                     </div>
-
                                     <div hidden={filepath.length > 0} {...getRootProps({style})}>
                                         <input {...getInputProps()} />
                                         <p>Drag 'n' drop your image file here, or click to select files</p>
@@ -240,7 +233,7 @@ const EditProduct = () => {
                                     <div className='d-flex justify-content-center'>
                                         <center>
                                             <button style={{marginRight: '10px'}} type="submit"
-                                                    className="btn btn-primary" onClick={updateProduct}>
+                                                    className="btn btn-primary">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                      fill="currentColor" className="bi bi-cloud-download"
                                                      viewBox="0 0 16 16">

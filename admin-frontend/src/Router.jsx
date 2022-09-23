@@ -12,8 +12,6 @@ import Products from './views/admin/side-pages/products';
 import Users from './views/admin/side-pages/users';
 import {NavbarLayout} from "./layouts/Navbar";
 
-
-
 const Routers = () => {
     const {loggedIn} = useContext(AuthContext);
 

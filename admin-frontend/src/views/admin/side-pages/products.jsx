@@ -26,7 +26,7 @@ class products extends Component {
             for (let i = 0; i < product.length; i++) {
                 data.push([(i + 1), /*product[i].id, */product[i].productName, product[i].brand, product[i].price, product[i].weightOrVoluem, product[i].nutrition,
                     <div>
-                        <a className="btn btn-warning" href={`/editProduct/${product[i].id}`}>
+                        <a className="btn btn-warning" href={`/editCustomer/${product[i].id}`}>
                             Edit
                         </a>
                         &nbsp;&nbsp;
