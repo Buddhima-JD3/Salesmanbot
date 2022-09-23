@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
-      <change afterPath="$PROJECT_DIR$/chatbot/models/20220923-115909-savory-tuba.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/failed_test_stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/failed_test_stories.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/intent_confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/intent_confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/intent_histogram.png" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/intent_histogram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/intent_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/intent_report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/story_confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/story_confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/results/story_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/results/story_report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests/test_stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/tests/test_stories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +143,7 @@
       <workItem from="1662095576370" duration="1222000" />
       <workItem from="1662437833584" duration="9380000" />
       <workItem from="1663908646096" duration="2881000" />
+      <workItem from="1663915330685" duration="1450000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
