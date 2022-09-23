@@ -12,8 +12,8 @@ const firebaseConfig = {
   projectId: "salesman-bot-56ef5",
   storageBucket: "salesman-bot-56ef5.appspot.com",
   messagingSenderId: "351167086438",
-  appId: "1:351167086438:web:e770f3dce9aa32eb8452a7",
-  measurementId: "G-854TQ2TFS9"
+  appId: "1:351167086438:web:2b8a859ca1947bbf8452a7",
+  measurementId: "G-TMNMHQ1T4L"
 };
 
 // Initialize Firebase
