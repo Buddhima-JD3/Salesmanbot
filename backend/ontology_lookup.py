@@ -1,22 +1,24 @@
 from owlready2 import *
 
-onto = get_ontology("./ontology/DairyProducts.owl")
-onto.load()
-print("Ontology Successfully Loaded")
-#<http://example.com/DairyProductsOntology/#>
+def loadOntology():
+    onto = get_ontology("./ontology/DairyProducts.owl")
+    onto.load()
+    print("Ontology Successfully Loaded")
 
-print("Total Classes : ", list(default_world.sparql("""
+def getNoOfClasses():
+    print("Total Classes : ", list(default_world.sparql("""
                  SELECT (COUNT(?x) AS ?nb)
                  { ?x a owl:Class . }
           """)))
+    print(list(onto.classes()))
 
 
-a = list(default_world.sparql("""
+classList = list(default_world.sparql("""
                  SELECT ?subject ?object
                  	WHERE { ?subject rdfs:subClassOf ?object }
           """))
 
-print(a)
+print(classList)
 
 
 def categoryBased(category):
