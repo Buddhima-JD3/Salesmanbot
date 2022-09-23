@@ -89,3 +89,21 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+- story: interactive_story_1
+  steps:
+  - user: |
+      hey
+  - intent: greet
+  - action: utter_greet
+  - user: |
+      are you a bot?
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - user: |
+      what are the products you have?
+  - intent: product_check
+  - action: utter_check_products
+  - user: |
+      yes, show me the product list.
+  - intent: product_list
+  - action: action_hello_world

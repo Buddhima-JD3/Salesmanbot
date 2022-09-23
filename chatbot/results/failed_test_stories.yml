@@ -1,1 +1,24 @@
-# None of the test stories failed - all good!
+version: "3.1"
+stories:
+- story: interactive_story_1 (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      hey
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      are you a bot?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - user: |-
+      what are the products you have?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: product_check
+  - action: utter_check_products
+  - user: |-
+      yes, show me the product list.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: product_list
+  - action: action_hello_world
