@@ -89,3 +89,7 @@ nlu:
     - products?
     - what are the available products?
     - what are the products you have?
+- intent: product_list
+  examples: |
+    - product list
+    - show me the list

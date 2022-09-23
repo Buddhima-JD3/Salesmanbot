@@ -33,20 +33,13 @@
     
 
 
-    <!-- http://example.com/DairyProductsOntology/hasColdMilk -->
+    <!-- http://example.com/DairyProductsOntology/hasColdWeatherBased -->
 
-    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasColdMilk">
-        <rdfs:subPropertyOf rdf:resource="http://example.com/DairyProductsOntology/hasColdorHot"/>
-        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/Milk"/>
-        <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/Cold"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://example.com/DairyProductsOntology/hasColdorHot -->
-
-    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasColdorHot">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasColdWeatherBased">
+        <rdfs:subPropertyOf rdf:resource="http://example.com/DairyProductsOntology/hasWeatherBased"/>
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/HotChocolateMilk"/>
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/HotVannilaMilk"/>
+        <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/CoolWeather"/>
     </owl:ObjectProperty>
     
 
@@ -63,12 +56,14 @@
     
 
 
-    <!-- http://example.com/DairyProductsOntology/hasHotMilk -->
+    <!-- http://example.com/DairyProductsOntology/hasHotWeatherBased -->
 
-    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasHotMilk">
-        <rdfs:subPropertyOf rdf:resource="http://example.com/DairyProductsOntology/hasColdorHot"/>
-        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/Milk"/>
-        <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/Hot"/>
+    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasHotWeatherBased">
+        <rdfs:subPropertyOf rdf:resource="http://example.com/DairyProductsOntology/hasWeatherBased"/>
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/ColdChocolateMilk"/>
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/ColdVannilaMilk"/>
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/IceCream"/>
+        <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
     </owl:ObjectProperty>
     
 
@@ -112,6 +107,15 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/DairyProducts"/>
         <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/SugarLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/hasWeatherBased -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/DairyProductsOntology/hasWeatherBased">
+        <rdfs:domain rdf:resource="http://example.com/DairyProductsOntology/DairyProducts"/>
+        <rdfs:range rdf:resource="http://example.com/DairyProductsOntology/WeatherBased"/>
     </owl:ObjectProperty>
     
 
@@ -292,18 +296,39 @@
     
 
 
-    <!-- http://example.com/DairyProductsOntology/Cold -->
+    <!-- http://example.com/DairyProductsOntology/ColdChocolateMilk -->
 
-    <owl:Class rdf:about="http://example.com/DairyProductsOntology/Cold">
-        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/ColdorHot"/>
-        <owl:disjointWith rdf:resource="http://example.com/DairyProductsOntology/Hot"/>
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/ColdChocolateMilk">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/ChocolateMilk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasHotWeatherBased"/>
+                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://example.com/DairyProductsOntology/ColdorHot -->
+    <!-- http://example.com/DairyProductsOntology/ColdVannilaMilk -->
 
-    <owl:Class rdf:about="http://example.com/DairyProductsOntology/ColdorHot"/>
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/ColdVannilaMilk">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/VanillaMilk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasHotWeatherBased"/>
+                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/CoolWeather -->
+
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/CoolWeather">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/WeatherBased"/>
+    </owl:Class>
     
 
 
@@ -343,10 +368,38 @@
     
 
 
-    <!-- http://example.com/DairyProductsOntology/Hot -->
+    <!-- http://example.com/DairyProductsOntology/HotChocolateMilk -->
 
-    <owl:Class rdf:about="http://example.com/DairyProductsOntology/Hot">
-        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/ColdorHot"/>
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/HotChocolateMilk">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/ChocolateMilk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasColdWeatherBased"/>
+                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/CoolWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/HotVannilaMilk -->
+
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/HotVannilaMilk">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/VanillaMilk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasColdWeatherBased"/>
+                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/CoolWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/HotWeather -->
+
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/HotWeather">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/WeatherBased"/>
     </owl:Class>
     
 
@@ -371,6 +424,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasMedumSugarLevel"/>
                 <owl:someValuesFrom rdf:resource="http://example.com/DairyProductsOntology/Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasHotWeatherBased"/>
+                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -467,18 +526,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasMedumSugarLevel"/>
                 <owl:someValuesFrom rdf:resource="http://example.com/DairyProductsOntology/Medium"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasColdMilk"/>
-                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/Cold"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasHotMilk"/>
-                <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/Hot"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -649,6 +696,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/WeatherBased -->
+
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/WeatherBased"/>
     
 
 
