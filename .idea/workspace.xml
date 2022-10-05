@@ -4,7 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix" />
+    <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Router.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/apis/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/apis/modules/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/apis/modules/buyer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/apis/modules/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/apis/modules/owner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/context/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/landing_page/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/landing_page/landingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/landing_page/landingPagestyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/navtop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/sidenav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/validations/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/admin-panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/admin-panel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/side-pages/customers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/side-pages/itemsold.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/side-pages/orders.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/side-pages/products.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/admin/side-pages/users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/Rectangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/clientRegistration.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/auth/ownerRegistration.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SendMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/SignOut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/chat.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/utils/SettingsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/utils/TranscribeOutput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/utils/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/utils/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/chat/utils/utility_transcribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/cart/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/cart/cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/cart/carts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/home/chome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/home/home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/home/search-filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/my orders/myorders.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/payment/payment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/client/payment/payment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/client-dashboard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/owner-dashboard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/itemview/itemview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/itemview/itemview.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/owner/home/addProduct.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/owner/home/editProduct.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/owner/home/home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/owner/home/orders.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/speechtotext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/SettingsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/TranscribeOutput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/speech-to-text/utils/utility_transcribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +152,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -157,7 +244,8 @@
       <workItem from="1664934518465" duration="1551000" />
       <workItem from="1664936359071" duration="126000" />
       <workItem from="1664938601946" duration="1485000" />
-      <workItem from="1664954665257" duration="3154000" />
+      <workItem from="1664954665257" duration="4204000" />
+      <workItem from="1664959112825" duration="1802000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -234,6 +322,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/frontend" />
+    </ignored-roots>
     <MESSAGE value="Chat UI changes and other fixes" />
     <MESSAGE value="Chat interface added" />
     <MESSAGE value="Chat interface bug fix" />
