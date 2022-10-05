@@ -106,4 +106,4 @@ stories:
   - user: |
       yes, show me the product list.
   - intent: product_list
-  - action: action_hello_world
+  - action: action_get_productlist

@@ -21,4 +21,4 @@ stories:
       yes, show me the product list.
   - action: action_listen  # predicted: action_default_fallback
   - intent: product_list
-  - action: action_hello_world
+  - action: action_get_productlist

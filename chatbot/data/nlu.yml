@@ -93,3 +93,6 @@ nlu:
   examples: |
     - product list
     - show me the list
+- intent: search_product
+  examples: |
+    - is [Heighland] (milk powder) available

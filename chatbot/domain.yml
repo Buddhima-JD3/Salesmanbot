@@ -9,6 +9,7 @@ intents:
 - mood_unhappy
 - product_check
 - product_list
+- search_product
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -33,3 +34,5 @@ actions:
 - utter_greet
 - utter_iamabot
 - action_hello_world
+- action_get_productlist
+- action_search_product
