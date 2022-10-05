@@ -23,6 +23,33 @@ class ActionHelloWorld(Action):
 
         return []
 
+
+class ActionGetProduct(Action):
+    def name(self) -> Text:
+        return "action_get_productlist"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        a = " | test | "
+        b = "mapped data"
+        dispatcher.utter_message(text="product list : " + a + b)
+
+        return []
+
+
+class ActionSearchproduct(Action):
+    def name(self) -> Text:
+        return "action_search_product"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Search product is running")
+
+        return []
+
 # class ActionHelloWorld(Action):
 #
 #     def name(self) -> Text:

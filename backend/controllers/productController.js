@@ -28,12 +28,12 @@ const getAllProducts = async (req, res, next) => {
                     doc.id,
                     doc.data().productName,
                     doc.data().brand,
-                    doc.data().iteam_type,
+                    doc.data().item_type,
                     doc.data().price,
-                    doc.data().weightOrVolume,
-                    doc.data().ingredients,
+                    doc.data().weightOrVoluem,
+                    doc.data().ingreduents,
                     doc.data().nutrition,
-                    doc.data().helthStat
+                    doc.data().healthStat
                 );
                 productsArray.push(product);
             });

@@ -47,4 +47,9 @@ stories:
 - story: product_list_story
   steps:
     - intent: product_list
-    - action: action_hello_world
+    - action: action_get_productlist
+
+- story: search_product_story
+  steps:
+    - intent: search_product
+    - action: action_search_product
