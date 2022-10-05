@@ -2911,7 +2911,7 @@
     return Constructor;
   }
 
-  function _defineProperty$1(obj, key, value) {
+  function _defineProperty$2(obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {
         value: value,
@@ -2933,7 +2933,7 @@
 
       _classCallCheck(this, SetLike);
 
-      _defineProperty$1(this, "items", void 0);
+      _defineProperty$2(this, "items", void 0);
 
       this.items = items;
     }
@@ -3862,6 +3862,72 @@
       isReferenced: compute === "description",
       recursion: false
     }));
+  }
+
+  function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+
+    if (Object.getOwnPropertySymbols) {
+      var symbols = Object.getOwnPropertySymbols(object);
+      enumerableOnly && (symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      })), keys.push.apply(keys, symbols);
+    }
+
+    return keys;
+  }
+
+  function _objectSpread(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = null != arguments[i] ? arguments[i] : {};
+      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+        _defineProperty$1(target, key, source[key]);
+      }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+
+    return target;
+  }
+
+  function _defineProperty$1(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+  /**
+   * @param root
+   * @param options
+   * @returns
+   */
+
+  function computeAccessibleDescription(root) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var description = queryIdRefs(root, "aria-describedby").map(function (element) {
+      return computeTextAlternative(element, _objectSpread(_objectSpread({}, options), {}, {
+        compute: "description"
+      }));
+    }).join(" "); // TODO: Technically we need to make sure that node wasn't used for the accessible name
+    //       This causes `description_1.0_combobox-focusable-manual` to fail
+    //
+    // https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation
+    // says for so many elements to use the `title` that we assume all elements are considered
+
+    if (description === "") {
+      var title = root.getAttribute("title");
+      description = title === null ? "" : title;
+    }
+
+    return description;
   }
 
   /**
@@ -11113,7 +11179,7 @@
     } else if (typeof matcher === 'function') {
       return matcher(normalizedText, node);
     } else {
-      return matcher.test(normalizedText);
+      return matchRegExp(matcher, normalizedText);
     }
   }
 
@@ -11128,7 +11194,7 @@
     if (matcher instanceof Function) {
       return matcher(normalizedText, node);
     } else if (matcher instanceof RegExp) {
-      return matcher.test(normalizedText);
+      return matchRegExp(matcher, normalizedText);
     } else {
       return normalizedText === String(matcher);
     }
@@ -11164,21 +11230,31 @@
         collapseWhitespace = _ref2.collapseWhitespace,
         normalizer = _ref2.normalizer;
 
-    if (normalizer) {
-      // User has specified a custom normalizer
-      if (typeof trim !== 'undefined' || typeof collapseWhitespace !== 'undefined') {
-        // They've also specified a value for trim or collapseWhitespace
-        throw new Error('trim and collapseWhitespace are not supported with a normalizer. ' + 'If you want to use the default trim and collapseWhitespace logic in your normalizer, ' + 'use "getDefaultNormalizer({trim, collapseWhitespace})" and compose that into your normalizer');
-      }
-
-      return normalizer;
-    } else {
+    if (!normalizer) {
       // No custom normalizer specified. Just use default.
       return getDefaultNormalizer({
         trim: trim,
         collapseWhitespace: collapseWhitespace
       });
     }
+
+    if (typeof trim !== 'undefined' || typeof collapseWhitespace !== 'undefined') {
+      // They've also specified a value for trim or collapseWhitespace
+      throw new Error('trim and collapseWhitespace are not supported with a normalizer. ' + 'If you want to use the default trim and collapseWhitespace logic in your normalizer, ' + 'use "getDefaultNormalizer({trim, collapseWhitespace})" and compose that into your normalizer');
+    }
+
+    return normalizer;
+  }
+
+  function matchRegExp(matcher, text) {
+    var match = matcher.test(text);
+
+    if (matcher.global && matcher.lastIndex !== 0) {
+      console.warn("To match all elements we had to reset the lastIndex of the RegExp because the global flag is enabled. We encourage to remove the global flag from the RegExp.");
+      matcher.lastIndex = 0;
+    }
+
+    return match;
   }
 
   function getNodeText(node) {
@@ -11420,7 +11496,8 @@
   }
 
   function prettyRoles(dom, _ref7) {
-    var hidden = _ref7.hidden;
+    var hidden = _ref7.hidden,
+        includeDescription = _ref7.includeDescription;
     var roles = getRoles(dom, {
       hidden: hidden
     }); // We prefer to skip generic role, we don't recommend it
@@ -11437,6 +11514,14 @@
           computedStyleSupportsPseudoElements: getConfig().computedStyleSupportsPseudoElements
         }) + "\":\n";
         var domString = prettyDOM(el.cloneNode(false));
+
+        if (includeDescription) {
+          var descriptionString = "Description \"" + computeAccessibleDescription(el, {
+            computedStyleSupportsPseudoElements: getConfig().computedStyleSupportsPseudoElements
+          }) + "\":\n";
+          return "" + nameString + descriptionString + domString;
+        }
+
         return "" + nameString + domString;
       }).join('\n\n');
       return role + ":\n\n" + elementsString + "\n\n" + delimiterBar;
@@ -12349,8 +12434,23 @@
     return "Found multiple elements with the text: " + text;
   };
 
-  var getMissingError$5 = function getMissingError(c, text) {
-    return "Unable to find an element with the text: " + text + ". This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.";
+  var getMissingError$5 = function getMissingError(c, text, options) {
+    if (options === void 0) {
+      options = {};
+    }
+
+    var _options = options,
+        collapseWhitespace = _options.collapseWhitespace,
+        trim = _options.trim,
+        normalizer = _options.normalizer;
+    var matchNormalizer = makeNormalizer({
+      collapseWhitespace: collapseWhitespace,
+      trim: trim,
+      normalizer: normalizer
+    });
+    var normalizedText = matchNormalizer(text.toString());
+    var isNormalizedDifferent = normalizedText !== text.toString();
+    return "Unable to find an element with the text: " + (isNormalizedDifferent ? normalizedText + " (normalized from '" + text + "')" : text) + ". This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.";
   };
 
   var queryAllByTextWithSuggestions = wrapAllByQueryWithSuggestion(queryAllByText, queryAllByText.name, 'queryAll');
@@ -12489,6 +12589,7 @@
         _ref$hidden = _ref.hidden,
         hidden = _ref$hidden === void 0 ? getConfig().defaultHidden : _ref$hidden,
         name = _ref.name,
+        description = _ref.description,
         trim = _ref.trim,
         normalizer = _ref.normalizer,
         _ref$queryFallbacks = _ref.queryFallbacks,
@@ -12642,6 +12743,17 @@
         return text;
       });
     }).filter(function (element) {
+      if (description === undefined) {
+        // Don't care
+        return true;
+      }
+
+      return matches(computeAccessibleDescription(element, {
+        computedStyleSupportsPseudoElements: getConfig().computedStyleSupportsPseudoElements
+      }), element, description, function (text) {
+        return text;
+      });
+    }).filter(function (element) {
       return hidden === false ? isInaccessible(element, {
         isSubtreeInaccessible: cachedIsSubtreeInaccessible
       }) === false : true;
@@ -12689,7 +12801,8 @@
     var _ref4 = _temp3 === void 0 ? {} : _temp3,
         _ref4$hidden = _ref4.hidden,
         hidden = _ref4$hidden === void 0 ? getConfig().defaultHidden : _ref4$hidden,
-        name = _ref4.name;
+        name = _ref4.name,
+        description = _ref4.description;
 
     if (getConfig()._disableExpensiveErrorDiagnostics) {
       return "Unable to find role=\"" + role + "\"";
@@ -12699,7 +12812,8 @@
     Array.from(container.children).forEach(function (childElement) {
       roles += prettyRoles(childElement, {
         hidden: hidden,
-        includeName: name !== undefined
+        includeName: name !== undefined,
+        includeDescription: description !== undefined
       });
     });
     var roleMessage;
@@ -12724,7 +12838,17 @@
       nameHint = " and name `" + name + "`";
     }
 
-    return ("\nUnable to find an " + (hidden === false ? 'accessible ' : '') + "element with the role \"" + role + "\"" + nameHint + "\n\n" + roleMessage).trim();
+    var descriptionHint = '';
+
+    if (description === undefined) {
+      descriptionHint = '';
+    } else if (typeof description === 'string') {
+      descriptionHint = " and description \"" + description + "\"";
+    } else {
+      descriptionHint = " and description `" + description + "`";
+    }
+
+    return ("\nUnable to find an " + (hidden === false ? 'accessible ' : '') + "element with the role \"" + role + "\"" + nameHint + descriptionHint + "\n\n" + roleMessage).trim();
   };
 
   var queryAllByRoleWithSuggestions = wrapAllByQueryWithSuggestion(queryAllByRole, queryAllByRole.name, 'queryAll');
