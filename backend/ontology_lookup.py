@@ -15,15 +15,17 @@ def getNoOfClasses():
           """)))
     print(list(onto.classes()))
 
-
-classList = list(default_world.sparql("""
-                 SELECT ?subject ?object
-                 	WHERE { ?subject rdfs:subClassOf ?object }
-          """))
+def getClasses_and_Relations():
+    return list(default_world.sparql("""
+                     SELECT ?subject ?object
+                        WHERE { ?subject rdfs:subClassOf ?object }
+              """))
 
 #get product categories on relationships of weather and sugar
-products_category_list =[]
+
 def products_category_on_relationship(data):
+    products_category_list =[]
+    classList = getClasses_and_Relations()
     for x in classList:
         object_string = str(x)
         if data in object_string:
@@ -40,8 +42,10 @@ print(products_category_on_relationship("HotWeather"))
 
 
 #get products on categories
-products_list =[]
+
 def product_on_category(data):
+    products_list =[]
+    classList = getClasses_and_Relations()
     for x in classList:
         object_string = str(x)
         if data+"," in object_string:
@@ -54,8 +58,10 @@ def product_on_category(data):
 print(product_on_category("Milk"))
 
 #get products of a brand
-products_list_on_brand =[]
+
 def product_category_on_brand(data):
+    products_list_on_brand =[]
+    classList = getClasses_and_Relations()
     for x in classList:
         object_string = str(x)
         if data in object_string:
@@ -68,8 +74,10 @@ def product_category_on_brand(data):
 print(product_category_on_brand("Ambewela"))
 
 #get products on ingredients
-products_list_on_ingredient =[]
+
 def product_category_on_ingredients(data):
+    products_list_on_ingredient =[]
+    classList = getClasses_and_Relations()
     for x in classList:
         object_string = str(x)
         if data in object_string:
