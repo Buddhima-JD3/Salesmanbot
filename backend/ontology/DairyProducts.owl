@@ -178,6 +178,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasIngredients"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Fat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasPriceforProduct"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -218,6 +224,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
                 <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasIngredients"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -850,6 +862,14 @@
     
 
 
+    <!-- http://example.com/DairyProductsOntology/Fat -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/DairyProductsOntology/Fat">
+        <rdf:type rdf:resource="http://example.com/DairyProductsOntology/Ingredients"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://example.com/DairyProductsOntology/Highland -->
 
     <owl:NamedIndividual rdf:about="http://example.com/DairyProductsOntology/Highland">
@@ -870,6 +890,14 @@
 
     <owl:NamedIndividual rdf:about="http://example.com/DairyProductsOntology/Pelawaththa">
         <rdf:type rdf:resource="http://example.com/DairyProductsOntology/Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/DairyProductsOntology/Protein -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/DairyProductsOntology/Protein">
+        <rdf:type rdf:resource="http://example.com/DairyProductsOntology/Ingredients"/>
     </owl:NamedIndividual>
     
 
