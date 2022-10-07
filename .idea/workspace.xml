@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4efcac-6139-45e4-95a1-8be8afa6be24" name="Changes" comment="ontology queries fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6d4efcac-6139-45e4-95a1-8be8afa6be24" name="Changes" comment="workspace fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +164,8 @@
       <workItem from="1664959112825" duration="3023000" />
       <workItem from="1665029473323" duration="209000" />
       <workItem from="1665123218276" duration="899000" />
+      <workItem from="1665129181925" duration="1132000" />
+      <workItem from="1665152258630" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664988770005</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="workspace fix">
+      <created>1665129242002</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665129242002</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +274,7 @@
     <MESSAGE value="merge fix" />
     <MESSAGE value="ontology modifications and python functions with ontology" />
     <MESSAGE value="ontology queries fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="ontology queries fix" />
+    <MESSAGE value="workspace fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace fix" />
   </component>
 </project>
