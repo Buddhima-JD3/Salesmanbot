@@ -12,11 +12,11 @@ def get_weather():
 
     temp = response['main']['temp']
     temp = math.floor((temp * 1.8) - 459.67)  # Convert to °F
-    temp = (temp - 32) * 5/9
+    temp = math.floor((temp - 32) * 5/9) # Convert to °C
 
     feels_like = response['main']['feels_like']
     feels_like = math.floor((feels_like * 1.8) - 459.67)  # Convert to °F
-    feels_like = (feels_like - 32) * 5/9
+    feels_like = math.floor((feels_like - 32) * 5/9) # Convert to °C
 
     humidity = response['main']['humidity']
 
