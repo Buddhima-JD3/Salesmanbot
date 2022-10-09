@@ -28,11 +28,15 @@ cd frontend; npm install
 ```
 ### Backend
 ```terminal
-python -m venv env; ./env/scripts/activate; pip install -r backend/requirements.txt;
+python -m venv env; 
+./env/scripts/activate; 
+pip install -r backend/requirements.txt;
 ```
 ### Chatbot
 ```terminal
-cd chatbot; python -m venv venv; pip install; pip install rasa
+cd chatbot; python -m venv venv; 
+pip install 
+pip install rasa
 ```
 ### Admin-Frontend:
 ```terminal
@@ -59,4 +63,12 @@ pip freeze > requirements.txt
 ### To remove node modules
 ```terminal
 rm -r node_modules
+```
+### To remove git cache files
+```terminal
+git rm -r --cached .
+```
+### To remove git python cache files
+```terminal
+git rm --cached *.pyc
 ```
