@@ -184,6 +184,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Pelawaththa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasIngredients"/>
                 <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Fat"/>
             </owl:Restriction>
@@ -235,7 +241,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
-                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Pelawaththa"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
