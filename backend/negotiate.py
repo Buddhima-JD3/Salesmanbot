@@ -6,8 +6,11 @@ from ontology_lookup import *
 from weather_negotiation import *
 import random
 
-cred = credentials.Certificate("D:\Downloads\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
+cred = credentials.Certificate(".\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
+# RUN THIS Line ONLY ONCE When your running this file for the first time
 # firebase_admin.initialize_app(cred)
+# ==================================================================================================
+
 
 db = firestore.client()
 # ==================================================================================================
@@ -50,6 +53,23 @@ def getAllProducts():
         print(productNameList)
     return
 
+def getAvailableProducts(text):
+    categorylist = product_category_on_brand(text)
+    print(categorylist)
+    availableProducts = []
+    for x in categorylist:
+        availableProducts.append(productCategoryAvailability(x))
+
+    new_productlist = [0 if i is None else i for i in availableProducts]
+    print(new_productlist)
+
+    for i in new_productlist:
+        if type(i) == list:
+            newlist = [i]
+
+    if all(item == 0 for item in new_productlist):
+        return "No Available Products"
+    return newlist
 
 # Queries for a particular product that has been recognized from the chatbot and returns the length of the result
 def productAvailability(text):
@@ -108,7 +128,7 @@ def getFromPurchaseHistory(text):
         response = getResponse(result, availableProducts)
     else:
         print("No Products Available")
-        response = "notok"
+        response = "no"
     return(response)
 
 
@@ -136,7 +156,7 @@ def getSimilarProductsCluster(text):
         print(list)
     else:
         print("Cant Generate Cluster")
-        return "notok"
+        return "no"
     availableProducts = []
     for x in list:
             availableProducts.append(productBrandAvailability(x))
@@ -146,7 +166,7 @@ def getSimilarProductsCluster(text):
         response = getResponse(result, availableProducts)
     else:
         print("No Products Available")
-        response = "notok"
+        response = "no"
     return (response)
 
 
@@ -190,14 +210,25 @@ def getResponse(result, productList):
     if(response == "ok"):
         return str("ok")
     else:
-        return str("notok")
+        return str("no")
 
 
 # Negotiation Process
 def main():
     # getAllProducts()
-    text = input()
-    if (productAvailability(text) > 0 ):
+    text2 = input()
+    brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa"]
+    if (text2.capitalize() in brands):
+        i = brands.index(text2.capitalize())
+        list = getAvailableProducts(brands[i])
+        print(list)
+        text = input()
+        if(text == "ok"):
+            print("purchased")
+        else:
+            print("negotiation terminated")
+
+    elif (productAvailability(text2) > 0 ):
         result = getProductDetails(text)
         print(result)
         print('Product Available\n')
@@ -205,13 +236,13 @@ def main():
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
-            # result = getFromPurchaseHistory(text)
+            # result = getFromPurchaseHistory(text2)
             result = "not ok"
             if(result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
-                result = getSimilarProductsCluster(text)
+                result = getSimilarProductsCluster(text2)
                 if(result == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
@@ -223,13 +254,13 @@ def main():
                         print('Final1 - Terminate Negotiation\n')
     else:
         print('Check 1 - Product Not Available\n')
-        # result = getFromPurchaseHistory(text)
+        # result = getFromPurchaseHistory(text2)
         result = "not ok"
         if (result == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 2 - Customer Not Satisfied. Continue\n')
-            result = getSimilarProductsCluster(text)
+            result = getSimilarProductsCluster(text2)
             if (result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
