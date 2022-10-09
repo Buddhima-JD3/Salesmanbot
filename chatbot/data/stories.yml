@@ -53,3 +53,12 @@ stories:
   steps:
     - intent: search_product
     - action: action_search_product
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: product_check
+  - action: utter_check_products
+  - intent: product_list
+  - action: action_get_productlist

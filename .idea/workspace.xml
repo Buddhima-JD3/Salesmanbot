@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af98cbd-153f-47d7-9402-b6ec3ed8afa4" name="Changes" comment="set timeout fix">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp4k7bpz3k/patterns.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.data_example.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.entity_tag_specs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.index_label_id_mapping.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.label_data.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.sparse_feature_sizes.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.tf_model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/DIETClassifier.tf_model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmp9gdptmhm/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmpgdxptcou/oov_words.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmpgdxptcou/vocabularies.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmpnmlsao83/feature_to_idx_dict.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmpq_lx9jxt/oov_words.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/tmpq_lx9jxt/vocabularies.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/models/20221007-172201-alternating-bismuth.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/.rasa/cache/cache.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +182,9 @@
       <workItem from="1664938601946" duration="1485000" />
       <workItem from="1664954665257" duration="4204000" />
       <workItem from="1664959112825" duration="3270000" />
-      <workItem from="1665035578176" duration="624000" />
+      <workItem from="1665035578176" duration="845000" />
+      <workItem from="1665143405963" duration="1382000" />
+      <workItem from="1665298701196" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="Chat UI changes and other fixes">
       <created>1661691145277</created>
