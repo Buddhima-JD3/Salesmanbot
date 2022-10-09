@@ -38,7 +38,7 @@ def products_category_on_relationship(data):
     return products_category_list
 
 
-print(products_category_on_relationship("HotWeather"))
+# print(products_category_on_relationship("HotWeather"))
 
 
 #get products on categories
@@ -55,7 +55,7 @@ def product_on_category(data):
     return products_list
 
 
-print(product_on_category("Milk"))
+# print(product_on_category("Milk"))
 
 #get products of a brand
 
@@ -71,7 +71,7 @@ def product_category_on_brand(data):
     return products_list_on_brand
 
 
-print(product_category_on_brand("Ambewela"))
+# print(product_category_on_brand("Ambewela"))
 
 #get products on ingredients
 
@@ -87,4 +87,4 @@ def product_category_on_ingredients(data):
     return products_list_on_ingredient
 
 
-print(product_category_on_ingredients("Cocoa"))
+# print(product_category_on_ingredients("Cocoa"))

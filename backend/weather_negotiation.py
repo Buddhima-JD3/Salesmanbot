@@ -26,4 +26,4 @@ def get_weather():
         'humidity': humidity
     }
 
-print(get_weather()['feels_like'])
+# print(get_weather()['feels_like'])
