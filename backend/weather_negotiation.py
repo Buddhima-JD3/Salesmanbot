@@ -1,29 +1,29 @@
-# import the module
-import python_weather
-import asyncio
-import os
+import requests
+from tkinter import *
+import math
 
-async def getweather():
-  # declare the client. format defaults to the metric system (celcius, km/h, etc.)
-  async with python_weather.Client(format=python_weather.IMPERIAL) as client:
+city_name = "Colombo"
+api_key = "17bd70b483cac66319d04a1fd97ec36c"
 
-    # fetch a weather forecast from a city
-    weather = await client.get("Colombo")
+def get_weather():
+    url = f"http://api.openweathermap.org/data/2.5/weather?q=Colombo&appid=17bd70b483cac66319d04a1fd97ec36c"
 
-    # returns the current day's forecast temperature (int)
-    print(weather.current.temperature)
+    response = requests.get(url).json()
 
-    # get the weather forecast for a few days
-    for forecast in weather.forecasts:
-      print(forecast.date, forecast.astronomy)
+    temp = response['main']['temp']
+    temp = math.floor((temp * 1.8) - 459.67)  # Convert to °F
+    temp = math.floor((temp - 32) * 5/9) # Convert to °C
 
-      # hourly forecasts
-      for hourly in forecast.hourly:
-        print(f' --> {hourly!r}')
+    feels_like = response['main']['feels_like']
+    feels_like = math.floor((feels_like * 1.8) - 459.67)  # Convert to °F
+    feels_like = math.floor((feels_like - 32) * 5/9) # Convert to °C
 
-if __name__ == "__main__":
+    humidity = response['main']['humidity']
 
-  if os.name == "nt":
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    return {
+        'temp': temp,
+        'feels_like': feels_like,
+        'humidity': humidity
+    }
 
-  asyncio.run(getweather())
+# print(get_weather()['feels_like'])
