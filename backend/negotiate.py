@@ -1,18 +1,20 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-from create_data import *
+# from create_data import *
 from ontology_lookup import *
 from weather_negotiation import *
 import random
 
 cred = credentials.Certificate(".\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
 # RUN THIS Line ONLY ONCE When your running this file for the first time
-# firebase_admin.initialize_app(cred)
+firebase_admin.initialize_app(cred)
 # ==================================================================================================
 
 
 db = firestore.client()
+
+
 # ==================================================================================================
 # To manually add data to firstore
 # addData()
@@ -27,18 +29,18 @@ db = firestore.client()
 
 # Exception Handling
 # try:
-        #     result = (dicts[0]["location"], dicts[0]["quantity"], dicts[0]["category"])
-        # except:
-        #     result = 0
-        #     print("Something else went wrong or No Available Products!!!")
-        #     response = "notok"
-        #     return response
+#     result = (dicts[0]["location"], dicts[0]["quantity"], dicts[0]["category"])
+# except:
+#     result = 0
+#     print("Something else went wrong or No Available Products!!!")
+#     response = "notok"
+#     return response
 # ==================================================================================================
 
 
 # Gets all the products availble in the database and lists them
 def getAllProducts():
-    docs =  db.collection('products').get()
+    docs = db.collection('products').get()
     dicts = []
     productNameList = []
     for doc in docs:
@@ -48,10 +50,12 @@ def getAllProducts():
         # print(dicts[0]["location"], dicts[0]["quantity"])
 
     # Get all the Products to a List
-    for i in dicts:
-        productNameList = i["productName"] + " --- " + i["brand"]
-        print(productNameList)
-    return
+    #for i in dicts:
+    #   productNameList = i["productName"] + " --- " + i["brand"]
+    #   print(productNameList)
+    a = "data map"
+    return a
+
 
 def getAvailableProducts(text):
     categorylist = product_category_on_brand(text)
@@ -71,11 +75,13 @@ def getAvailableProducts(text):
         return "No Available Products"
     return newlist
 
+
 # Queries for a particular product that has been recognized from the chatbot and returns the length of the result
 def productAvailability(text):
     docs = list(db.collection('products').where("productName", "==", text).get())
     print("# of documents in collection: {}".format(len(docs)))
     return len(docs)
+
 
 def productCategoryAvailability(text):
     docs1 = db.collection('products').where("category", "==", text).get()
@@ -83,9 +89,10 @@ def productCategoryAvailability(text):
     for doc in docs1:
         dicts.append(doc.to_dict())
         print(doc.to_dict())
-    if(len(dicts) == 0):
+    if (len(dicts) == 0):
         return 0
     return dicts
+
 
 def productBrandAvailability(text):
     print(text)
@@ -95,10 +102,10 @@ def productBrandAvailability(text):
         dicts.append(doc.to_dict())
         print(doc.to_dict())
 
-
-    if(len(dicts) == 0):
+    if (len(dicts) == 0):
         return 0
     return dicts
+
 
 # Queries for the product specified and returns the "location", "quatity" and "category" of product
 def getProductDetails(text):
@@ -121,15 +128,15 @@ def getFromPurchaseHistory(text):
     list = ['Non-Fat Milk', 'Biscuits', 'IceCream']
     availableProducts = []
     for x in list:
-        if(productAvailability(x) > 0):
+        if (productAvailability(x) > 0):
             availableProducts.append(x)
 
-    if(len(availableProducts) != 0):
+    if (len(availableProducts) != 0):
         response = getResponse(result, availableProducts)
     else:
         print("No Products Available")
         response = "no"
-    return(response)
+    return (response)
 
 
 # Get related to cateogories of products to the original product
@@ -159,7 +166,7 @@ def getSimilarProductsCluster(text):
         return "no"
     availableProducts = []
     for x in list:
-            availableProducts.append(productBrandAvailability(x))
+        availableProducts.append(productBrandAvailability(x))
 
     # print(availableProducts)
     if (len(availableProducts) != 0):
@@ -176,7 +183,7 @@ def getProductsWeather():
     result = get_weather()['feels_like']
     temp = round(result)
     print(temp)
-    if(temp >= 28):
+    if (temp >= 28):
         categorylist = products_category_on_relationship("HotWeather")
         print(categorylist)
         availableProducts = []
@@ -207,7 +214,7 @@ def getResponse(result, productList):
     print(productList)
     print("Getting Response from Rasa")
     response = input()
-    if(response == "ok"):
+    if (response == "ok"):
         return str("ok")
     else:
         return str("no")
@@ -215,40 +222,40 @@ def getResponse(result, productList):
 
 # Negotiation Process
 def main():
-    # getAllProducts()
+    getAllProducts()
     text2 = input()
-    brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa"]
+    brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa"]
     if (text2.capitalize() in brands):
         i = brands.index(text2.capitalize())
         list = getAvailableProducts(brands[i])
         print(list)
         text = input()
-        if(text == "ok"):
+        if (text == "ok"):
             print("purchased")
         else:
             print("negotiation terminated")
 
-    elif (productAvailability(text2) > 0 ):
-        result = getProductDetails(text)
+    elif (productAvailability(text2) > 0):
+        result = getProductDetails(text2)
         print(result)
         print('Product Available\n')
-        if(result == "ok"):
+        if (result == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
             # result = getFromPurchaseHistory(text2)
             result = "not ok"
-            if(result == "ok"):
+            if (result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
                 result = getSimilarProductsCluster(text2)
-                if(result == "ok"):
+                if (result == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Check 3 - Customer Not Satisfied. Continue\n')
                     result = getProductsWeather()
-                    if(result == "ok"):
+                    if (result == "ok"):
                         print('Customer Satisfied. Terminate\n')
                     else:
                         print('Final1 - Terminate Negotiation\n')
@@ -271,9 +278,6 @@ def main():
                 else:
                     print('Final2 - Terminate Negotiation\n')
 
+
 if __name__ == "__main__":
     main()
-
-
-
-

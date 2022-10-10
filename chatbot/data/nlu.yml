@@ -98,3 +98,4 @@ nlu:
 - intent: search_product
   examples: |
     - is [Highland] (milk powder) available
+    - is [Milo] (milk powder) available
