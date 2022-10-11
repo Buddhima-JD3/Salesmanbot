@@ -138,8 +138,8 @@ def getFromPurchaseHistory(text):
 def getSimilarProductsCluster(text):
     print("Getting From Ontology " + text)
     result = "Ontology Based Products"
-    if "milk" in text.lower():
-        list = product_on_category("Milk")
+    if "milkpowder" in text.lower():
+        list = product_on_category("MilkPowder")
         print(list)
     elif "butter" in text.lower():
         list = product_on_category("Butter")
@@ -150,14 +150,14 @@ def getSimilarProductsCluster(text):
     elif "icecream" in text.lower():
         list = product_on_category("IceCream")
         print(list)
-    elif "milkpowder" in text.lower():
-        list = product_on_category("MilkPowder")
+    elif "milk" in text.lower():
+        list = product_on_category("Milk")
         print(list)
     elif "yoghurt" in text.lower():
         list = product_on_category("Yoghurt")
         print(list)
     else:
-        print("Cant Generate Cluster")
+        print("Can't Generate Cluster")
         return "no"
     availableProducts = []
     for x in list:
@@ -235,7 +235,7 @@ def bestMatch(text):
     for dbdatas in dbdata:
         match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
         #print(dbdatas+" "+str(match))
-        if max < match and match >= 0.15:
+        if max < match and match >= 0.5:
             max = match
             best = dbdatas
 
@@ -244,8 +244,15 @@ def bestMatch(text):
 # Negotiation Process
 def main():
     # getAllProducts()
-    text2 = input()
-    text2 = bestMatch(text2)
+    while True:
+        text2 = input()
+        if text2 == "Stop" or text2 == "stop":
+            return
+        text2 = bestMatch(text2)
+        if text2 != "null":
+            break
+        print("No matching keywords... Enter again")
+
     print("Best Match: "+text2)
     brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     if (text2.capitalize() in brands):
