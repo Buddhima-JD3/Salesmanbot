@@ -8,15 +8,25 @@
 # This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
+
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-import os
-import sys;
+from ...backend import negotiate
 
-sys.path.insert(1, os.path.join(sys.path[0], '../../backend/negotiate.py'))
+# import os
+# import importlib.util
+# import sys
 
+# sys.path.insert(1, os.path.join(sys.path[0], '../../backend/negotiate.py'))
+#
 # import backend.negotiate as nego
+#
+# spec = importlib.util.spec_from_file_location("backend.negotiate", "backend/negotiate")
+# nego = importlib.util.module_from_spec(spec)
+# sys.modules["backend.negotiate"] = nego
+# spec.loader.exec_module(nego)
+# nego.MyClass()
 
 
 class ActionHelloWorld(Action):
@@ -38,9 +48,9 @@ class ActionGetProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # b = nego.getAllProducts()
+        b = negotiate.getAllProducts()
         a = "aaaa"
-        # print(b)
+        print(b)
         dispatcher.utter_message(text="product list : " + a)
 
         return []
