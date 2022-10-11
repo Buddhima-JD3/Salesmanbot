@@ -89,9 +89,11 @@ def productCategoryAvailability(text):
         return 0
     return dicts
 
-def productBrandAvailability(text):
+def productBrandAvailability(text,text2):
     print(text)
-    docs1 = db.collection('products').where("brand", "==", text).get()
+    docs1 = db.collection('products').where("brand", "==", text)
+    docs1 = docs1.where("category", "==", text2)
+    docs1 = docs1.get()
     dicts = []
     for doc in docs1:
         dicts.append(doc.to_dict())
@@ -161,7 +163,7 @@ def getSimilarProductsCluster(text):
         return "no"
     availableProducts = []
     for x in list:
-            availableProducts.append(productBrandAvailability(x))
+            availableProducts.append(productBrandAvailability(x,text))
 
     # print(availableProducts)
     if (len(availableProducts) != 0):
