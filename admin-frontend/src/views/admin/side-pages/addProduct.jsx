@@ -104,7 +104,7 @@ class addproducts extends Component {
                                                 className="form-control"
                                                 id="brand"
                                                 name="brand"
-                                                placeholder="Brand"
+                                                placeholder="Enter brand without spaces and first letter of each word in capital (ElephantHouse)"
                                                 value={this.state.brand}
                                                 onChange={this.handleInputChange}
                                             />
@@ -116,7 +116,7 @@ class addproducts extends Component {
                                                 className="form-control"
                                                 id="category"
                                                 name="category"
-                                                placeholder="Category"
+                                                placeholder="Enter category without spaces and first letter of each word in capital (IceCream)"
                                                 value={this.state.category}
                                                 onChange={this.handleInputChange}
                                             />
