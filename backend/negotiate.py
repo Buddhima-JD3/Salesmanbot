@@ -5,6 +5,8 @@ from create_data import *
 from ontology_lookup import *
 from weather_negotiation import *
 import random
+from difflib import SequenceMatcher
+import numpy as np
 
 cred = credentials.Certificate(".\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
 # RUN THIS Line ONLY ONCE When your running this file for the first time
@@ -136,8 +138,8 @@ def getFromPurchaseHistory(text):
 def getSimilarProductsCluster(text):
     print("Getting From Ontology " + text)
     result = "Ontology Based Products"
-    if "milk" in text.lower():
-        list = product_on_category("Milk")
+    if "milkpowder" in text.lower():
+        list = product_on_category("MilkPowder")
         print(list)
     elif "butter" in text.lower():
         list = product_on_category("Butter")
@@ -148,14 +150,14 @@ def getSimilarProductsCluster(text):
     elif "icecream" in text.lower():
         list = product_on_category("IceCream")
         print(list)
-    elif "milkpowder" in text.lower():
-        list = product_on_category("MilkPowder")
+    elif "milk" in text.lower():
+        list = product_on_category("Milk")
         print(list)
     elif "yoghurt" in text.lower():
         list = product_on_category("Yoghurt")
         print(list)
     else:
-        print("Cant Generate Cluster")
+        print("Can't Generate Cluster")
         return "no"
     availableProducts = []
     for x in list:
@@ -212,11 +214,46 @@ def getResponse(result, productList):
     else:
         return str("no")
 
+#check best match for input
+def bestMatch(text):
+    docs = db.collection('products').get()
+    dbdata = []
+    for doc1 in docs:
+        brand = u'{}'.format(doc1.to_dict()['brand'])
+        dbdata.append(brand)
+
+    for doc2 in docs:
+        pname = u'{}'.format(doc2.to_dict()['productName'])
+        dbdata.append(pname)
+
+    for doc3 in docs:
+        cat = u'{}'.format(doc3.to_dict()['category'])
+        dbdata.append(cat)
+
+    max=0.0
+    best="null"
+    for dbdatas in dbdata:
+        match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
+        #print(dbdatas+" "+str(match))
+        if max < match and match >= 0.5:
+            max = match
+            best = dbdatas
+
+    return best
 
 # Negotiation Process
 def main():
     # getAllProducts()
-    text2 = input()
+    while True:
+        text2 = input()
+        if text2 == "Stop" or text2 == "stop":
+            return
+        text2 = bestMatch(text2)
+        if text2 != "null":
+            break
+        print("No matching keywords... Enter again")
+
+    print("Best Match: "+text2)
     brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     if (text2.capitalize() in brands):
         i = brands.index(text2.capitalize())
