@@ -21,7 +21,7 @@ const getAllProducts = async (req, res, next) => {
         const productsArray = [];
 
         if(data.empty) {
-            res.status(400).send('No product record found');            
+            res.status(400).send('No product record found');
         }else{
             data.forEach(doc => {
                 const product = new Product(

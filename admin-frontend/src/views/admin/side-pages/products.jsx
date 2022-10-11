@@ -26,7 +26,7 @@ class products extends Component {
             for (let i = 0; i < product.length; i++) {
                 data.push([(i + 1), /*product[i].id, */product[i].productName, product[i].brand, product[i].price, product[i].weightOrVoluem, product[i].nutrition,
                     <div>
-                        <a className="btn btn-warning" href={`/editCustomer/${product[i].id}`}>
+                        <a className="btn btn-warning" href={`/editproduct/${product[i].id}`}>
                             Edit
                         </a>
                         &nbsp;&nbsp;
@@ -72,7 +72,13 @@ class products extends Component {
                     <div className="container">
                         <div style={{width: "100%", textAlign: "right"}}>
                             <h5 className={"admin-panel-heading"}>Products_</h5>
+
                         </div>
+                        <br/>
+                        <a className="btn btn-info" href={'/addproduct'}>
+                            Add Product
+                        </a>
+                        <br/>
                         <br/>
                         <div className="card login-card">
                             <div className="container">

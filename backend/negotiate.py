@@ -217,7 +217,7 @@ def getResponse(result, productList):
 def main():
     # getAllProducts()
     text2 = input()
-    brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa"]
+    brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     if (text2.capitalize() in brands):
         i = brands.index(text2.capitalize())
         list = getAvailableProducts(brands[i])

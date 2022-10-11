@@ -10,6 +10,8 @@ import Itemsold from './views/admin/side-pages/itemsold';
 import Orders from './views/admin/side-pages/orders';
 import Products from './views/admin/side-pages/products';
 import Users from './views/admin/side-pages/users';
+import EditProduct from './views/admin/side-pages/editProduct';
+import AddProduct from './views/admin/side-pages/addProduct';
 import {NavbarLayout} from "./layouts/Navbar";
 
 const Routers = () => {
@@ -19,7 +21,7 @@ const Routers = () => {
         <Router>
             <NavbarLayout/>
 
-            <Route exact path="/" component={AdminLandingPage}/>
+            <Route exact path="/"><Admin/></Route>
 
             <Route exact path="/admin"><Admin/></Route>
 
@@ -36,6 +38,8 @@ const Routers = () => {
             }
 
             <Route exact path="/test"><ValidationSchemaExample/></Route>
+            <Route exact path="/editproduct/:id"><EditProduct/></Route>
+            <Route exact path="/addproduct"><AddProduct/></Route>
         </Router>
     );
 };
