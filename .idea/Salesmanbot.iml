@@ -371,8 +371,8 @@
       <excludeFolder url="file://$MODULE_DIR$/env/Lib/site-packages/zipp-3.8.1.dist-info" />
       <excludeFolder url="file://$MODULE_DIR$/env/Scripts" />
       <excludeFolder url="file://$MODULE_DIR$/env/share" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (SalesmanbotNew)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -8,6 +8,12 @@ cd frontend; npm start
 ```terminal
 ./env/scripts/activate; cd Backend; npm start
 ```
+```terminal
+./env/scripts/activate; cd Backend;
+set FLASK_APP=app.py
+set FLASK_ENV=development
+flask --app app  --debug run
+```
 ### Chatbot
 ```terminal
 cd chatbot; ./venv/scripts/activate; rasa run -m models --enable-api --cors “*” --debug
@@ -31,6 +37,7 @@ cd frontend; npm install
 python -m venv env; 
 ./env/scripts/activate; 
 pip install -r backend/requirements.txt;
+cd backend; pip install Flask
 ```
 ### Chatbot
 ```terminal
