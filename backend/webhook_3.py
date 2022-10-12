@@ -23,4 +23,3 @@ def return_response(request):
     print('Check 3 - Customer Not Satisfied. Continue\n')
     result = negotiate.getProductsWeather()
     return (result, 200)
-
