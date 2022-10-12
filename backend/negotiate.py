@@ -62,17 +62,17 @@ def getAvailableProducts(text):
     print(categorylist)
     availableProducts = []
     for x in categorylist:
-        availableProducts.append(productCategoryAvailability(x))
+        availableProducts.append(productCategoryBrandAvailability(x,text))
 
     new_productlist = [0 if i is None else i for i in availableProducts]
-    print(new_productlist)
+    #print(new_productlist)
 
     for i in new_productlist:
         if type(i) == list:
             newlist = [i]
 
     if all(item == 0 for item in new_productlist):
-        return "No Available Products"
+        return "No Available Products of this Brand"
     return newlist
 
 
@@ -93,21 +93,45 @@ def productCategoryAvailability(text):
         return 0
     return dicts
 
+<<<<<<< HEAD
 
 def productBrandAvailability(text):
     print(text)
     docs1 = db.collection('products').where("brand", "==", text).get()
+=======
+def productCategoryBrandAvailability(text, text2):
+    docs1 = db.collection('products').where("category", "==", text)
+    docs1 = docs1.where("brand", "==", text2)
+    docs1 = docs1.get()
     dicts = []
     for doc in docs1:
         dicts.append(doc.to_dict())
-        print(doc.to_dict())
+        #print(doc.to_dict())
+    if(len(dicts) == 0):
+        return 0
+    return dicts
+
+def productBrandAvailability(text,text2):
+    #print(text)
+    docs1 = db.collection('products').where("brand", "==", text)
+    docs1 = docs1.where("category", "==", text2)
+    docs1 = docs1.get()
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
+    dicts = []
+    for doc in docs1:
+        dicts.append(doc.to_dict())
+        #print(doc.to_dict())
 
     if (len(dicts) == 0):
         return 0
     return dicts
 
+<<<<<<< HEAD
 
 # Queries for the product specified and returns the "location", "quatity" and "category" of product
+=======
+# Queries for the product specified and returns the "location", "quantity" and "category" of product
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
 def getProductDetails(text):
     docs1 = db.collection('products').where("productName", "==", text).get()
     dicts = []
@@ -117,8 +141,9 @@ def getProductDetails(text):
     if (len(dicts) == 0):
         return 0
     result = "product available"
-    response = getResponse(result, dicts)
-    return response
+    #response = getResponse(result, dicts)
+    #return response
+    return dicts
 
 
 # Predict products based on purshcase history using ML
@@ -170,10 +195,12 @@ def getSimilarProductsCluster(text):
 
     # print(availableProducts)
     if (len(availableProducts) != 0):
-        response = getResponse(result, availableProducts)
+        #response = getResponse(result, availableProducts)
+        return availableProducts
     else:
-        print("No Products Available")
+        #print("No Products Available")
         response = "no"
+        return "No Products Available"
     return (response)
 
 
@@ -203,8 +230,9 @@ def getProductsWeather():
             newlist = []
             newlist.append(i)
 
-    response = getResponse(temp, newlist)
-    return response
+    #response = getResponse(temp, newlist)
+    return newlist
+    #return response
 
 
 # Gets the response from the chatbot when products are offered
@@ -235,11 +263,21 @@ def main():
         else:
             print("negotiation terminated")
 
+<<<<<<< HEAD
     elif (productAvailability(text2) > 0):
+=======
+    elif (productAvailability(text2) > 0 ):
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
         result = getProductDetails(text2)
         print(result)
+        cat = result[0]["category"]
         print('Product Available\n')
+<<<<<<< HEAD
         if (result == "ok"):
+=======
+        result2= input()
+        if(result2 == "ok"):
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
@@ -249,13 +287,26 @@ def main():
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
+<<<<<<< HEAD
                 result = getSimilarProductsCluster(text2)
                 if (result == "ok"):
+=======
+                result = getSimilarProductsCluster(cat)
+                print(result)
+                result3 = input()
+                if(result3 == "ok"):
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Check 3 - Customer Not Satisfied. Continue\n')
                     result = getProductsWeather()
+<<<<<<< HEAD
                     if (result == "ok"):
+=======
+                    print(result)
+                    result4 = input()
+                    if(result4 == "ok"):
+>>>>>>> d1fe1b5c87b56585b170e86a8d7442c60954f041
                         print('Customer Satisfied. Terminate\n')
                     else:
                         print('Final1 - Terminate Negotiation\n')
@@ -268,12 +319,16 @@ def main():
         else:
             print('Check 2 - Customer Not Satisfied. Continue\n')
             result = getSimilarProductsCluster(text2)
-            if (result == "ok"):
+            print(result)
+            result3 = input()
+            if (result3 == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 3 - Customer Not Satisfied. Continue\n')
                 result = getProductsWeather()
-                if (result == "ok"):
+                print(result)
+                result4 = input()
+                if(result4 == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Final2 - Terminate Negotiation\n')
