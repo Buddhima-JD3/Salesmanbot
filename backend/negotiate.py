@@ -7,7 +7,7 @@ from weather_negotiation import *
 import random
 from difflib import SequenceMatcher
 import numpy as np
-
+from machineLearning import *
 cred = credentials.Certificate(".\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
 # RUN THIS Line ONLY ONCE When your running this file for the first time
 # firebase_admin.initialize_app(cred)
@@ -135,18 +135,22 @@ def getProductDetails(text):
 def getFromPurchaseHistory(text):
     print("Getting Products From ML " + text)
     result = "History Based Products"
-    list = ['Non-Fat Milk', 'Biscuits', 'IceCream']
+    # list = ['Non-Fat Milk', 'Biscuits', 'IceCream']
+    x = machineLearning(text)
+    print(x)
     availableProducts = []
-    for x in list:
-        if(productAvailability(x) > 0):
-            availableProducts.append(x)
+    # for x in list:
+    if(productAvailability(x) > 0):
+        availableProducts.append(x)
 
     if(len(availableProducts) != 0):
-        response = getResponse(result, availableProducts)
+        # response = getResponse(result, availableProducts)
+          response = availableProducts
+          print(response)
     else:
         print("No Products Available")
-        response = "no"
-    return(response)
+        response = ["No Products Available"]
+    return response + []
 
 
 # Get related to cateogories of products to the original product
@@ -293,8 +297,8 @@ def main():
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
-            # result = getFromPurchaseHistory(text2)
-            result = "not ok"
+            result = getFromPurchaseHistory(text2)
+            # result = "not ok"
             if(result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
@@ -315,8 +319,8 @@ def main():
                         print('Final1 - Terminate Negotiation\n')
     else:
         print('Check 1 - Product Not Available\n')
-        # result = getFromPurchaseHistory(text2)
-        result = "not ok"
+        result = getFromPurchaseHistory(text2)
+        # result = "not ok"
         if (result == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
