@@ -28,40 +28,27 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+  - intent: product_check
+  - action: utter_check_products
 
-- story: bot_challenge_story
+- story: interactive_story_1
   steps:
   - intent: greet
   - action: utter_greet
   - intent: bot_challenge
   - action: utter_iamabot
-
-- story: product_check_path
-  steps:
   - intent: product_check
   - action: utter_check_products
 
-- story: thanking_path
-  steps:
-  - intent: thankyou
-  - action: utter_welcome
-
-- story: product_list_path
+- story: product_list_story
   steps:
     - intent: product_list
     - action: action_get_productlist
 
-- story: search_product_path
+- story: search_product_story
   steps:
     - intent: search_product
     - action: action_search_product
-
-- story: product_check_story
-  steps:
-  - intent: product_check
-  - action: utter_check_products
-  - intent: affirm
-  - action: action_get_productlist
 
 - story: interactive_story_1
   steps:
