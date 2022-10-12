@@ -71,5 +71,16 @@ def getWeatherProducts():
     result = negotiate.getProductsWeather()
     return (result, 200)
 
+@app.route('/getWeather')
+def getWeather():
+    result = negotiate.getWeather()
+    return (result, 200)
+
+@app.route('/getBrands')
+def getBrands():
+    result =  ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
+    return (result, 200)
+
+
 if __name__ == "__main__":
     app.run(debug=True)

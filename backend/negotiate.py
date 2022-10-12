@@ -189,6 +189,10 @@ def getSimilarProductsCluster(text):
         return ["No Products Available"]+[]
     #return (response)
 
+#get weather
+def getWeather():
+    result = get_weather()
+    return result
 
 # Get products to be recommended based on weather
 def getProductsWeather():
