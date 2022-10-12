@@ -10,20 +10,23 @@ intents:
 - product_check
 - product_list
 - search_product
+- thankyou
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey! How you feeling?
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
+    image: https://i.imgur.com/igt12tf.jpeg
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
-  - text: Great, carry on!
+  - text: Great, How can I help you?
+  utter_welcome:
+  - text: Welcome!! Thank you for using SalesmanBot :)
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: My name is Alice the SalesmanBot, powered by Rasa Framework.
   utter_check_products:
   - text: We have daily products. Do you want to check the product list?
 session_config:
@@ -33,6 +36,7 @@ actions:
 - utter_check_products
 - utter_greet
 - utter_iamabot
+- utter_welcome
 - action_hello_world
 - action_get_productlist
 - action_search_product

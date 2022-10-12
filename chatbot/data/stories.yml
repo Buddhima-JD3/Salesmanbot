@@ -8,8 +8,6 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-  - intent: product_check
-  - action: utter_check_products
 
 - story: sad path 1
   steps:
@@ -20,8 +18,6 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-  - intent: product_check
-  - action: utter_check_products
 
 - story: sad path 2
   steps:
