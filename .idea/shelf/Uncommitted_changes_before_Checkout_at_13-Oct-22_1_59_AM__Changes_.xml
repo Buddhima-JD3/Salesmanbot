@@ -1,0 +1,124 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]" date="1665606609741" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 13-Oct-22 1:59 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="chatbot/.rasa/cache/cache.db" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/cache.db" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/cache.db" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpoct7x_4q/DIETClassifier.sparse_feature_sizes.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.sparse_feature_sizes.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.tf_model.data-00000-of-00001" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.tf_model.data-00000-of-00001" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.data_example.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.data_example.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp5to4vwfi/DIETClassifier.tf_model.data-00000-of-00001" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.tf_model.data-00000-of-00001" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp5to4vwfi/DIETClassifier.tf_model.index" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.tf_model.index" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.tf_model.index" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.tf_model.index" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.label_data.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.label_data.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.data_example.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.data_example.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.meta.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.meta.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpoct7x_4q/DIETClassifier.tf_model.data-00000-of-00001" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.tf_model1.data-00000-of-00001" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.tf_model.data-00000-of-00001" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.tf_model.data-00000-of-00001" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpoct7x_4q/DIETClassifier.data_example.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.data_example.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.label_data.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.label_data.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp5to4vwfi/DIETClassifier.data_example.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.data_example1.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpoct7x_4q/DIETClassifier.tf_model.index" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.tf_model1.index" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.tf_model.index" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.tf_model.index" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.fake_features.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.fake_features.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp0zxcqczk/ted_policy.meta.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/ted_policy.meta.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.fake_features.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.fake_features.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp5to4vwfi/DIETClassifier.sparse_feature_sizes.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.sparse_feature_sizes1.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpxn9omsvs/unexpected_intent_policy.label_quantiles.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/unexpected_intent_policy.label_quantiles.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmp5to4vwfi/DIETClassifier.label_data.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.label_data.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="chatbot/.rasa/cache/tmpoct7x_4q/DIETClassifier.label_data.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-Oct-22_1_59_AM_[Changes]/DIETClassifier.label_data1.pkl" />
+  </binary>
+</changelist>
