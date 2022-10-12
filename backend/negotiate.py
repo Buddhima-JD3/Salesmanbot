@@ -53,7 +53,7 @@ def getAllProducts():
     for i in dicts:
         productNameList = i["productName"] + " --- " + i["brand"]
         print(productNameList)
-    return
+    return dicts
 
 def getAvailableProducts(text):
     categorylist = product_category_on_brand(text)
