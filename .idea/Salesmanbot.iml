@@ -2,7 +2,6 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/backend" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
@@ -373,7 +372,6 @@
       <excludeFolder url="file://$MODULE_DIR$/env/Scripts" />
       <excludeFolder url="file://$MODULE_DIR$/env/share" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (SalesmanbotNew)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
