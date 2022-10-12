@@ -35,6 +35,11 @@ nlu:
     - of course
     - that sounds good
     - correct
+- intent: thankyou
+  examples: |
+    - thank you
+    - thanks
+    - ty
 - intent: deny
   examples: |
     - no

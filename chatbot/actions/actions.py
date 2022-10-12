@@ -27,8 +27,12 @@ class ActionGetProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         response = requests.get("http://127.0.0.1:5000/getAll").json()
-        a = "aaaa"
-        dispatcher.utter_message(text="product list : " + a)
+        for data in response[""]:
+            if data[""] == aaa.title():
+                print(data)
+        a = "aaa"
+        message = "productName" + data
+        dispatcher.utter_message(text="product list : " + message + a)
 
         return []
 
