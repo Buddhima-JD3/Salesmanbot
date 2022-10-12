@@ -60,17 +60,17 @@ def getAvailableProducts(text):
     print(categorylist)
     availableProducts = []
     for x in categorylist:
-        availableProducts.append(productCategoryBrandAvailability(x,text))
+        availableProducts.append(productCategoryAvailability(x))
 
     new_productlist = [0 if i is None else i for i in availableProducts]
-    #print(new_productlist)
+    print(new_productlist)
 
     for i in new_productlist:
         if type(i) == list:
             newlist = [i]
 
     if all(item == 0 for item in new_productlist):
-        return "No Available Products of this Brand"
+        return "No Available Products"
     return newlist
 
 # Queries for a particular product that has been recognized from the chatbot and returns the length of the result
@@ -89,34 +89,22 @@ def productCategoryAvailability(text):
         return 0
     return dicts
 
-def productCategoryBrandAvailability(text, text2):
-    docs1 = db.collection('products').where("category", "==", text)
-    docs1 = docs1.where("brand", "==", text2)
-    docs1 = docs1.get()
-    dicts = []
-    for doc in docs1:
-        dicts.append(doc.to_dict())
-        #print(doc.to_dict())
-    if(len(dicts) == 0):
-        return 0
-    return dicts
-
 def productBrandAvailability(text,text2):
-    #print(text)
+    print(text)
     docs1 = db.collection('products').where("brand", "==", text)
     docs1 = docs1.where("category", "==", text2)
     docs1 = docs1.get()
     dicts = []
     for doc in docs1:
         dicts.append(doc.to_dict())
-        #print(doc.to_dict())
+        print(doc.to_dict())
 
 
     if(len(dicts) == 0):
         return 0
     return dicts
 
-# Queries for the product specified and returns the "location", "quantity" and "category" of product
+# Queries for the product specified and returns the "location", "quatity" and "category" of product
 def getProductDetails(text):
     docs1 = db.collection('products').where("productName", "==", text).get()
     dicts = []
@@ -126,9 +114,8 @@ def getProductDetails(text):
     if (len(dicts) == 0):
         return 0
     result = "product available"
-    #response = getResponse(result, dicts)
-    #return response
-    return dicts
+    response = getResponse(result, dicts)
+    return response
 
 
 # Predict products based on purshcase history using ML
@@ -180,12 +167,10 @@ def getSimilarProductsCluster(text):
 
     # print(availableProducts)
     if (len(availableProducts) != 0):
-        #response = getResponse(result, availableProducts)
-        return availableProducts
+        response = getResponse(result, availableProducts)
     else:
-        #print("No Products Available")
+        print("No Products Available")
         response = "no"
-        return "No Products Available"
     return (response)
 
 
@@ -215,9 +200,8 @@ def getProductsWeather():
             newlist = []
             newlist.append(i)
 
-    #response = getResponse(temp, newlist)
-    return newlist
-    #return response
+    response = getResponse(temp, newlist)
+    return response
 
 
 # Gets the response from the chatbot when products are offered
@@ -284,12 +268,10 @@ def main():
             print("negotiation terminated")
 
     elif (productAvailability(text2) > 0 ):
-        result = getProductDetails(text2)
+        result = getProductDetails(text)
         print(result)
-        cat = result[0]["category"]
         print('Product Available\n')
-        result2= input()
-        if(result2 == "ok"):
+        if(result == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
@@ -299,17 +281,13 @@ def main():
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
-                result = getSimilarProductsCluster(cat)
-                print(result)
-                result3 = input()
-                if(result3 == "ok"):
+                result = getSimilarProductsCluster(text2)
+                if(result == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Check 3 - Customer Not Satisfied. Continue\n')
                     result = getProductsWeather()
-                    print(result)
-                    result4 = input()
-                    if(result4 == "ok"):
+                    if(result == "ok"):
                         print('Customer Satisfied. Terminate\n')
                     else:
                         print('Final1 - Terminate Negotiation\n')
@@ -322,16 +300,12 @@ def main():
         else:
             print('Check 2 - Customer Not Satisfied. Continue\n')
             result = getSimilarProductsCluster(text2)
-            print(result)
-            result3 = input()
-            if (result3 == "ok"):
+            if (result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 3 - Customer Not Satisfied. Continue\n')
                 result = getProductsWeather()
-                print(result)
-                result4 = input()
-                if(result4 == "ok"):
+                if (result == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Final2 - Terminate Negotiation\n')
