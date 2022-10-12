@@ -1,20 +1,20 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-from create_data import *
+# from create_data import *
 from ontology_lookup import *
 from weather_negotiation import *
 import random
-from difflib import SequenceMatcher
-import numpy as np
 
 cred = credentials.Certificate(".\salesman-bot-56ef5-firebase-adminsdk-ozj39-4ef8a3c068.json")
 # RUN THIS Line ONLY ONCE When your running this file for the first time
-# firebase_admin.initialize_app(cred)
+firebase_admin.initialize_app(cred)
 # ==================================================================================================
 
 
 db = firestore.client()
+
+
 # ==================================================================================================
 # To manually add data to firstore
 # addData()
@@ -29,18 +29,18 @@ db = firestore.client()
 
 # Exception Handling
 # try:
-        #     result = (dicts[0]["location"], dicts[0]["quantity"], dicts[0]["category"])
-        # except:
-        #     result = 0
-        #     print("Something else went wrong or No Available Products!!!")
-        #     response = "notok"
-        #     return response
+#     result = (dicts[0]["location"], dicts[0]["quantity"], dicts[0]["category"])
+# except:
+#     result = 0
+#     print("Something else went wrong or No Available Products!!!")
+#     response = "notok"
+#     return response
 # ==================================================================================================
 
 
 # Gets all the products availble in the database and lists them
 def getAllProducts():
-    docs =  db.collection('products').get()
+    docs = db.collection('products').get()
     dicts = []
     productNameList = []
     for doc in docs:
@@ -50,10 +50,12 @@ def getAllProducts():
         # print(dicts[0]["location"], dicts[0]["quantity"])
 
     # Get all the Products to a List
-    for i in dicts:
-        productNameList = i["productName"] + " --- " + i["brand"]
-        print(productNameList)
-    return
+    #for i in dicts:
+    #   productNameList = i["productName"] + " --- " + i["brand"]
+    #   print(productNameList)
+    a = "data map"
+    return a
+
 
 def getAvailableProducts(text):
     categorylist = product_category_on_brand(text)
@@ -73,11 +75,13 @@ def getAvailableProducts(text):
         return "No Available Products"
     return newlist
 
+
 # Queries for a particular product that has been recognized from the chatbot and returns the length of the result
 def productAvailability(text):
     docs = list(db.collection('products').where("productName", "==", text).get())
     print("# of documents in collection: {}".format(len(docs)))
     return len(docs)
+
 
 def productCategoryAvailability(text):
     docs1 = db.collection('products').where("category", "==", text).get()
@@ -85,24 +89,23 @@ def productCategoryAvailability(text):
     for doc in docs1:
         dicts.append(doc.to_dict())
         print(doc.to_dict())
-    if(len(dicts) == 0):
+    if (len(dicts) == 0):
         return 0
     return dicts
 
-def productBrandAvailability(text,text2):
+
+def productBrandAvailability(text):
     print(text)
-    docs1 = db.collection('products').where("brand", "==", text)
-    docs1 = docs1.where("category", "==", text2)
-    docs1 = docs1.get()
+    docs1 = db.collection('products').where("brand", "==", text).get()
     dicts = []
     for doc in docs1:
         dicts.append(doc.to_dict())
         print(doc.to_dict())
 
-
-    if(len(dicts) == 0):
+    if (len(dicts) == 0):
         return 0
     return dicts
+
 
 # Queries for the product specified and returns the "location", "quatity" and "category" of product
 def getProductDetails(text):
@@ -125,23 +128,23 @@ def getFromPurchaseHistory(text):
     list = ['Non-Fat Milk', 'Biscuits', 'IceCream']
     availableProducts = []
     for x in list:
-        if(productAvailability(x) > 0):
+        if (productAvailability(x) > 0):
             availableProducts.append(x)
 
-    if(len(availableProducts) != 0):
+    if (len(availableProducts) != 0):
         response = getResponse(result, availableProducts)
     else:
         print("No Products Available")
         response = "no"
-    return(response)
+    return (response)
 
 
 # Get related to cateogories of products to the original product
 def getSimilarProductsCluster(text):
     print("Getting From Ontology " + text)
     result = "Ontology Based Products"
-    if "milkpowder" in text.lower():
-        list = product_on_category("MilkPowder")
+    if "milk" in text.lower():
+        list = product_on_category("Milk")
         print(list)
     elif "butter" in text.lower():
         list = product_on_category("Butter")
@@ -152,18 +155,18 @@ def getSimilarProductsCluster(text):
     elif "icecream" in text.lower():
         list = product_on_category("IceCream")
         print(list)
-    elif "milk" in text.lower():
-        list = product_on_category("Milk")
+    elif "milkpowder" in text.lower():
+        list = product_on_category("MilkPowder")
         print(list)
     elif "yoghurt" in text.lower():
         list = product_on_category("Yoghurt")
         print(list)
     else:
-        print("Can't Generate Cluster")
+        print("Cant Generate Cluster")
         return "no"
     availableProducts = []
     for x in list:
-            availableProducts.append(productBrandAvailability(x,text))
+        availableProducts.append(productBrandAvailability(x))
 
     # print(availableProducts)
     if (len(availableProducts) != 0):
@@ -180,7 +183,7 @@ def getProductsWeather():
     result = get_weather()['feels_like']
     temp = round(result)
     print(temp)
-    if(temp >= 28):
+    if (temp >= 28):
         categorylist = products_category_on_relationship("HotWeather")
         print(categorylist)
         availableProducts = []
@@ -211,83 +214,48 @@ def getResponse(result, productList):
     print(productList)
     print("Getting Response from Rasa")
     response = input()
-    if(response == "ok"):
+    if (response == "ok"):
         return str("ok")
     else:
         return str("no")
 
-#check best match for input
-def bestMatch(text):
-    docs = db.collection('products').get()
-    dbdata = []
-    for doc1 in docs:
-        brand = u'{}'.format(doc1.to_dict()['brand'])
-        dbdata.append(brand)
-
-    for doc2 in docs:
-        pname = u'{}'.format(doc2.to_dict()['productName'])
-        dbdata.append(pname)
-
-    for doc3 in docs:
-        cat = u'{}'.format(doc3.to_dict()['category'])
-        dbdata.append(cat)
-
-    max=0.0
-    best="null"
-    for dbdatas in dbdata:
-        match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
-        #print(dbdatas+" "+str(match))
-        if max < match and match >= 0.5:
-            max = match
-            best = dbdatas
-
-    return best
 
 # Negotiation Process
 def main():
-    # getAllProducts()
-    while True:
-        text2 = input()
-        if text2 == "Stop" or text2 == "stop":
-            return
-        text2 = bestMatch(text2)
-        if text2 != "null":
-            break
-        print("No matching keywords... Enter again")
-
-    print("Best Match: "+text2)
-    brands = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
+    getAllProducts()
+    text2 = input()
+    brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa"]
     if (text2.capitalize() in brands):
         i = brands.index(text2.capitalize())
         list = getAvailableProducts(brands[i])
         print(list)
         text = input()
-        if(text == "ok"):
+        if (text == "ok"):
             print("purchased")
         else:
             print("negotiation terminated")
 
-    elif (productAvailability(text2) > 0 ):
-        result = getProductDetails(text)
+    elif (productAvailability(text2) > 0):
+        result = getProductDetails(text2)
         print(result)
         print('Product Available\n')
-        if(result == "ok"):
+        if (result == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
             # result = getFromPurchaseHistory(text2)
             result = "not ok"
-            if(result == "ok"):
+            if (result == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
                 result = getSimilarProductsCluster(text2)
-                if(result == "ok"):
+                if (result == "ok"):
                     print('Customer Satisfied. Terminate\n')
                 else:
                     print('Check 3 - Customer Not Satisfied. Continue\n')
                     result = getProductsWeather()
-                    if(result == "ok"):
+                    if (result == "ok"):
                         print('Customer Satisfied. Terminate\n')
                     else:
                         print('Final1 - Terminate Negotiation\n')
@@ -310,9 +278,6 @@ def main():
                 else:
                     print('Final2 - Terminate Negotiation\n')
 
+
 if __name__ == "__main__":
     main()
-
-
-
-
