@@ -39,7 +39,7 @@ def chat():
             result = negotiate.getProductDetails(text2)
             print(result)
             print('Product Available\n')
-            cat = result[0]["category"]
+            cat = result[0]["category"]+"[m]"
             result.append(cat)
             return (result, 200)
 
