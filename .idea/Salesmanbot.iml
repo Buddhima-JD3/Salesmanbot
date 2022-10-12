@@ -372,7 +372,9 @@
       <excludeFolder url="file://$MODULE_DIR$/env/Scripts" />
       <excludeFolder url="file://$MODULE_DIR$/env/share" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/env" />
     </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
