@@ -29,6 +29,7 @@ def chat():
             i = brands.index(text2.capitalize())
             list = negotiate.getAvailableProducts(brands[i])
             print(list)
+            list.append("ok")
             return (list, 200)
             #text = input()
             #if(text == "ok"):
@@ -59,6 +60,15 @@ def chat():
         result = negotiate.getProductsWeather()
         return (result, 200)
 
+@app.route('/getAll')
+def getAll():
+    result = negotiate.getAllProducts()
+    return (result, 200)
+
+@app.route('/getWeatherProducts')
+def getWeatherProducts():
+    result = negotiate.getProductsWeather()
+    return (result, 200)
 
 if __name__ == "__main__":
     app.run(debug=True)
