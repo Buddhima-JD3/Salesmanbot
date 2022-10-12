@@ -1,33 +1,9 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 from ...backend import negotiate
-
-# import os
-# import importlib.util
-# import sys
-
-# sys.path.insert(1, os.path.join(sys.path[0], '../../backend/negotiate.py'))
-#
-# import backend.negotiate as nego
-#
-# spec = importlib.util.spec_from_file_location("backend.negotiate", "backend/negotiate")
-# nego = importlib.util.module_from_spec(spec)
-# sys.modules["backend.negotiate"] = nego
-# spec.loader.exec_module(nego)
-# nego.MyClass()
-
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
