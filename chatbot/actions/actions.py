@@ -3,6 +3,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+import requests
+
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
@@ -23,6 +25,8 @@ class ActionGetProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        response = requests.get("http://127.0.0.1:5000/getAll").json()
         a = "aaaa"
         dispatcher.utter_message(text="product list : " + a)
 
