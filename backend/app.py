@@ -58,6 +58,7 @@ def chat():
     else:
         print('Check 3 - Customer Not Satisfied. Continue\n')
         result = negotiate.getProductsWeather()
+        result.append("ok")
         return (result, 200)
 
 @app.route('/getAll')
