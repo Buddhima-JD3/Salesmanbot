@@ -149,7 +149,7 @@ def getFromPurchaseHistory(text):
           print(response)
     else:
         print("No Products Available")
-        response = ["No Products Available"]
+        response = ["No Products Available based on Purchase History, Searching for Category"]
     return response + []
 
 

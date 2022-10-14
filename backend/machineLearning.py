@@ -41,9 +41,9 @@ def machineLearning(text):
     categories = {
                 0:"Butter",
                 1:"Cheese",
-                2:"Ice Cream",
+                2:"IceCream",
                 3:"Milk",
-                4:"Milk Powder",
+                4:"MilkPowder",
                 5:"Yoghurt"
     }
 
