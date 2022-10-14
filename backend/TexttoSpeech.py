@@ -17,3 +17,4 @@ def list_languages():
     print(f" Languages: {len(languages)} ".center(60, "-"))
     for i, language in enumerate(sorted(languages)):
         print(f"{language:>10}", end="\n" if i % 5 == 4 else "")
+
