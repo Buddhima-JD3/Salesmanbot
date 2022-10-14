@@ -84,7 +84,7 @@ class addproducts extends Component {
                                 <div className="col-md-8 mt-4 mx-auto">
                                     <br></br>
                                     <form>
-                                        <center><h2>Edit Product</h2></center><br></br>
+                                        <center><h2>Add Product</h2></center><br></br>
                                         <div className="form-group h3 mb-3 font-weight-normal">
                                             <label htmlFor="productName">Product</label>
                                             <input
