@@ -8,7 +8,7 @@ def unique_languages_from_voices(voices):
             language_set.add(language_code)
     return language_set
 
-
+//Text to speech libraries
 def list_languages():
     client = tts.TextToSpeechClient()
     response = client.list_voices()
