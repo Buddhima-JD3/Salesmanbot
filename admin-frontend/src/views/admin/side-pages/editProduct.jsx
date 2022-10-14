@@ -2,14 +2,10 @@ import React, {Component} from "react";
 import MUIDataTable from "mui-datatables";
 import productsModule from "../../../apis/modules/products";
 import {useParams} from "react-router-dom";
-
 const data = [];
-
 class editproducts extends Component {
-
     constructor(props) {
         super(props);
-
         this.state = {
             searchKey: "",
             products: []
@@ -26,19 +22,17 @@ class editproducts extends Component {
             weightOrVolume:""
         }
     }
-
     componentDidMount() {
         this.retrieveProducts();
-
     }
-
     retrieveProducts() {
         let url = window.location.toString();
-        let params = url?.split("/")[4];
+        let params = url?.split("/");
+        params = params[params.length-1]
+        //alert(params)
         productsModule.retrieveEditProduct(params).then((res) => {
             //console.log();
             let product = res.data;
-
             this.setState({
                 productName: product.productName,
                 brand: product.brand,
@@ -52,7 +46,6 @@ class editproducts extends Component {
             });
         });
     }
-
     handleInputChange = (e) => {
         const { name, value } = e.target;
         this.setState({
@@ -63,7 +56,6 @@ class editproducts extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         const { productName, brand, category, price, quantity } = this.state;
-
         const data = {
             productName: productName,
             brand: brand,
@@ -76,7 +68,9 @@ class editproducts extends Component {
             weightOrVolume:this.state.weightOrVolume
         };
         let url = window.location.toString();
-        let params = url?.split("/")[4];
+        let params = url?.split("/");
+        params = params[params.length-1]
+        //alert(params)
         console.log(data);
         productsModule.updateProduct(params,data).then((res) => {
             if (res.data == 'Product details updated successfully') {
@@ -88,15 +82,12 @@ class editproducts extends Component {
         });
     };
 
-
     render() {
         const columns = ["Index", /*"Code",*/ "Product", "Brand", "Price", "Weight/Volume", "Nutrition", "Action"];
         const options = {
             filterType: 'checkbox',
         };
-
         console.log(data);
-
         return (
             <div className={"body-div admin-panel-main con-mid"}>
                 <div className={"admin-card-container"}>
@@ -191,8 +182,6 @@ class editproducts extends Component {
             </div>
         )
     }
-
 }
-
 
 export default editproducts;
