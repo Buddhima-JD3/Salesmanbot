@@ -52,6 +52,8 @@ def product_on_category(data):
             if "hasBrand.value" in object_string:
                 products_list.append((((object_string.split(",")[1]).split("hasBrand.value")[1]).strip('(').strip(')]')).split(".")[1])
 
+    products_list = list(dict.fromkeys(products_list))
+
     return products_list
 
 
