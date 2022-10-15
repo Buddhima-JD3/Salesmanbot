@@ -149,7 +149,7 @@ def getFromPurchaseHistory(text):
           print(response)
     else:
         print("No Products Available")
-        response = ["No Products Available"]
+        response = ["No Products Available based on Purchase History, Searching for Category"]
     return response + []
 
 
@@ -297,9 +297,10 @@ def main():
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 1 -Customer Not Satisfied. Continue\n')
-            result = getFromPurchaseHistory(text2)
+            result = getFromPurchaseHistory(cat)
+            result5 = input()
             # result = "not ok"
-            if(result == "ok"):
+            if(result5 == "ok"):
                 print('Customer Satisfied. Terminate\n')
             else:
                 print('Check 2 -Customer Not Satisfied. Continue\n')
@@ -320,8 +321,9 @@ def main():
     else:
         print('Check 1 - Product Not Available\n')
         result = getFromPurchaseHistory(text2)
+        result5 = input()
         # result = "not ok"
-        if (result == "ok"):
+        if (result5 == "ok"):
             print('Customer Satisfied. Terminate\n')
         else:
             print('Check 2 - Customer Not Satisfied. Continue\n')

@@ -41,9 +41,9 @@ def machineLearning(text):
     categories = {
                 0:"Butter",
                 1:"Cheese",
-                2:"Ice Cream",
+                2:"IceCream",
                 3:"Milk",
-                4:"Milk Powder",
+                4:"MilkPowder",
                 5:"Yoghurt"
     }
 
@@ -106,3 +106,34 @@ def machineLearning(text):
     print("Accuracy of this model = {:.3f}".format(accuracy))
 
     return products[predictions[0]]
+
+# Model Training and Testing Method
+def modelTraining():
+    data = pd.read_csv("New Dairy Products Sample.csv")
+    df = data
+    df = df.drop(
+        ['Sno', 'Buying Frequency', 'Online Buying Preference', 'Expected Delivery Time', 'Preferred Time Slot',
+         'Discount Expectations', 'Preferred Billing Type', 'Buying Farm Fresh Fruits Online'], axis=1)
+    df.CusID = pd.Categorical(df.CusID)
+    df['CusID_Code'] = df.CusID.cat.codes
+    df[['Month', 'Day', 'Year']] = df['Date'].str.split("/", expand=True)
+    df["Dairy Product Consumed"] = pd.Categorical(df["Dairy Product Consumed"])
+    df['Dairy_Product_Consumed'] = df["Dairy Product Consumed"].cat.codes
+    df.Category = pd.Categorical(df.Category)
+    df['Category_Code'] = df.Category.cat.codes
+    df_new = df.drop(['CusID', 'Date', 'Dairy Product Consumed', 'Category', 'Year'], axis=1)
+    x = df_new[['CusID_Code', 'Month', 'Day', 'Category_Code']]
+    y = df_new['Dairy_Product_Consumed']
+
+    x_train, x_test, y_train, y_test = model_selection.train_test_split(x, y, test_size=0.40, random_state=0)
+    x_train.shape, y_train.shape
+    model2 = tree.DecisionTreeClassifier(criterion='entropy', max_depth=3, random_state=0)
+    model2.fit(x_train, y_train)
+    y_pred = model2.predict(x_test)
+    wrong_pred = (y_test != y_pred).sum()
+    print("Total wrongly detected = {}".format(wrong_pred))
+
+    accuracy = metrics.accuracy_score(y_test, y_pred)
+    print("Accuracy of this model = {:.3f}".format(accuracy))
+
+# machineLearning("Butter")

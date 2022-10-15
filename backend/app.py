@@ -19,8 +19,8 @@ def chat():
             return ("You can find products from B block", 200)
         text2 = negotiate.bestMatch(text2)
         if text2 == "null":
-            text2 = request.json["message"]
-         # return ("No matching keywords... Enter again", 200)
+            return ("No matching keywords... Enter again", 200)
+
 
         print("Best Match: "+text2)
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
@@ -39,7 +39,7 @@ def chat():
             result = negotiate.getProductDetails(text2)
             print(result)
             print('Product Available\n')
-            cat = result[0]["category"]+"[c]"
+            cat = result[0]["category"]
             result.append(cat)
             return (result, 200)
 
