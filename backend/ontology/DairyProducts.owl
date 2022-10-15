@@ -409,7 +409,7 @@
                 <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Fat"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://example.com/DairyProductsOntology/WithoutCreamMilkPowder"/>
+        <owl:disjointWith rdf:resource="http://example.com/DairyProductsOntology/NonFatMilkPowder"/>
     </owl:Class>
     
 
@@ -739,6 +739,14 @@
     
 
 
+    <!-- http://example.com/DairyProductsOntology/NonFatMilkPowder -->
+
+    <owl:Class rdf:about="http://example.com/DairyProductsOntology/NonFatMilkPowder">
+        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/MilkPowder"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/DairyProductsOntology/StrawberryYoghurt -->
 
     <owl:Class rdf:about="http://example.com/DairyProductsOntology/StrawberryYoghurt">
@@ -805,14 +813,6 @@
     <!-- http://example.com/DairyProductsOntology/WeatherBased -->
 
     <owl:Class rdf:about="http://example.com/DairyProductsOntology/WeatherBased"/>
-    
-
-
-    <!-- http://example.com/DairyProductsOntology/WithoutCreamMilkPowder -->
-
-    <owl:Class rdf:about="http://example.com/DairyProductsOntology/WithoutCreamMilkPowder">
-        <rdfs:subClassOf rdf:resource="http://example.com/DairyProductsOntology/MilkPowder"/>
-    </owl:Class>
     
 
 
