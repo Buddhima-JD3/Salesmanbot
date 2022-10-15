@@ -1,3 +1,4 @@
+import json
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -25,14 +26,26 @@ class ActionGetProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        response = requests.post('http://127.0.0.1:5000/getAll', json={"message": ""})
+        map = response.json()
 
-        response = requests.get("http://127.0.0.1:5000/getAll").json()
-        for data in response[""]:
-            if data[""] == aaa.title():
-                print(data)
-        a = "aaa"
-        message = "productName" + data
-        dispatcher.utter_message(text="product list : " + message + a)
+        emptyList = []
+
+        for x in map:
+            msg = x['category']
+            emptyList.append(msg)
+
+        # convert list to a set
+        uniqueList = set(emptyList)
+
+        # convert set into a list
+        newList = list(uniqueList)
+
+        strMsg = ""
+        for i in newList:
+            strMsg += "<br>" + i
+
+        dispatcher.utter_message(text="Available product categories : " + strMsg)
 
         return []
 
@@ -46,19 +59,22 @@ class ActionSearchproduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         entities = tracker.latest_message['entities']
-        print(entities)
 
         for e in entities:
-            if e['entity'] == 'milk power':
+            if e['entity'] == 'product':
                 name = e['value']
 
-            if name == "Highland":
-                message = "finding highland products"
+            if name == "Highland" or name == "highland":
+                keywd = "Highland"
 
-            if name == "Milo":
-                message = "finding Milo products"
+            if name == "Milo" or name == "milo":
+                keywd = "Fresh Milk"
 
-        dispatcher.utter_message(message)
+            response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
+            map = response.json()
+            msg = "Brand : " + map[0][0]['brand'] + "<br>" + "Category : " + map[0][0]['category'] + "<br>" + "Product name : " + map[0][0]['productName'] + "<br>" + "Price : " + map[0][0]['price'] + "<br>" + "Weight(Kg) or Volume(l) : " + map[0][0]['weightOrVolume']
+
+        dispatcher.utter_message(text=msg)
 
         return []
 

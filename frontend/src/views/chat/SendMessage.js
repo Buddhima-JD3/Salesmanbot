@@ -32,15 +32,53 @@ export default function SendMessage({scroll}) {
                     "message": inputMsg
                 }).then(async (res) => {
                 let inputMsg = res.data[0].text;
+                console.log(res.data.length, res, res.data, inputMsg)
                 let msgType = "bot";
 
-                await db.collection('messages').add({
-                    text: inputMsg,
-                    photoURL,
-                    uid,
-                    messageType: msgType,
-                    createdAt: firebase.firestore.FieldValue.serverTimestamp()
-                })
+                for (let i = 0; i < res.data.length; i++) {
+                    let replyData = res.data[i]
+                    if (replyData.hasOwnProperty('text')) {
+
+                        let resImg = "";
+                        let replyText = res.data[i].text;
+                        await dbSave(replyText, resImg);
+
+                    } else if (replyData.hasOwnProperty('image')) {
+
+                        let replyText = "";
+                        let resImg = res.data[i].image;
+                        await dbSave(replyText, resImg);
+
+                    }
+                }
+
+                // if (res.data.length === 3) {
+                //     let resImg = res.data[1].image;
+                //     await dbSave(resImg);
+                // } else {
+                //     let resImg = "";
+                //     await dbSave(resImg);
+                // }
+
+                // await db.collection('messages').add({
+                //     text: inputMsg,
+                //     photoURL,
+                //     resImg: resImg,
+                //     uid,
+                //     messageType: msgType,
+                //     createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                // })
+
+                async function dbSave (replyText, resImg) {
+                    await db.collection('messages').add({
+                        text: replyText,
+                        photoURL,
+                        resImg: resImg,
+                        uid,
+                        messageType: msgType,
+                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                    })
+                }
 
             }).catch(err => {
                 console.log(err);

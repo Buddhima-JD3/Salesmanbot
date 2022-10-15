@@ -18,7 +18,7 @@ responses:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/igt12tf.jpeg
   utter_did_that_help:
-  - text: Did that help you?
+  - text: Did that help you 😊?
   utter_happy:
   - text: Great, How can I help you?
   utter_welcome:

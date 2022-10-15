@@ -24,13 +24,30 @@ function Chat() {
         <div>
             <SignOut/>
             <div className="msgs">
-                {messages.map(({ id, text, /*photoURL, uid,*/ messageType }) => (
+                {messages.map(({ id, text, resImg, /*photoURL, uid,*/ messageType }) => (
                     <div>
                         {/*<div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>*/}
-                        <div key={id} className={`msg ${messageType === "user" ? 'sent' : 'received'}`}>
+
+
+                        <div key={id} className={`msg ${messageType === "user" ? 'sent' : 'received'} ${resImg || text.split("<br>").length > 0 ? 'img-reply' : ''}`}>
                             {/*<img className="profile" src={photoURL} alt="" />*/}
-                            <p>{text}</p>
+                            <p>
+
+                                {
+                                    text.split("<br>").map((item, index) => (
+                                        <span>
+                                             {index === 0 ? "" : "• "}
+                                            {item.toString()}
+                                            <br/>
+                                        </span>
+                                    ))
+                                }
+
+                                {resImg ? <div style={{width: "100%"}} className={"con-mid"}><img alt={"reply image"} src={resImg} className={"reply-img"} style={{margin: "0 20px 20px", borderRadius: "10px"}} /></div> : ""}
+                            </p>
                         </div>
+
+
                     </div>
                 ))}
             </div>
