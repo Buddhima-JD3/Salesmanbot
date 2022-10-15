@@ -64,3 +64,20 @@ stories:
   steps:
   - intent: thankyou
   - action: utter_welcome
+
+- story: search_product_sucessfull_path
+  steps:
+  - intent: search_product
+  - action: action_search_product
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_welcome
+
+- story: search_product_fail_path
+  steps:
+  - intent: search_product
+  - action: action_search_product
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_search_product
+  - action: utter_did_that_help
