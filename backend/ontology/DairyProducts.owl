@@ -336,6 +336,24 @@
                 <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Ambewela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Milo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -348,6 +366,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasHotWeatherBased"/>
                 <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/HotWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Ambewela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -433,6 +463,24 @@
                 <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/CoolWeather"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Ambewela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Milo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -445,6 +493,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasColdWeatherBased"/>
                 <owl:allValuesFrom rdf:resource="http://example.com/DairyProductsOntology/CoolWeather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Ambewela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/DairyProductsOntology/hasBrand"/>
+                <owl:hasValue rdf:resource="http://example.com/DairyProductsOntology/Highland"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
