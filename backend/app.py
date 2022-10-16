@@ -62,7 +62,7 @@ def chat():
         result.append("ok")
         return (result, 200)
 
-@app.route('/getAll')
+@app.route('/getAll', methods=["POST"])
 def getAll():
     result = negotiate.getAllProducts()
     return (result, 200)
@@ -79,7 +79,7 @@ def getWeather():
 
 @app.route('/getBrands')
 def getBrands():
-    result =  ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
+    result = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     return (result, 200)
 
 @app.route('/getTime', methods=["POST"])
@@ -89,4 +89,4 @@ def time():
     return current_time
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
