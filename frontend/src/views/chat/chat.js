@@ -15,7 +15,7 @@ function Chat() {
     // eslint-disable-next-line no-use-before-define
     useEffect(() => {
         scrollFunc();
-        db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {
+        db.collection('messages').orderBy('createdAt').onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))
         })
     }, [])
