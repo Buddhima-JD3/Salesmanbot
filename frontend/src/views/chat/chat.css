@@ -132,8 +132,31 @@ body {
     display: flex;
 }
 
-
+.con-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .flex-child:first-child {
     margin-right: 20px;
+}
+
+.img-reply {
+    border-radius: 40px;
+    border-top-left-radius: 10px !important;
+}
+
+.reply-img {
+    width: 500px;
+    height: auto;
+}
+
+@media screen and (max-width: 678px) {
+    .reply-img {
+        width: 200px;
+        height: auto;
+    }
 }

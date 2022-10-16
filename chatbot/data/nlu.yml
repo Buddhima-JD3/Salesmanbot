@@ -35,6 +35,11 @@ nlu:
     - of course
     - that sounds good
     - correct
+- intent: thankyou
+  examples: |
+    - thank you
+    - thanks
+    - ty
 - intent: deny
   examples: |
     - no
@@ -48,6 +53,7 @@ nlu:
   examples: |
     - perfect
     - great
+    - good
     - amazing
     - feeling like a king
     - wonderful
@@ -89,10 +95,14 @@ nlu:
     - products?
     - what are the available products?
     - what are the products you have?
+    - what products do you offer?
 - intent: product_list
   examples: |
     - product list
     - show me the list
+    - please provide me the list of products
 - intent: search_product
   examples: |
-    - is [Highland] (milk powder) available
+    - is [highland](product) available
+    - is [milo](product) available
+    - is [Ambewela](product) available
