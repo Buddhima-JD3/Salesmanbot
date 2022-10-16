@@ -42,9 +42,12 @@ def machineLearning(text):
                 0:"Butter",
                 1:"Cheese",
                 2:"IceCream",
-                3:"Milk",
+                3:"HotChocolateMilk",
                 4:"MilkPowder",
-                5:"Yoghurt"
+                5:"Yoghurt",
+                6:"ColdChocolateMilk",
+                7:"ColdVannilaMilk",
+                8:"HotVannilaMilk"
     }
 
     # Processing the integer values required for prediction
