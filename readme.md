@@ -10,9 +10,7 @@ cd frontend; npm start
 ```
 ```terminal
 ./env/scripts/activate; cd Backend;
-set FLASK_APP=app.py
-set FLASK_ENV=development
-flask --app app  --debug run
+flask run
 ```
 ### Chatbot
 ```terminal

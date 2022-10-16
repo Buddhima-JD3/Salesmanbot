@@ -41,10 +41,14 @@ def machineLearning(text):
     categories = {
                 0:"Butter",
                 1:"Cheese",
-                2:"IceCream",
-                3:"Milk",
-                4:"MilkPowder",
-                5:"Yoghurt"
+                2:"ColdChocolateMilk",
+                3:"ColdVannilaMilk",
+                4:"CreamMilkPowder",
+                5:"HotChocolateMilk",
+                6:"HotVannilaMilk",
+                7:"IceCream",
+                8:"NonFatMilkPowder",
+                9:"Yoghurt",
     }
 
     # Processing the integer values required for prediction
@@ -56,9 +60,12 @@ def machineLearning(text):
     #  day
     day = dt.day
     #  category
+    print(text)
     for key, value in categories.items():
         if text == value:
             categorynumber = key
+
+    print(categorynumber)
 
     # Extracting the data from csv file
     data = pd.read_csv("New Dairy Products Sample.csv")
