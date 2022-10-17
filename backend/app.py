@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 @app.route('/chat', methods=["POST"])
 def chat():
-    #return "2", 200
     print(request.json)
     if request.json["message"] != "weather":
         machine = request.json["message"][request.json["message"].find("[")+1:request.json["message"].find("]")]
@@ -26,18 +25,18 @@ def chat():
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
         if (text2.capitalize() in brands):
             i = brands.index(text2.capitalize())
-            # list = negotiate.getAvailableProducts(brands[i])
-            list = negotiate.getProductsForBrand(brands[i])
+            list = negotiate.getAvailableProducts(brands[i])
             print(list)
             list.append("ok")
-            return (list, 200)
+            convert = [list]
+            return (convert, 200)
             #text = input()
             #if(text == "ok"):
             #    print("purchased")
             #else:
             #    print("negotiation terminated")
-        elif (negotiate.productAvailability(text2) > 0):
-            result = negotiate.getProductDetails(text2)
+        elif (negotiate.checkProductAvailability(text2) > 0):
+            result = negotiate.getProductsForProductName(text2)
             print(result)
             print('Product Available\n')
             cat = result[0]["category"]
@@ -49,14 +48,14 @@ def chat():
             print('Check 1 - Product Name Not Available\n')
             print('Check 2 - Customer Not Satisfied. Continue\n')
             if machine == "c":
-                result = negotiate.getSimilarProductsCluster(text2)
+                result = negotiate.getFromOntology(text2)
                 result.append("weather")
                 return (result, 200)
             else:
-                result = negotiate.getFromPurchaseHistory(text2)
+                result = negotiate.getFromMachineLearning(text2)
                 print(result[0])
-                if(result[0] == "No"):
-                    result = negotiate.getSimilarProductsCluster(text2)
+                if(result[0] == "No Products"):
+                    result = negotiate.getFromOntology(text2)
                     result.append("weather")
                     return (result, 200)
                 resulttest = text2 +  "[c]"
@@ -65,7 +64,7 @@ def chat():
 
     else:
         print('Check 3 - Customer Not Satisfied. Continue\n')
-        result = negotiate.getProductsWeather()
+        result = negotiate.getFromWeather()
         result.append("ok")
         return (result, 200)
 
@@ -76,7 +75,7 @@ def getAll():
 
 @app.route('/getWeatherProducts', methods=["POST"])
 def getWeatherProducts():
-    result = negotiate.getProductsWeather()
+    result = negotiate.getFromWeather()
     return (result, 200)
 
 @app.route('/getWeather', methods=["POST"])
