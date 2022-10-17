@@ -21,6 +21,8 @@ responses:
   - text: Did that help you 😊?
   utter_happy:
   - text: Great, How can I help you?
+  utter_any_other:
+  - text: Anything else?
   utter_welcome:
   - text: Welcome!! Thank you for using SalesmanBot :)
   utter_goodbye:
@@ -40,3 +42,4 @@ actions:
 - action_hello_world
 - action_get_productlist
 - action_search_product
+- action_get_brands

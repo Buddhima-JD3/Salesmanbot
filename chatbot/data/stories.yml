@@ -59,6 +59,7 @@ stories:
   - action: utter_check_products
   - intent: affirm
   - action: action_get_productlist
+  - action: utter_any_other
 
 - story: thanking_path
   steps:
