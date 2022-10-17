@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import redirect
 import negotiate
-
+from datetime import datetime
 app = Flask(__name__)
 
 @app.route('/chat', methods=["POST"])
@@ -88,6 +88,11 @@ def getBrands():
     result = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     return (result, 200)
 
+@app.route('/getTime', methods=["POST"])
+def time():
+    time_now = datetime.now()
+    current_time = time_now.strftime("%H:%M:%S")
+    return current_time
 
 if __name__ == "__main__":
     app.run()
