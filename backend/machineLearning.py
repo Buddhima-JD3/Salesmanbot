@@ -25,17 +25,17 @@ def machineLearning(text):
                 13:"Highland Cheese Spread",
                 14:"Highland Chocolate Flavoured Milk",
                 15:"Highland Full Cream Milk Powder",
-                16:"Highland House Cocolate Ice Cream",
-                17:"Highland House Vanilla Ice Cream",
+                16:"Highland Cocolate Ice Cream",
+                17:"Highland Vanilla Ice Cream",
                 18:"Highland Non-Fat Milk Powder",
                 19:"Highland Processed Cheese",
                 20:"Highland Vanilla Flavoured Milk",
                 21:"Highland Vanilla Yoghurt",
                 22:"Milo",
-                23:"Pelawatte Chocolate Ice Cream",
-                24:"Pelawatte Full Cream Milk Powder",
-                25:"Pelawatte Non-Fat Milk Powder",
-                26:"Pelawatter Vanilla Yoghurt"
+                23:"Pelawaththa Chocolate Ice Cream",
+                24:"Pelawaththa Full Cream Milk Powder",
+                25:"Pelawaththa Non-Fat Milk Powder",
+                26:"Pelawaththa Vanilla Yoghurt"
     }
 
     categories = {
