@@ -18,7 +18,7 @@ def chat():
             return ("You can find products from B block", 200)
         text2 = negotiate.bestMatch(text2)
         if text2 == "null":
-            return (["No Products Available"], 200)
+            return (["No Products"], 200)
 
 
         print("Best Match: "+text2)
