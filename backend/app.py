@@ -19,14 +19,15 @@ def chat():
             return ("You can find products from B block", 200)
         text2 = negotiate.bestMatch(text2)
         if text2 == "null":
-            return ("No matching keywords... Enter again", 200)
+            return (["No Products"], 200)
 
 
         print("Best Match: "+text2)
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
         if (text2.capitalize() in brands):
             i = brands.index(text2.capitalize())
-            list = negotiate.getAvailableProducts(brands[i])
+            # list = negotiate.getAvailableProducts(brands[i])
+            list = negotiate.getProductsForBrand(brands[i])
             print(list)
             list.append("ok")
             return (list, 200)
@@ -41,10 +42,11 @@ def chat():
             print('Product Available\n')
             cat = result[0]["category"]
             result.append(cat)
-            return (result, 200)
+            convert = [result]
+            return (convert, 200)
 
         else:
-            print('Check 1 - Product Not Available\n')
+            print('Check 1 - Product Name Not Available\n')
             print('Check 2 - Customer Not Satisfied. Continue\n')
             if machine == "c":
                 result = negotiate.getSimilarProductsCluster(text2)
@@ -52,6 +54,11 @@ def chat():
                 return (result, 200)
             else:
                 result = negotiate.getFromPurchaseHistory(text2)
+                print(result[0])
+                if(result[0] == "No"):
+                    result = negotiate.getSimilarProductsCluster(text2)
+                    result.append("weather")
+                    return (result, 200)
                 resulttest = text2 +  "[c]"
                 result.append(resulttest)
                 return (result, 200)
@@ -67,17 +74,17 @@ def getAll():
     result = negotiate.getAllProducts()
     return (result, 200)
 
-@app.route('/getWeatherProducts')
+@app.route('/getWeatherProducts', methods=["POST"])
 def getWeatherProducts():
     result = negotiate.getProductsWeather()
     return (result, 200)
 
-@app.route('/getWeather')
+@app.route('/getWeather', methods=["POST"])
 def getWeather():
     result = negotiate.getWeather()
     return (result, 200)
 
-@app.route('/getBrands')
+@app.route('/getBrands', methods=["POST"])
 def getBrands():
     result = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
     return (result, 200)

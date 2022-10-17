@@ -55,6 +55,18 @@ def getAllProducts():
         print(productNameList)
     return dicts
 
+def getProductsForBrand(text):
+    docs1 = db.collection('products').where("brand", "==", text).get()
+    dicts = []
+    for doc in docs1:
+        dicts.append(doc.to_dict())
+        print(doc.to_dict())
+    if (len(dicts) == 0):
+        return 0
+    return dicts
+
+
+
 def getAvailableProducts(text):
     categorylist = product_category_on_brand(text)
     print(categorylist)
@@ -141,7 +153,7 @@ def getFromPurchaseHistory(text):
     availableProducts = []
     # for x in list:
     if(productAvailability(x) > 0):
-        availableProducts.append(x)
+        availableProducts.append(getProductDetails(x))
 
     if(len(availableProducts) != 0):
         # response = getResponse(result, availableProducts)
@@ -149,7 +161,7 @@ def getFromPurchaseHistory(text):
           print(response)
     else:
         print("No Products Available")
-        response = ["No Products Available based on Purchase History, Searching for Category"]
+        response = ["No"]
     return response + []
 
 
