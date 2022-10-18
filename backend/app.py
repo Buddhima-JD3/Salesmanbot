@@ -30,7 +30,7 @@ def chat():
             print(list)
             list.append("ok")
             with open('next.txt', 'a') as f:
-                f.write('\n'+"ok")
+                f.write('\n' + "ok")
             convert = [list]
             return (convert, 200)
             # text = input()
@@ -45,7 +45,7 @@ def chat():
             cat = result[0]["category"]
             result.append(cat)
             with open('next.txt', 'a') as f:
-                f.write('\n'+cat)
+                f.write('\n' + cat)
             convert = [result]
             return (convert, 200)
 
@@ -56,7 +56,7 @@ def chat():
                 result = negotiate.getFromOntology(text2)
                 result.append("weather")
                 with open('next.txt', 'a') as f:
-                    f.write('\n'+"weather")
+                    f.write('\n' + "weather")
                 return (result, 200)
             else:
                 result = negotiate.getFromMachineLearning(text2)
@@ -65,12 +65,12 @@ def chat():
                     result = negotiate.getFromOntology(text2)
                     result.append("weather")
                     with open('next.txt', 'a') as f:
-                        f.write('\n'+"weather")
+                        f.write('\n' + "weather")
                     return (result, 200)
                 resulttest = text2 + "[c]"
                 result.append(resulttest)
                 with open('next.txt', 'a') as f:
-                    f.write('\n'+resulttest)
+                    f.write('\n' + resulttest)
                 return (result, 200)
 
     else:
@@ -78,7 +78,7 @@ def chat():
         result = negotiate.getFromWeather()
         result.append("ok")
         with open('next.txt', 'a') as f:
-            f.write('\n'+"ok")
+            f.write('\n' + "ok")
         return (result, 200)
 
 
@@ -112,7 +112,8 @@ def time():
     current_time = time_now.strftime("%H:%M:%S")
     return current_time
 
-#get next keyword
+
+# get next keyword
 @app.route('/getNext', methods=["POST"])
 def getNext():
     with open("next.txt") as file:
@@ -120,6 +121,7 @@ def getNext():
             pass
         last_line = line
     return [last_line]
+
 
 if __name__ == "__main__":
     app.run()
