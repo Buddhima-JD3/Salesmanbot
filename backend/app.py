@@ -29,6 +29,8 @@ def chat():
             list = negotiate.getAvailableProducts(brands[i])
             print(list)
             list.append("ok")
+            with open('next.txt', 'a') as f:
+                f.write('\n'+"ok")
             convert = [list]
             return (convert, 200)
             # text = input()
@@ -42,6 +44,8 @@ def chat():
             print('Product Available\n')
             cat = result[0]["category"]
             result.append(cat)
+            with open('next.txt', 'a') as f:
+                f.write('\n'+cat)
             convert = [result]
             return (convert, 200)
 
@@ -51,6 +55,8 @@ def chat():
             if machine == "c":
                 result = negotiate.getFromOntology(text2)
                 result.append("weather")
+                with open('next.txt', 'a') as f:
+                    f.write('\n'+"weather")
                 return (result, 200)
             else:
                 result = negotiate.getFromMachineLearning(text2)
@@ -58,15 +64,21 @@ def chat():
                 if (result[0] == "No Products"):
                     result = negotiate.getFromOntology(text2)
                     result.append("weather")
+                    with open('next.txt', 'a') as f:
+                        f.write('\n'+"weather")
                     return (result, 200)
                 resulttest = text2 + "[c]"
                 result.append(resulttest)
+                with open('next.txt', 'a') as f:
+                    f.write('\n'+resulttest)
                 return (result, 200)
 
     else:
         print('Check 3 - Customer Not Satisfied. Continue\n')
         result = negotiate.getFromWeather()
         result.append("ok")
+        with open('next.txt', 'a') as f:
+            f.write('\n'+"ok")
         return (result, 200)
 
 
@@ -100,6 +112,14 @@ def time():
     current_time = time_now.strftime("%H:%M:%S")
     return current_time
 
+#get next keyword
+@app.route('/getNext', methods=["POST"])
+def getNext():
+    with open("next.txt") as file:
+        for line in file:
+            pass
+        last_line = line
+    return [last_line]
 
 if __name__ == "__main__":
     app.run()
