@@ -103,6 +103,7 @@ nlu:
     - please provide me the list of products
 - intent: search_product
   examples: |
+    - is [](product) available
     - is [highland](product) available
     - is [milo](product) available
     - is [Ambewela](product) available
@@ -131,3 +132,4 @@ nlu:
     - is [Pelawaththa butter](product) available
     - is [Ambewela yoghurt](product) available
     - is [Anchor yoghurt](product) available
+    - is [highland](product) available?

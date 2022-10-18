@@ -38,20 +38,13 @@ stories:
   steps:
     - intent: product_check
     - action: utter_check_products
+    - action: utter_did_that_help
 
 - story: search_product_path
   steps:
     - intent: search_product
     - action: action_search_product
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: product_check
-  - action: utter_check_products
-  - intent: product_list
-  - action: action_get_productlist
+    - action: utter_did_that_help
 
 - story: product_check_story
   steps:
@@ -80,5 +73,16 @@ stories:
   - action: action_search_product
   - action: utter_did_that_help
   - intent: deny
+    entities:
+      - product: No
   - action: action_search_product
   - action: utter_did_that_help
+
+- story: interactive_story_1
+  steps:
+  - intent: search_product
+    entities:
+    - product: highland
+  - action: action_search_product
+  - intent: search_product
+  - action: action_search_product

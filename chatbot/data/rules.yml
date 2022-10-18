@@ -11,8 +11,3 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-
-- rule: Say "We have daily products" anytime the user ask about products
-  steps:
-    - intent: product_check
-    - action: utter_check_products

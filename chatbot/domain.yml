@@ -35,11 +35,18 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-- utter_check_products
-- utter_greet
-- utter_iamabot
-- utter_welcome
-- action_hello_world
-- action_get_productlist
-- action_search_product
 - action_get_brands
+- action_get_productlist
+- action_hello_world
+- action_search_product
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_any_other
+- utter_welcome
+- utter_goodbye
+- utter_iamabot
+- utter_check_products
+entities:
+- product
