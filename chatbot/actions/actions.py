@@ -65,33 +65,40 @@ class ActionSearchproduct(Action):
         if not entities:
             msg = "Unfortunately We dont have that Product or Category"
 
-        else:
-            for e in entities:
-                if e['entity'] == 'product':
-                    name = e['value']
-                    print("from name" + name)
+        for e in entities:
+            if e['entity'] == 'product':
+                name = e['value']
+                print("from name" + name)
 
-                if name == "No":
-                    keywd = "No"
-                else:
-                    keywd = name
+            if name == "No" or name == "no":
+                c = requests.post('http://127.0.0.1:5000/getNext', json={"message": ""})
+                cdata = c.json()
+                print(cdata)
+                keywd = cdata[0]
 
-                response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
-                map = response.json()
+            else:
+                keywd = name
 
-                if map[0] == "No Products":
-                    msg = "Unfortunately We dont have that Product or Category"
+            response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
+            map = response.json()
 
-                else:
-                    brand = str(map[0][0][0]['brand'])
-                    categoty = str(map[0][0][0]['category'])
-                    productName = str(map[0][0][0]['productName'])
-                    price = str(map[0][0][0]['price'])
-                    weightOrVol = str(map[0][0][0]['weightOrVolume'])
+            if map[0] == "No Products":
+                msg = "Unfortunately We dont have that Product or Category"
 
-                    msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
+            else:
+                brand = str(map[0][0]['brand'])
+                categoty = str(map[0][0]['category'])
+                productName = str(map[0][0]['productName'])
+                price = str(map[0][0]['price'])
+                weightOrVol = str(map[0][0]['weightOrVolume'])
+
+                msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
 
         dispatcher.utter_message(text=msg)
+
+        # purchace history
+        # pdata = productName
+        # requests.post('http://127.0.0.1:5000/chat', json={"message": pdata})
 
         return []
 

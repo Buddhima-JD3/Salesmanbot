@@ -78,11 +78,18 @@ stories:
   - action: action_search_product
   - action: utter_did_that_help
 
+
 - story: interactive_story_1
   steps:
   - intent: search_product
     entities:
-    - product: highland
+    - product: milo
   - action: action_search_product
-  - intent: search_product
+  - action: utter_did_that_help
+  - intent: deny
+    entities:
+      - product: No
   - action: action_search_product
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_welcome
