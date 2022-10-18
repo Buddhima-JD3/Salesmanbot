@@ -3,13 +3,15 @@ from flask import request
 from flask import redirect
 import negotiate
 from datetime import datetime
+
 app = Flask(__name__)
+
 
 @app.route('/chat', methods=["POST"])
 def chat():
     print(request.json)
     if request.json["message"] != "weather":
-        machine = request.json["message"][request.json["message"].find("[")+1:request.json["message"].find("]")]
+        machine = request.json["message"][request.json["message"].find("[") + 1:request.json["message"].find("]")]
         print(machine)
         text2 = request.json["message"]
         if text2 == "Stop" or text2 == "stop":
@@ -20,8 +22,7 @@ def chat():
         if text2 == "null":
             return (["No Products"], 200)
 
-
-        print("Best Match: "+text2)
+        print("Best Match: " + text2)
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
         if (text2.capitalize() in brands):
             i = brands.index(text2.capitalize())
@@ -30,10 +31,10 @@ def chat():
             list.append("ok")
             convert = [list]
             return (convert, 200)
-            #text = input()
-            #if(text == "ok"):
+            # text = input()
+            # if(text == "ok"):
             #    print("purchased")
-            #else:
+            # else:
             #    print("negotiation terminated")
         elif (negotiate.checkProductAvailability(text2) > 0):
             result = negotiate.getProductsForProductName(text2)
@@ -54,11 +55,11 @@ def chat():
             else:
                 result = negotiate.getFromMachineLearning(text2)
                 print(result[0])
-                if(result[0] == "No Products"):
+                if (result[0] == "No Products"):
                     result = negotiate.getFromOntology(text2)
                     result.append("weather")
                     return (result, 200)
-                resulttest = text2 +  "[c]"
+                resulttest = text2 + "[c]"
                 result.append(resulttest)
                 return (result, 200)
 
@@ -68,31 +69,37 @@ def chat():
         result.append("ok")
         return (result, 200)
 
+
 @app.route('/getAll', methods=["POST"])
 def getAll():
     result = negotiate.getAllProducts()
     return (result, 200)
+
 
 @app.route('/getWeatherProducts', methods=["POST"])
 def getWeatherProducts():
     result = negotiate.getFromWeather()
     return (result, 200)
 
+
 @app.route('/getWeather', methods=["POST"])
 def getWeather():
     result = negotiate.getWeather()
     return (result, 200)
 
+
 @app.route('/getBrands', methods=["POST"])
 def getBrands():
-    result = ["Ambewela","Anchor", "ElephantHouse","Milo","Pelawaththa","Highland"]
+    result = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
     return (result, 200)
+
 
 @app.route('/getTime', methods=["POST"])
 def time():
     time_now = datetime.now()
     current_time = time_now.strftime("%H:%M:%S")
     return current_time
+
 
 if __name__ == "__main__":
     app.run()

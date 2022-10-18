@@ -60,21 +60,70 @@ class ActionSearchproduct(Action):
 
         entities = tracker.latest_message['entities']
 
-        for e in entities:
-            if e['entity'] == 'product':
-                name = e['value']
+        print(entities)
 
-            if name == "Highland" or name == "highland":
-                keywd = "Highland"
+        if not entities:
+            msg = "Unfortunately We dont have that Product or Category"
 
-            if name == "Milo" or name == "milo":
-                keywd = "Fresh Milk"
+        else:
+            for e in entities:
+                if e['entity'] == 'product':
+                    name = e['value']
+                    print("from name" + name)
 
-            response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
-            map = response.json()
-            msg = "Brand : " + map[0][0]['brand'] + "<br>" + "Category : " + map[0][0]['category'] + "<br>" + "Product name : " + map[0][0]['productName'] + "<br>" + "Price : " + map[0][0]['price'] + "<br>" + "Weight(Kg) or Volume(l) : " + map[0][0]['weightOrVolume']
+                if name == "No":
+                    keywd = "No"
+                else:
+                    keywd = name
+
+                response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
+                map = response.json()
+
+                if map[0] == "No Products":
+                    msg = "Unfortunately We dont have that Product or Category"
+
+                else:
+                    brand = str(map[0][0][0]['brand'])
+                    categoty = str(map[0][0][0]['category'])
+                    productName = str(map[0][0][0]['productName'])
+                    price = str(map[0][0][0]['price'])
+                    weightOrVol = str(map[0][0][0]['weightOrVolume'])
+
+                    msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
 
         dispatcher.utter_message(text=msg)
+
+        return []
+
+
+class ActionGetBrands(Action):
+    def name(self) -> Text:
+        return "action_get_brands"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        response = requests.post('http://127.0.0.1:5000/getAll', json={"message": ""})
+        map = response.json()
+
+        emptyList = []
+
+        for x in map:
+            msg = x['Brands']
+            emptyList.append(msg)
+
+        # convert list to a set
+        uniqueList = set(emptyList)
+
+        # convert set into a list
+        newList = list(uniqueList)
+
+        strMsg = ""
+        for i in newList:
+            strMsg += "<br>" + i
+
+        dispatcher.utter_message(text="Available product Brands : " + strMsg)
 
         return []
 
