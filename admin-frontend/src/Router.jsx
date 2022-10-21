@@ -11,6 +11,8 @@ import Orders from './views/admin/side-pages/orders';
 import Products from './views/admin/side-pages/products';
 import Users from './views/admin/side-pages/users';
 import {NavbarLayout} from "./layouts/Navbar";
+import EditProduct from './views/admin/side-pages/editProduct';
+import AddProduct from './views/admin/side-pages/addProduct';
 
 const Routers = () => {
     const {loggedIn} = useContext(AuthContext);
@@ -36,6 +38,8 @@ const Routers = () => {
             }
 
             <Route exact path="/test"><ValidationSchemaExample/></Route>
+            <Route exact path="/editproduct/:id"><EditProduct/></Route>
+            <Route exact path="/addproduct"><AddProduct/></Route>
         </Router>
     );
 };
