@@ -134,3 +134,11 @@ nlu:
     - is [Anchor yoghurt](product) available
     - is [highland](product) available?
     - is [milo](product) available?
+- intent: weather_recommendations
+  examples: |
+    - Do you have any recommendations
+    - Can you recommend some products based on weather
+    - any recommendation
+    - weather based products
+    - weather based recommendation
+  

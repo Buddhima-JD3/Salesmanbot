@@ -31,8 +31,7 @@ def chat():
             list.append("ok")
             with open('next.txt', 'a') as f:
                 f.write('\n' + "ok")
-            convert = [list]
-            return (convert, 200)
+            return (list, 200)
             # text = input()
             # if(text == "ok"):
             #    print("purchased")
