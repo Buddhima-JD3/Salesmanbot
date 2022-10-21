@@ -5,6 +5,7 @@ stories:
 - story: happy path
   steps:
   - intent: greet
+  - action: action_Greet_byTime
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
@@ -12,6 +13,7 @@ stories:
 - story: sad path 1
   steps:
   - intent: greet
+  - action: action_Greet_byTime
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
@@ -22,6 +24,7 @@ stories:
 - story: sad path 2
   steps:
   - intent: greet
+  - action: action_Greet_byTime
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
@@ -93,3 +96,10 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_welcome
+
+
+- story: get_weather_based_products_path
+  steps:
+  - intent: weather_recommendations
+  - action: action_weather_based_products
+  - action: utter_did_that_help
