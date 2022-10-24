@@ -26,12 +26,13 @@ def chat():
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
         if (text2.capitalize() in brands):
             i = brands.index(text2.capitalize())
-            list = negotiate.getAvailableProducts(brands[i])
+            list = negotiate.getProductsForBrand(brands[i])
             print(list)
             list.append("ok")
+            convert = [list]
             with open('next.txt', 'a') as f:
                 f.write('\n' + "ok")
-            return (list, 200)
+            return (convert, 200)
             # text = input()
             # if(text == "ok"):
             #    print("purchased")
