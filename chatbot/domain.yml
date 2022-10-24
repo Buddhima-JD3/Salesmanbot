@@ -12,6 +12,7 @@ intents:
 - search_product
 - thankyou
 - weather_recommendations
+- get_weather
 responses:
   utter_greet:
   - text: Hey! How you feeling?
@@ -42,6 +43,7 @@ actions:
 - action_search_product
 - action_Greet_byTime
 - action_weather_based_products
+- action_tell_weather
 - utter_any_other
 - utter_check_products
 - utter_cheer_up

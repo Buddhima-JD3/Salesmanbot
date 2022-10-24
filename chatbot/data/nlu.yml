@@ -141,4 +141,12 @@ nlu:
     - any recommendation
     - weather based products
     - weather based recommendation
+- intent: get_weather
+  examples: |
+    - show me the weather
+    - what is the weather now
+    - what is the temp right now
+    - what is the temperature
+    - how is the weather today
+    - how is the weather feels like
   

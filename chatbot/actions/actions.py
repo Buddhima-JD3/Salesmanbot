@@ -78,6 +78,13 @@ class ActionSearchproduct(Action):
 
             response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
             map = response.json()
+            # cout = map.count
+            # print(cout)
+
+            # for x in range map:
+            #     print(x)
+                # data = str(map[0][x]['brand'])
+                # print(data)
 
             if map[0] == "No Products":
                 msg = "Unfortunately We dont have that Product or Category"
@@ -187,6 +194,29 @@ class ActionWeatherProducts(Action):
             strMsg += "<br>" + i
 
         dispatcher.utter_message(text="Recommended products based on weather: " + strMsg)
+
+        return []
+
+
+class ActionWeatherData(Action):
+
+    def name(self) -> Text:
+        return "action_tell_weather"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        response = requests.post('http://127.0.0.1:5000/getWeather', json={"message": ""})
+
+        map = response.json()
+
+        feelsLike = str(map['feels_like'])
+        humidity = str(map['humidity'])
+        temp = str(map['temp'])
+
+        msg = "The temperature is " + temp + "°C and the humidity is " + humidity + "% and you feels like " + feelsLike + "°C. 😶‍🌫️"
+
+        dispatcher.utter_message(text=msg)
 
         return []
 
