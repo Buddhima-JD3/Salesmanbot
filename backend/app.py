@@ -43,10 +43,10 @@ def chat():
             print(result)
             print('Product Available\n')
             cat = result[0]["category"]
-            result.append(cat)
+            convert = [result]
+            convert.append(cat)
             with open('next.txt', 'a') as f:
                 f.write('\n' + cat)
-            convert = [result]
             return (convert, 200)
 
         else:
