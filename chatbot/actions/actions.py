@@ -78,27 +78,25 @@ class ActionSearchproduct(Action):
 
             response = requests.post('http://127.0.0.1:5000/chat', json={"message": keywd})
             map = response.json()
-            # cout = map.count
-            # print(cout)
-
-            # for x in range map:
-            #     print(x)
-                # data = str(map[0][x]['brand'])
-                # print(data)
+            count = len(map[0])
+            print(count)
 
             if map[0] == "No Products":
                 msg = "Unfortunately We dont have that Product or Category"
+                dispatcher.utter_message(text=msg)
 
             else:
-                brand = str(map[0][0]['brand'])
-                categoty = str(map[0][0]['category'])
-                productName = str(map[0][0]['productName'])
-                price = str(map[0][0]['price'])
-                weightOrVol = str(map[0][0]['weightOrVolume'])
+                for x in range(count - 1):
+                    brand = str(map[0][0]['brand'])
+                    categoty = str(map[0][0]['category'])
+                    productName = str(map[0][0]['productName'])
+                    price = str(map[0][0]['price'])
+                    weightOrVol = str(map[0][0]['weightOrVolume'])
 
-                msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
+                    msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
+                    dispatcher.utter_message(text=msg)
 
-        dispatcher.utter_message(text=msg)
+
 
         # purchace history
         # pdata = productName
