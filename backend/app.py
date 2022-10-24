@@ -28,8 +28,8 @@ def chat():
             i = brands.index(text2.capitalize())
             list = negotiate.getProductsForBrand(brands[i])
             print(list)
-            list.append("ok")
             convert = [list]
+            convert.append("ok")
             with open('next.txt', 'a') as f:
                 f.write('\n' + "ok")
             return (convert, 200)
