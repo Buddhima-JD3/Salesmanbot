@@ -103,3 +103,9 @@ stories:
   - intent: weather_recommendations
   - action: action_weather_based_products
   - action: utter_did_that_help
+
+- story: show_weather_path
+  steps:
+  - intent: get_weather
+  - action: action_tell_weather
+  - action: utter_any_other
