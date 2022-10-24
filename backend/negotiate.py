@@ -238,7 +238,16 @@ def getFromWeather():
         availableProducts = []
         for x in categorylist:
             availableProducts.append(productCategoryAvailability(x))
-    return availableProducts
+
+    p = []
+    for dd in availableProducts:
+        if type(dd) == list:
+            for dds in dd:
+                p.append(dds)
+        else:
+            p.append(dd)
+
+    return [p]
 
 
 # ==================================================================================================
