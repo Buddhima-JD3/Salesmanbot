@@ -213,9 +213,18 @@ def getFromOntology(text):
     for x in list:
             availableProducts.append(productBrandAvailability(x,text))
 
-    new_productlist = [x for x in availableProducts if x != 0]
-    if (len(new_productlist) != 0):
-        return new_productlist
+    # new_productlist = [x for x in availableProducts if x != 0]
+    print(availableProducts)
+    p = []
+    for dd in availableProducts:
+        if type(dd) == list:
+            p.append(dd)
+        else:
+            for x in dd:
+                p.append(x)
+
+    if (len(availableProducts) != 0):
+        return [p]
     else:
         return ["No Products"]+[]
 
