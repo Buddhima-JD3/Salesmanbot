@@ -143,26 +143,54 @@ def productBrandAvailability(text,text2):
 def bestMatch(text):
     docs = db.collection('products').get()
     dbdata = []
-    for doc1 in docs:
-        brand = u'{}'.format(doc1.to_dict()['brand'])
-        dbdata.append(brand)
+    if len(text.split(" ")) > 1 and SequenceMatcher(None, text.lower(), "elephanthouse").ratio() < 0.8:
+        for doc2 in docs:
+            pname = u'{}'.format(doc2.to_dict()['productName'])
+            dbdata.append(pname)
+        max = 0.0
+        best = "null"
+        for dbdatas in dbdata:
+            match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
+            # print(dbdatas+" "+str(match))
+            if max < match and match >= 0.70:
+                max = match
+                best = dbdatas
+            if best == "null":
+                categories = [
+                    "Butter",
+                    "Cheese",
+                    "ColdChocolateMilk",
+                    "ColdVannilaMilk",
+                    "CreamMilkPowder",
+                    "HotChocolateMilk",
+                    "HotVannilaMilk",
+                    "IceCream",
+                    "NonFatMilkPowder",
+                    "Yoghurt",
+                ]
+                max2 = 0.0
+                for cat in categories:
+                    match2 = SequenceMatcher(None, text.lower(), cat.lower()).ratio()
+                    if max2 < match and match2 >= 0.5:
+                        max2 = match2
+                        best = cat
+    else:
+        for doc1 in docs:
+            brand = u'{}'.format(doc1.to_dict()['brand'])
+            dbdata.append(brand)
+        for doc3 in docs:
+            cat = u'{}'.format(doc3.to_dict()['category'])
+            dbdata.append(cat)
+        max = 0.0
+        best = "null"
+        for dbdatas in dbdata:
+            match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
+            # print(dbdatas+" "+str(match))
+            if max < match and match >= 0.6:
+                max = match
+                best = dbdatas
 
-    for doc2 in docs:
-        pname = u'{}'.format(doc2.to_dict()['productName'])
-        dbdata.append(pname)
 
-    for doc3 in docs:
-        cat = u'{}'.format(doc3.to_dict()['category'])
-        dbdata.append(cat)
-
-    max=0.0
-    best="null"
-    for dbdatas in dbdata:
-        match = SequenceMatcher(None, text.lower(), dbdatas.lower()).ratio()
-        #print(dbdatas+" "+str(match))
-        if max < match and match >= 0.5:
-            max = match
-            best = dbdatas
 
     return best
 
@@ -218,12 +246,13 @@ def getFromOntology(text):
     p = []
     for dd in availableProducts:
         if type(dd) == list:
-            p.append(dd)
-        else:
             for x in dd:
                 p.append(x)
+        else:
+            p.append(dd)
 
-    if (len(availableProducts) != 0):
+
+    if (len(p) != 0):
         return [p]
     else:
         return ["No Products"]+[]

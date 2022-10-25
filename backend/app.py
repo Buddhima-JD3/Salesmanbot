@@ -24,8 +24,8 @@ def chat():
 
         print("Best Match: " + text2)
         brands = ["Ambewela", "Anchor", "ElephantHouse", "Milo", "Pelawaththa", "Highland"]
-        if (text2.capitalize() in brands):
-            i = brands.index(text2.capitalize())
+        if (text2 in brands):
+            i = brands.index(text2)
             list = negotiate.getProductsForBrand(brands[i])
             print(list)
             convert = [list]
