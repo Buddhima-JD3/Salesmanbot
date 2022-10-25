@@ -72,17 +72,17 @@ def machineLearning(text):
     df=data
 
     # Data PreProcessing
-    df=df.drop(['Sno','Buying Frequency','Online Buying Preference','Expected Delivery Time','Preferred Time Slot','Discount Expectations','Preferred Billing Type','Buying Farm Fresh Fruits Online'], axis=1)
+    df=df.drop(['Sno','BuyingFrequency','OnlineBuyingPreference','ExpectedDeliveryTime','PreferredTimeSlot','DiscountExpectations','PreferredBillingType','BuyingFarmFreshFruitsOnline'], axis=1)
     df.CusID = pd.Categorical(df.CusID)
     df['CusID_Code'] = df.CusID.cat.codes
     df[['Month','Day','Year']] = df['Date'].str.split("/", expand = True)
-    df["Dairy Product Consumed"] = pd.Categorical(df["Dairy Product Consumed"])
-    df['Dairy_Product_Consumed'] = df["Dairy Product Consumed"].cat.codes
+    df["DairyProductConsumed"] = pd.Categorical(df["DairyProductConsumed"])
+    df['Dairy_Product_Consumed'] = df["DairyProductConsumed"].cat.codes
     df.Category = pd.Categorical(df.Category)
     df['Category_Code'] = df.Category.cat.codes
 
 
-    df_new=df.drop(['CusID','Date','Dairy Product Consumed', 'Category','Year'], axis=1)
+    df_new=df.drop(['CusID','Date','DairyProductConsumed', 'Category','Year'], axis=1)
     X = df_new.drop(['Dairy_Product_Consumed'],axis=1)
     Y = df['Dairy_Product_Consumed']
     # print(X.shape,Y.shape)
@@ -92,6 +92,7 @@ def machineLearning(text):
     model.fit(X,Y)
 
     # Making Prediction
+    print(cusId,month,day,categorynumber)
     predictions = model.predict([[cusId,month,day,categorynumber]])
     print(predictions)
     print(products[predictions[0]])
@@ -119,16 +120,16 @@ def modelTraining():
     data = pd.read_csv("New Dairy Products Sample.csv")
     df = data
     df = df.drop(
-        ['Sno', 'Buying Frequency', 'Online Buying Preference', 'Expected Delivery Time', 'Preferred Time Slot',
-         'Discount Expectations', 'Preferred Billing Type', 'Buying Farm Fresh Fruits Online'], axis=1)
+        ['Sno', 'BuyingFrequency', 'OnlineBuyingPreference', 'ExpectedDeliveryTime', 'PreferredTimeSlot',
+         'DiscountExpectations', 'PreferredBillingType', 'BuyingFarmFreshFruitsOnline'], axis=1)
     df.CusID = pd.Categorical(df.CusID)
     df['CusID_Code'] = df.CusID.cat.codes
     df[['Month', 'Day', 'Year']] = df['Date'].str.split("/", expand=True)
-    df["Dairy Product Consumed"] = pd.Categorical(df["Dairy Product Consumed"])
-    df['Dairy_Product_Consumed'] = df["Dairy Product Consumed"].cat.codes
+    df["DairyProductConsumed"] = pd.Categorical(df["DairyProductConsumed"])
+    df['Dairy_Product_Consumed'] = df["DairyProductConsumed"].cat.codes
     df.Category = pd.Categorical(df.Category)
     df['Category_Code'] = df.Category.cat.codes
-    df_new = df.drop(['CusID', 'Date', 'Dairy Product Consumed', 'Category', 'Year'], axis=1)
+    df_new = df.drop(['CusID', 'Date', 'DairyProductConsumed', 'Category', 'Year'], axis=1)
     x = df_new[['CusID_Code', 'Month', 'Day', 'Category_Code']]
     y = df_new['Dairy_Product_Consumed']
 

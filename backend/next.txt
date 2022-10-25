@@ -218,3 +218,12 @@ ok
 ok
 Cheese[c]
 weather
+ok
+ColdChocolateMilk
+ColdChocolateMilk
+weather
+Cheese
+Cheese[c]
+Cheese[c]
+Cheese[c]
+Cheese[c]

@@ -1,4 +1,4 @@
-Sno,CusID,Date,Dairy Product Consumed,Category,Buying Frequency,Online Buying Preference,Expected Delivery Time,Preferred Time Slot,Discount Expectations,Preferred Billing Type,Buying Farm Fresh Fruits Online
+Sno,CusID,Date,DairyProductConsumed,Category,BuyingFrequency,OnlineBuyingPreference,ExpectedDeliveryTime,PreferredTimeSlot,DiscountExpectations,PreferredBillingType,BuyingFarmFreshFruitsOnline
 1,C3,1/1/2000,Highland Vanilla Flavoured Milk,HotVannilaMilk,Once Every 2-3 days,1,24,6 AM to 12 Noon,Yes,Prepaid,Yes
 2,C5,1/1/2000,Highland Processed Cheese,Cheese,Once Every 2-3 days,8,6,6 AM to 12 Noon,No,Prepaid,Yes
 3,C4,1/2/2000,Ambewela Vanilla Flavoured Milk,ColdVannilaMilk,Once Every 2-3 days,4,12,6 PM to 11 PM,No,Instant,Yes
