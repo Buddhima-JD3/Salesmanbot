@@ -41,7 +41,6 @@ stories:
   steps:
     - intent: product_check
     - action: utter_check_products
-    - action: utter_did_that_help
 
 - story: search_product_path
   steps:
@@ -69,6 +68,7 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_welcome
+  - action: utter_any_other
 
 - story: search_product_fail_path
   steps:
@@ -96,6 +96,7 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_welcome
+  - action: utter_any_other
 
 
 - story: get_weather_based_products_path
@@ -103,9 +104,37 @@ stories:
   - intent: weather_recommendations
   - action: action_weather_based_products
   - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_any_other
 
 - story: show_weather_path
   steps:
   - intent: get_weather
   - action: action_tell_weather
+  - action: utter_any_other
+
+- story: get_weather_based_products_path_1
+  steps:
+  - intent: weather_recommendations
+  - action: action_weather_based_products
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_any_other
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_thanking
+  - action: utter_any_other
+
+- story: get_engagements_path
+  steps:
+  - intent: affirm
+  - action: utter_did_that_help
+
+- story: get_engagements_path_1
+  steps:
+  - intent: affirm
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_thanking
   - action: utter_any_other
