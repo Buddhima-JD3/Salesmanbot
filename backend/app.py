@@ -3,7 +3,8 @@ from flask import request
 from flask import redirect
 import negotiate
 from datetime import datetime
-
+import random
+import create_data
 app = Flask(__name__)
 
 
@@ -122,6 +123,16 @@ def getNext():
         last_line = line
     return [last_line]
 
+@app.route('/savePurchase', methods=["POST"])
+def purchase():
+    print(request.json)
+    text2 = request.json["message"]
+    current_time = datetime.now()
+    #  customer ID
+    cusId = "C" + str(random.randint(0, 9))
+    date = current_time.strftime('%m/%d/%Y')
+    status = create_data.addData(cusId,date,text2[0],text2[1])
+    return (status,200)
 
 if __name__ == "__main__":
     app.run()
