@@ -9,20 +9,28 @@ import {CircularProgress} from "@material-ui/core";
 function Chat() {
     const scroll = useRef()
     const [messages, setMessages] = useState([])
+    const [buyLoading, setButLoading] = useState(false);
+    const [buyId, setBuyId] = useState();
 
     function scrollFunc() {
         window.scrollTo(0, document.body.scrollHeight);
     }
 
     const clickBuy = (product, category) => {
+        setButLoading(true);
+        setBuyId(product + category);
         console.log("Product: " + product);
         console.log("Category: " + category);
 
         axios.post('http://localhost:5000/savePurchase', {
             message: [product, category]
+        }, {
+            headers: {'Access-Control-Allow-Credentials': true}
         }).then(res => {
+            setButLoading(false);
             console.log(res);
         }).catch(err => {
+            setButLoading(false);
             console.log(err);
         })
     }
@@ -60,7 +68,9 @@ function Chat() {
                                                             item.toString().split("<button>")[1].split(',')[0],
                                                             item.toString().split("<button>")[1].split(',')[1]
                                                         )} className={'btn btn-primary'}>
-                                                            {1 === 1 ? <CircularProgress/> : "Buy"}
+                                                            {
+                                                                buyId === item.toString().split("<button>")[1].split(',')[0]+item.toString().split("<button>")[1].split(',')[1] ?
+                                                                buyLoading === true ? <CircularProgress size={'2rem'} style={{color: '#fff'}}/> : "Purchased" : "Buy"}
                                                         </button>
                                                             </div>
                                                     </>)

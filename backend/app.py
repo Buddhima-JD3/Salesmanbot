@@ -1,11 +1,15 @@
 from flask import Flask
 from flask import request
 from flask import redirect
+from flask_cors import CORS, cross_origin
 import negotiate
 from datetime import datetime
 import random
 import create_data
+
 app = Flask(__name__)
+CORS(app, resources={r"/savePurchase": {"origins": "http://localhost:3000"}})
+
 
 
 @app.route('/chat', methods=["POST"])
