@@ -31,7 +31,7 @@ def machineLearning(text):
                 19:"Highland Processed Cheese",
                 20:"Highland Vanilla Flavoured Milk",
                 21:"Highland Vanilla Yoghurt",
-                22:"Milo",
+                22:"Milo Flavoured Milk",
                 23:"Pelawaththa Chocolate Ice Cream",
                 24:"Pelawaththa Full Cream Milk Powder",
                 25:"Pelawaththa Non-Fat Milk Powder",
