@@ -241,21 +241,21 @@ def getFromOntology(text):
     for x in list:
             availableProducts.append(productBrandAvailability(x,text))
 
-    # new_productlist = [x for x in availableProducts if x != 0]
-    print(availableProducts)
+    new_productlist = [x for x in availableProducts if x != 0]
+    print(new_productlist)
     p = []
-    for dd in availableProducts:
+    for dd in new_productlist:
         if type(dd) == list:
+            p.append(dd)
+        else:
             for x in dd:
                 p.append(x)
-        else:
-            p.append(dd)
 
 
     if (len(p) != 0):
         return [p]
     else:
-        return ["No Products"]+[]
+        return ["No Products"]
 
 
 # GET PRODUCTS TO BE RECOMMENDED BASED ON WEATHER OF THE DAY
