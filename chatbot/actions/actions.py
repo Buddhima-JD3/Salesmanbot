@@ -62,7 +62,8 @@ class ActionSearchproduct(Action):
         entities = tracker.latest_message['entities']
 
         if not entities:
-            msg = "Unfortunately We dont have that Product or Category"
+            msgx = "Unfortunately We dont have that Product or Category"
+            dispatcher.utter_message(text=msgx)
 
         for e in entities:
             if e['entity'] == 'product':
@@ -73,6 +74,16 @@ class ActionSearchproduct(Action):
                 cdata = c.json()
                 keywd = cdata[0]
 
+                response = requests.post('http://127.0.0.1:5000/getWeather', json={"message": ""})
+                map = response.json()
+                feelsLike = str(map['feels_like'])
+                humidity = str(map['humidity'])
+                temp = str(map['temp'])
+                msg1 = "Don't worry I got you, according to the Weather today,"
+                dispatcher.utter_message(text=msg1)
+                msg2 = "The temperature is " + temp + "°C and the humidity is " + humidity + "% and it feels like " + feelsLike + "°C. 😶‍🌫️"
+                dispatcher.utter_message(text=msg2)
+
             else:
                 keywd = name
 
@@ -82,21 +93,22 @@ class ActionSearchproduct(Action):
             print(count)
 
             if map[0] == "No Products":
-                msg = "Unfortunately We dont have that Product or Category"
-                dispatcher.utter_message(text=msg)
+                msg3 = "Unfortunately We dont have that Product or Category"
+                dispatcher.utter_message(text=msg3)
 
             else:
-                for x in range(count - 1):
-                    brand = str(map[0][0]['brand'])
-                    categoty = str(map[0][0]['category'])
-                    productName = str(map[0][0]['productName'])
-                    price = str(map[0][0]['price'])
-                    weightOrVol = str(map[0][0]['weightOrVolume'])
+                msg4 = "Would you like to have ?"
+                dispatcher.utter_message(text=msg4)
+
+                for x in range(count):
+                    brand = str(map[0][x]['brand'])
+                    categoty = str(map[0][x]['category'])
+                    productName = str(map[0][x]['productName'])
+                    price = str(map[0][x]['price'])
+                    weightOrVol = str(map[0][x]['weightOrVolume'])
 
                     msg = "Brand : " + brand + "<br>" + "Category : " + categoty + "<br>" + "Product name : " + productName + "<br>" + "Price : " + price + "<br>" + "Weight(Kg) or Volume(l) : " + weightOrVol
                     dispatcher.utter_message(text=msg)
-
-
 
         # purchace history
         # pdata = productName
