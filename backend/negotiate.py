@@ -171,7 +171,7 @@ def bestMatch(text):
                 max2 = 0.0
                 for cat in categories:
                     match2 = SequenceMatcher(None, text.lower(), cat.lower()).ratio()
-                    if max2 < match and match2 >= 0.5:
+                    if max2 < match2 and match2 >= 0.5:
                         max2 = match2
                         best = cat
     else:
@@ -216,8 +216,11 @@ def getFromMachineLearning(text):
 # GET RELATED TO CATEOGORIES OF PRODUCTS TO THE ORIGINAL PRODUCT CATEGORY
 def getFromOntology(text):
     print("Getting From Ontology " + text)
-    if "milkpowder" in text.lower():
-        list = product_on_category("MilkPowder")
+    if "creammilkpowder" in text.lower():
+        list = product_on_category("CreamMilkPowder")
+        print(list)
+    elif "nonfatmilkpowder" in text.lower():
+        list = product_on_category("NonFatMilkPowder")
         print(list)
     elif "butter" in text.lower():
         list = product_on_category("Butter")
@@ -228,11 +231,26 @@ def getFromOntology(text):
     elif "icecream" in text.lower():
         list = product_on_category("IceCream")
         print(list)
-    elif "milk" in text.lower():
-        list = product_on_category("Milk")
+    elif "hotvannilamilk" in text.lower():
+        list = product_on_category("HotVannilaMilk")
+        print(list)
+    elif "coldvannilamilk" in text.lower():
+        list = product_on_category("ColdVannilaMilk")
+        print(list)
+    elif "hotchocolatemilk" in text.lower():
+        list = product_on_category("HotChocolateMilk")
+        print(list)
+    elif "coldchocolatemilk" in text.lower():
+        list = product_on_category("ColdChocolateMilk")
         print(list)
     elif "yoghurt" in text.lower():
         list = product_on_category("Yoghurt")
+        print(list)
+    elif "milkpowder" in text.lower():
+        list = product_on_category("MilkPowder")
+        print(list)
+    elif "milk" in text.lower():
+        list = product_on_category("Milk")
         print(list)
     else:
         print("Can't Generate Cluster")
