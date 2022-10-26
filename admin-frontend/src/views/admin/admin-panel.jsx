@@ -19,7 +19,7 @@ const adminpanal = () => {
 
                             <div className={"col admin-card"}>
                                 <a href="./products" style={{textDecoration: "none"}}>
-                                    <p className="card-text mbr-fonts-style display-4">35</p>
+                                    <p className="card-text mbr-fonts-style display-4">26</p>
                                     <h2 className="card-title mbr-fonts-style display-5 d-flex justify-content-left text-center">Products</h2>
                                 </a>
                             </div>
@@ -31,13 +31,13 @@ const adminpanal = () => {
                                 </a>
                             </div>
 
-                            <div className={"col admin-card"}>
+                         {/*   <div className={"col admin-card"}>
                                 <a href="./customers" style={{textDecoration: "none"}}>
                                     <p className="card-text mbr-fonts-style display-4">5</p>
                                     <h2 className="card-title mbr-fonts-style display-5">Inventory</h2>
                                 </a>
                             </div>
-
+                        */}
                         </div>
                         <div className={"row"}>
 

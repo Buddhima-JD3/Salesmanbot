@@ -20,44 +20,7 @@ export const NavbarLayout = () => {
                     Salesman Bot
                 </Link>
 
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
-                                Link 1
-                            </a>
-                        </li>
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
-                                Link 2
-                            </a>
-                        </li>
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
-                                Link 3
-                            </a>
-                        </li>
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
-                                Link 4
-                            </a>
-                        </li>
-                    </ul>
 
-                    <div className="nav-right navbar-nav ml-auto">
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link nav-sites-btn">
-                                Link 5
-                            </a>
-                        </li>
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link nav-sites-btn">
-                                Link 6
-                            </a>
-                        </li>
-                    </div>
-
-                </div>
             </div>
         </nav>
 
