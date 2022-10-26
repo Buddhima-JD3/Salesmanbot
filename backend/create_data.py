@@ -1,3 +1,5 @@
+import random
+
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -9,19 +11,38 @@ db = firestore.client()
 
 # Using add to add documents with auto generated keys
 def addData(cusId, date, text1, text2):
-    db.collection('purchase_history').add({
+    doc_ref = db.collection('purchase_history').order_by(u'Sno', direction=firestore.Query.DESCENDING).limit(1)
+    results = doc_ref.stream()
+
+    for post in results:
+        print(u'{} => {}'.format(post.id, post.to_dict()))
+        id = int(post.id)
+
+    lastId = id + 1
+
+    buyFreq = ['Once Every 2-3 days', 'Once a day', 'Twice a day', 'Once a week']
+    expDel=[24,6,12]
+    prefTime = ['6 AM to 12 Noon', '6 PM to 11 PM', 'Anytime would do', '7 AM to 12 Noon']
+    discount = ['Yes', 'No', 'Maybe']
+    billing = ['Prepaid', 'Instant', 'Postpaid, Instant', 'Any would do']
+
+
+    ref = db.collection('purchase_history').document(str(lastId)).set({
+        "Sno": lastId,
         "CusID": cusId,
         "Date": date,
         "DairyProductConsumed": text1,
         "Category": text2,
-        "BuyingFrequency": "Once Every 2-3 days",
-        "OnlineBuyingPreference":1,
-        "ExpectedDeliveryTime":24,
-        "PreferredTimeSlot":"6 AM to 12 Noon",
-        "DiscountExpectations":"Yes",
-        "PreferredBillingType":"Prepaid",
-        "BuyingFarmFreshFruitsOnline":"Yes"
+        "BuyingFrequency": random.choice(buyFreq),
+        "OnlineBuyingPreference":random.randint(0, 10),
+        "ExpectedDeliveryTime":random.choice(expDel),
+        "PreferredTimeSlot":random.choice(prefTime),
+        "DiscountExpectations":random.choice(discount),
+        "PreferredBillingType":random.choice(billing),
+        "BuyingFarmFreshFruitsOnline":random.choice(discount)
     })
+
+
     return "saved"
 
     # db.collection('products').add({
