@@ -133,7 +133,7 @@ def purchase():
     text2 = request.json["message"]
     current_time = datetime.now()
     #  customer ID
-    cusId = "C" + str(random.randint(0, 9))
+    cusId = "C" + str(random.randint(0, 10))
     date = current_time.strftime('%m/%d/%Y')
     status = create_data.addData(cusId,date,text2[0],text2[1])
     return (status,200)
