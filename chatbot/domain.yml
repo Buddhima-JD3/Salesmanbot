@@ -15,7 +15,7 @@ intents:
 - get_weather
 responses:
   utter_greet:
-  - text: Hey! How you feeling?
+  - text: Hey! How you feeling 🥹?
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/igt12tf.jpeg
@@ -24,15 +24,19 @@ responses:
   utter_happy:
   - text: Great, How can I help you?
   utter_any_other:
-  - text: Anything else?
+  - text: Anything else? 🤭
   utter_welcome:
   - text: Welcome!! Thank you for using SalesmanBot :)
   utter_goodbye:
-  - text: Bye
+  - text: Bye... 👋
   utter_iamabot:
-  - text: My name is Alice the SalesmanBot, powered by Rasa Framework.
+  - text: My name is Alice the SalesmanBot 🤖, powered by Rasa Framework.
   utter_check_products:
   - text: We have daily products. Do you want to check the product list?
+  utter_sorry:
+  - text: Sorry!! 🥴 I didn't get that.
+  utter_thanking:
+  - text: Thank you for using SalesmanBot 🥰. Keep using. Talk to you later ☺.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

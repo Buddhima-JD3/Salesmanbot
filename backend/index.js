@@ -12,6 +12,19 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
 
+// CORS
+const corsOptions ={
+    origin: '*',
+    credentials:true,
+    //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+}
+app.use(cors(corsOptions))
+
+// BodyParser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
 app.use('/api', productRoutes.routes);
 app.use('/api', userAccountRoutes.routes);
 

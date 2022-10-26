@@ -134,6 +134,9 @@ nlu:
     - is [Anchor yoghurt](product) available
     - is [highland](product) available?
     - is [milo](product) available?
+    - do you have [milo](product)
+    - do you have [highland](product)
+    - do you have [anchor](product)?
 - intent: weather_recommendations
   examples: |
     - Do you have any recommendations
