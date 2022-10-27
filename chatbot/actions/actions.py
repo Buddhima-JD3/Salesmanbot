@@ -188,6 +188,18 @@ class ActionWeatherProducts(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        response = requests.post('http://127.0.0.1:5000/getWeather', json={"message": ""})
+        mapdata = response.json()
+
+        feelsLike = str(mapdata['feels_like'])
+        humidity = str(mapdata['humidity'])
+        temp = str(mapdata['temp'])
+
+        msg1 = "Don't worry I got you, according to the Weather today 🤗"
+        dispatcher.utter_message(text=msg1)
+
+        msg2 = "The temperature is " + temp + "°C and the humidity is " + humidity + "% and it feels like " + feelsLike + "°C. 😶‍🌫️"
+        dispatcher.utter_message(text=msg2)
 
         weatherProduct = requests.post('http://127.0.0.1:5000/getWeatherProducts', json={"message": ""})
         mapdata = weatherProduct.json()
