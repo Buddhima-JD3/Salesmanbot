@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const config = require('./firebase-config');
 const productRoutes = require('./routes/product-routes');
 const userAccountRoutes = require('./routes/userAccounts-routes')
+const Keys = require("./Keys");
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.use(bodyParser.json());
 
 // CORS Policy
 const corsOptions ={
-    origin: "http://localhost:3000",
+    origin: Keys.CLIENT_URL,
     credentials:true,
     //access-control-allow-credentials:true
     optionSuccessStatus:200,

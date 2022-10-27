@@ -1,3 +1,6 @@
 
 CreamMilkPowder[c]
 ok
+CreamMilkPowder[c]
+ok
+IceCream
