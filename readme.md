@@ -35,7 +35,7 @@ cd frontend; npm install
 python -m venv env; 
 ./env/scripts/activate; 
 pip install -r backend/requirements.txt;
-cd backend; pip install Flask
+cd backend;
 ```
 ### Chatbot
 ```terminal
