@@ -5,9 +5,10 @@ from sklearn import metrics, model_selection, preprocessing
 from sklearn.tree import DecisionTreeClassifier
 import datetime
 import random
+import datacsv
 
 def machineLearning(text):
-
+    datacsv.main()
     products = {
                 0:"Ambewela Cheese",
                 1:"Ambewela Chocolate Flavoured Milk",
